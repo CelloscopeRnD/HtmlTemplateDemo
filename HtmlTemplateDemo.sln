@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HtmlTemplateDemo", "E:\AndroidProjects\HtmlTemplateDemo\", "{D82A7962-5F7C-4F30-8F0A-B797BBDFA6B8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_43871"
+		Debug.AspNetCompiler.PhysicalPath = "E:\AndroidProjects\HtmlTemplateDemo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43871\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_43871"
+		Release.AspNetCompiler.PhysicalPath = "E:\AndroidProjects\HtmlTemplateDemo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43871\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "43871"
+		SlnRelativePath = "E:\AndroidProjects\HtmlTemplateDemo\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D82A7962-5F7C-4F30-8F0A-B797BBDFA6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82A7962-5F7C-4F30-8F0A-B797BBDFA6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
