@@ -1,8 +1,24 @@
 ﻿body {
 }
 
+#logo {
+    max-height: 2cm;
+}
+
 #agent_banking_logo {
     float: left;
-    width: 4cm;
-    height: 2cm;
+    max-width: 4cm;
+}
+
+#logo {
+    float: right;
+    max-width: 4cm;
+}
+
+.center {
+    text-align: center;
+    width: auto;
+    background-color: gold;
+    margin-left: auto;
+    margin-right: auto;
 }
