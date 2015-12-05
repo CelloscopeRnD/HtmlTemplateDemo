@@ -1,5 +1,41 @@
-﻿body {
+﻿@page {
+    size: A4;
+    margin: 0;
+    padding: 0;
 }
+
+@media screen {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.page-third {
+    width: 100%;
+    height: 33.33%;
+    background-color: lightgray;
+}
+
+#first-part {
+    background-color: #e5dfdf;
+}
+
+#second-part {
+    background-color: #757070;
+}
+
+#third-part {
+    background-color: #494848;
+}
+
 
 #logo {
     max-height: 2cm;
