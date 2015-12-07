@@ -12,7 +12,7 @@ function replaceToken() {
 
 
 
-    addText("agentId", "11009(Naim Islam)");
+    addText("userId", "11009(Naim Islam)");
     addText("agentName", "Raqibul Alom");
     addText("agentPoint", "Kashipur Bazar");
     addText("boothAddress", "Vairab Chowdhurir Hath, Sonagazi");
