@@ -29,6 +29,14 @@
     margin-right:10px;
 }
 
+#qr {
+    margin-top:-15px;
+    height:70px;
+    width:70px;
+    margin-right:10px;
+    float:right;
+}
+
 #agent_banking_logo {
     height:80px;
     width:126px;
@@ -58,7 +66,7 @@
    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
 	letter-spacing:0.1em;
 	line-height: 100%;
-	font-size: 8.5pt;
+	font-size: 8pt;
 }
 
 .content2 {

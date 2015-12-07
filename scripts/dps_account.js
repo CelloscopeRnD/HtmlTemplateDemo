@@ -8,20 +8,23 @@ function replaceToken() {
     document.getElementById("agent_banking_logo").src = "images/agent_bangking_logo.jpg";
     document.getElementById("logo").src = "images/logo.gif";
     document.getElementById("photo").src = "images/photo.png";
+    document.getElementById("qr").src = "images/qr.png";
 
-    document.getElementById("agentId").innerHTML = "Naim Islam";
+    document.getElementById("agentId").innerHTML = "11009(Naim Islam)";
     document.getElementById("agentName").innerHTML = "Raqibul Alom";
     document.getElementById("boothAddress").innerHTML = "Vairab Chowdhurir Hath, Sonagazi";
 
     document.getElementById("accountName").innerHTML = "Mohammad Karim";
-    document.getElementById("accountNo").innerHTML = "1234567890";
-    document.getElementById("accountOpeningDate").innerHTML = "30-11-2015";
-    document.getElementById("linkAccountNumber").innerHTML = "1025468585601";
+    //document.getElementById("accountNo").innerHTML = "1234567890123"; //Account Number will be 13 characters
+    document.getElementById("accountOpeningDate").innerHTML = "30-NOV-2015";
+    document.getElementById("linkAccountNumber").innerHTML = "100-5000001-001";
     document.getElementById("district").innerHTML = "Feni";
-    document.getElementById("idNo").innerHTML = "987654321";
+    document.getElementById("idNo").innerHTML = "CB5000001"; //ID will be 7 characters
+    document.getElementById("timeSpan").innerHTML = "১২ বছর";
     document.getElementById("mobileNo").innerHTML = "01799123456";
+    document.getElementById("endDate").innerHTML = "30-NOV-2027";
     document.getElementById("name").innerHTML = "Mohammad Karim";
-    document.getElementById("printDate").innerHTML = "05-12-2015";
+    document.getElementById("printDate").innerHTML = "30-NOV-2015 11:15:15AM"; // Print Date will be Timestamp
     document.getElementById("subDistrict").innerHTML = "Sonagazi";
     document.getElementById("village").innerHTML = "Sujapur";
     document.getElementById("union").innerHTML = "Vhairab Chowdhurir Hat";
