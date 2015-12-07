@@ -1,49 +1,81 @@
-﻿body {
-    width:780px;
-    height:250px;
+﻿body
+{
+	background-color: white;
+    margin:0px;
+    padding:0px;
 }
 
-#mdiv{
-    width:750px;
-    height:230px;
-    border:solid;
-    border-color:red;
+ @page 
+    {
+        size: auto;
+        margin: 0mm;
+ }
+#main {
+    height:340px;
+    width:780px;
+    border-bottom:dashed 1px black;
+}
+
+#header {
+    height:120px;
+    width:100%;
+    margin-left:10px;
 }
 
 #logo {
-    max-height: 2cm;
+    margin-top:-60px;
+    height:80px;
+    width:126px;
+    margin-right:10px;
 }
 
 #agent_banking_logo {
-    float: left;
-    max-width: 40cm;
-    height:50px;
-    width:90px;
+    height:80px;
+    width:126px;
+    float:right;
+    margin-top:1px;
+    margin-right:10px;
 }
 
-#logo {
-    float: right;
-    max-width: 4cm;
-    height:50px;
-    width:90px;
+#photo {
+    height:70px;
+    width:70px;
+    float:right;
+    margin-right:10px;
 }
 
-.center {
-    width: auto;
-    background-color: gold;
-    margin-left: auto;
-    margin-right: auto;
+
+.content {
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+	letter-spacing:0.1em;
+	line-height: 100%;
+	font-size: 6.1pt;
 }
 
-.headertxt {
-    font-style: normal;
-    font-size: 8px;
-    font-family: Arial;
+.content1 {
+    color: #424242;
+   font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+	letter-spacing:0.1em;
+	line-height: 100%;
+	font-size: 8.5pt;
 }
 
-.ptxt {
-    font-style: normal;
-    font-size: 10px;
-    font-family: Arial;
+.content2 {
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+	letter-spacing:0.1em;
+	line-height: 100%;
+	font-size: 10pt;
+    text-align:left;
+}
+
+.content3 {
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    font-size: 8.5pt;
+    margin-top:85px;
 }
 
