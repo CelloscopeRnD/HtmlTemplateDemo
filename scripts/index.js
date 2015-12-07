@@ -14,10 +14,11 @@ function replaceToken() {
 
     addText("agentId", "11009(Naim Islam)");
     addText("agentName", "Raqibul Alom");
+    addText("agentPoint", "Kashipur Bazar");
     addText("boothAddress", "Vairab Chowdhurir Hath, Sonagazi");
 
     addText("accountName", "Mohammad Karim");
-    addText("accountNo", "100-5000001-001"); //Account Number will be 13 characters
+    addText("accountNo", "100-5000001-001"); //Account Number will be 13 characters //#ACCOUNT_NO
     addText("accountOpeningDate", "30-NOV-2015");
    
     addText("currentAccountType", "Current Account");
@@ -31,6 +32,7 @@ function replaceToken() {
     addText("printDate", "30-NOV-2015 11:15:15AM"); // Print Date will be Timestamp
     addText("savingsAccountType", "Savings Account");
     addText("subDistrict", "Sonagazi");
+    addText("transactionDate", "30-NOV-201"); //TRANSACTION_DATE
     addText("timeSpan", "১২ বছর");
     addText("village", "Sujapur");
     addText("union", "Vhairab Chowdhurir Hat");
