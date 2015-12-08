@@ -31,9 +31,16 @@
 
 #qr {
     margin-top:-15px;
-    height:70px;
-    width:70px;
+    height:60px;
+    width:60px;
     margin-right:10px;
+    float:right;
+}
+
+#barcode {
+    height:60px;
+    width:200px;
+    margin-right:-25px;
     float:right;
 }
 
@@ -86,4 +93,14 @@
     font-size: 8.5pt;
     margin-top:85px;
 }
+.content4 {
+    color: #424242;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    font-size: 7.3pt;
+    margin-top:0px;
+}
+
+
 

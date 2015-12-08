@@ -9,6 +9,7 @@ function replaceToken() {
     addImage("logo", "images/logo.gif");
     addImage("photo", "images/photo.png");
     addImage("qr", "images/qr.png");
+    addImage("barcode", "images/barcode.jpg");
 
 
 
