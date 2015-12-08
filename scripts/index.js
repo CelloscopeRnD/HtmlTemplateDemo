@@ -22,8 +22,7 @@ function replaceToken() {
     addText("cashDeposit", "Cash Deposit"); //#CASH_DEPOSIT
     addText("cashWithdraw", "Cash Withdraw"); //#CASH_WITHDRAW
     addText("currentAccountType", "Current Account"); //#CURRENT_ACCOUNT_TYPE
-    addText("district", "Feni"); //#DISTRICT
-    
+    addText("district", "Feni"); //#DISTRICT    
     addText("depositAmount", "1000Tk. One Thousand Only. "); //#DEPOSIT_AMOUNT
     addText("endDate", "30-NOV-2027"); //#END_DATE
     addText("expiryAmount", "32,000 টাকা"); //#EXPIRY_AMOUNT
@@ -34,7 +33,7 @@ function replaceToken() {
     addText("mobileNo", "01799123456"); //#MOBILE_NO
     addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
     addText("name", "Mohammad Karim"); //#NAME
-    addText("printDate", "30-NOV-2015 11:15:15AM"); // Print Date will be Timestamp #PRINT_DATE
+    addText("printDate", "30-NOV-2015 11:15:15 AM"); // Print Date will be Timestamp #PRINT_DATE
     addText("requestId", "736373736"); //#REQUEST_ID
     addText("savingsAccountType", "Savings Account"); //#SAVINGS_ACCOUNT_TYPE
     addText("subDistrict", "Sonagazi"); //#SUB_DISTRICT
