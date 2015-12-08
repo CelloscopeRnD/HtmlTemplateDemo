@@ -3,6 +3,7 @@
 	background-color: white;
     margin:0px;
     padding:0px;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
 }
 
  @page
@@ -55,7 +56,7 @@
 
 .content {
     color: #424242;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
+    
 	letter-spacing:0.1em;
 	line-height: 100%;
 	font-size: 6.1pt;
@@ -63,7 +64,6 @@
 
 .content1 {
     color: #424242;
-   font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
 	letter-spacing:0.1em;
 	line-height: 100%;
 	font-size: 8pt;
@@ -71,7 +71,6 @@
 
 .content2 {
     color: #424242;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
 	letter-spacing:0.1em;
 	line-height: 100%;
 	font-size: 10pt;
@@ -80,7 +79,6 @@
 
 .content3 {
     color: #424242;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Verdana, SolaimanLipi, Times, serif;
     letter-spacing: 0.1em;
     line-height: 100%;
     font-size: 8.5pt;
