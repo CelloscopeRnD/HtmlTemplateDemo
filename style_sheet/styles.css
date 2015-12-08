@@ -11,6 +11,12 @@
         size: auto;
         margin: 0mm;
  }
+
+ @font-face {
+    font-family: "BenSenHandwriting";
+    src: url(../Fonts/BenSenHandwriting.ttf) format("truetype");
+}
+
 #main {
     height:320px;
     width:780px;
