@@ -12,7 +12,7 @@ function replaceToken() {
 
 
 
-    addText("userId", "11009(Naim Islam)");
+    addText("userId", "11009(Naim Islam)"); //USER_ID
     addText("agentName", "Raqibul Alom");
     addText("agentPoint", "Kashipur Bazar");
     addText("boothAddress", "Vairab Chowdhurir Hath, Sonagazi");
@@ -37,7 +37,7 @@ function replaceToken() {
     addText("name", "Mohammad Karim");
     addText("printDate", "30-NOV-2015 11:15:15AM"); // Print Date will be Timestamp
 
-    addText("requestID", "736373736"); //REQUEST_ID
+    addText("requestId", "736373736"); //REQUEST_ID
     addText("savingsAccountType", "Savings Account");
     addText("subDistrict", "Sonagazi");
     addText("transactionDate", "30-NOV-201"); //TRANSACTION_DATE
