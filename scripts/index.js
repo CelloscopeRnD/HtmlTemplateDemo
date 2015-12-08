@@ -12,7 +12,7 @@ function replaceToken() {
 
 
 
-    addText("userId", "11009(Naim Islam)"); //#USER_ID
+    
     addText("agentName", "Raqibul Alom"); //#AGENT_NAME
     addText("agentPoint", "Kashipur Bazar"); //#AGENT_POINT
     addText("boothAddress", "Vairab Chowdhurir Hath, Sonagazi"); //#BOOTH_ADDRESS
@@ -27,11 +27,13 @@ function replaceToken() {
     addText("withdrawAmount", "15000Tk. Fifteen Thousand Only. "); //#WITHDRAW_AMOUNT
     addText("depositAmount", "1000Tk. One Thousand Only. "); //#DEPOSIT_AMOUNT
     addText("endDate", "30-NOV-2027"); //#END_DATE
+    addText("expiryAmount", "32,000 টাকা"); //#EXPIRY_AMOUNT
     addText("expireDate", "30-NOV-2027"); //#EXPAIRE_DATE
     addText("idNo", "CB5000001"); //ID will be 7 characters #ID_NO
     addText("initialDeposit", "Tk. 5000"); //#INITIAL_DEPOSIT
     addText("linkAccountNumber", "100-5000001-001"); //#LINK_ACCOUNT_NUMBER
     addText("mobileNo", "01799123456"); //#MOBILE_NO
+    addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
     addText("name", "Mohammad Karim"); //#NAME
     addText("printDate", "30-NOV-2015 11:15:15AM"); // Print Date will be Timestamp #PRINT_DATE
 
@@ -44,6 +46,7 @@ function replaceToken() {
     addText("timeSpan", "১২ বছর"); //#TIMESPAN
     addText("village", "Sujapur"); //#VILLAGE
     addText("union", "Vhairab Chowdhurir Hat"); //#UNION
+    addText("userId", "11009(Naim Islam)"); //#USER_ID
 }
 
 function addImage(elementId, path) {
