@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Receipt Layout Generic</title>
+    <script src="scripts/index.js"></script>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            width: 8.5in;
+            height: 3.5in;
+            background-color: #ED2286;
+            padding: 0.25in 0.25in 0.25in 0.75in;
+        }
+
+        #logoDiv {
+            height: .5in;
+            background-color: aqua;
+        }
+
+        #agent_banking_logo {
+            width: .85in;
+            max-height: .40in;
+            float: right;
+        }
+
+        #logo {
+            width: .85in;
+            max-height: .5in;
+            float: left;
+        }
+
+        #second-div {
+            background-color: blueviolet;
+            float: left;
+            width: 100%;
+        }
+
+        #addressDiv {
+            background-color: aquamarine;
+            float: right;
+            font-size: 9px;
+        }
+
+        #divAccountInfo {
+            margin: auto;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="logoDiv">
+            <img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" />
+
+            <img id="logo" src="#LOGO" alt="logo" />
+        </div>
+        <div id="second-div">
+            <div id="CustomerPhoto">
+
+            </div>
+            <table id="divAccountInfo">
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td>2001158500126</td>
+                </tr>
+                <tr>
+                    <td>Customer ID</td>
+                    <td>:</td>
+                    <td>158500</td>
+                </tr>
+                <tr>
+                    <td>Account Type</td>
+                    <td>:</td>
+                    <td>Savings</td>
+                </tr>
+            </table>
+            <div id="addressDiv">
+                <p>Agent Banking Division</p>
+                <p>The City Bank Ltd.</p>
+                <p>City Bank Center, 136</p>
+                <p>Gulshan Avenue, Dhaka - 1212</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

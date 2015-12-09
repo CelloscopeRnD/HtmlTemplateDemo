@@ -1,21 +1,27 @@
 ﻿window.onload = function () {
 
-    addStyleSheet('style_sheet/my_style.css');
+    //addStyleSheet('style_sheet/my_style.css');
     replaceToken();
 }
 
 function replaceToken() {
-    addImage("agent_banking_logo", "images/agent_bangking_logo.jpg");
-    addImage("logo", "images/logo.gif");
+    addImage("agent_banking_logo", "images/agent_bangking_logo.bmp");
+    addImage("logo", "images/logo.png");
     addImage("photo", "images/photo.png");
     addImage("qr", "images/qr.png");
-  
-    
+
+
     addText("agentName", "Raqibul Alom"); //#AGENT_NAME
     addText("agentPoint", "Kashipur Bazar"); //#AGENT_POINT
     addText("boothAddress", "Vairab Chowdhurir Hath, Sonagazi"); //#BOOTH_ADDRESS
     addText("outletName", "Vairab Chowdhurir Hath, Sonagazi"); //#OUTLATE_NAME
-
+    /*
+   Savings Account: name,village,mobileNo,union,subDistrict,district,accountName,idNo,accountNo,savingsAccountType,accountOpeningDate,printDate
+   Current Account: name,village,mobileNo,union,subDistrict,district,accountName,idNo,accountNo,savingsAccountType,accountOpeningDate,printDate
+   DPS Account: name,village,mobileNo,union,subDistrict,district,accountName,idNo,accountNo,linkAccountNumber,accountOpeningDate,monthlyDeposit,printDate
+    
+    
+    */
 
     addText("accountName", "Mohammad Karim"); //#ACCOUNT_NAME
     addText("accountNo", "100-5000001-001"); //Account Number will be 13 characters //#ACCOUNT_NO
@@ -38,7 +44,7 @@ function replaceToken() {
     addText("requestId", "736373736"); //#REQUEST_ID
     addText("savingsAccountType", "Savings Account"); //#SAVINGS_ACCOUNT_TYPE
     addText("subDistrict", "Sonagazi"); //#SUB_DISTRICT
-    addText("timeSpan", "১২ বছর"); //#TIMESPAN
+    addText("duration", "১২ বছর"); //#DURATION
     addText("transactionDate", "30-NOV-201"); //#TRANSACTION_DATE
     addText("transactionId", "TR025552"); //#TRANSACTION_ID
     addText("village", "Sujapur"); //#VILLAGE
@@ -71,3 +77,9 @@ function addStyleSheet(href) {
 
     head.appendChild(link);
 }
+
+
+
+
+
+
