@@ -22,7 +22,7 @@
 
 @page {
    size: 8.5in 11in;
-   margin: .25in .25in .25in .75in;
+   margin: .26in .25in .25in .75in;
 }
 
 @font-face {
@@ -65,8 +65,8 @@ th, td {
 }
 
 #main {
-    width: 7.4in;
-    height: 3.0in;
+    width: 7.40in;
+    height: 2.90in;
     background-color: gray;
     /*padding: 0.25in 0.25in 0.25in 0.75in;*/
 }
