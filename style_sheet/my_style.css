@@ -17,7 +17,10 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     margin: 0px;
+    padding: 0px;
 }
+
+
 
 th, td {
     padding: 0px;
@@ -50,7 +53,7 @@ th, td {
 
 
 
-#second-table {
+#threeColumnTable {
     float: left;
     width: 100%;
 }
@@ -70,7 +73,7 @@ th, td {
 }
 
     #thirdTable tr {
-        height: 15px;
+        /*height: 15px;*/
     }
 
 #fourthTable {
@@ -79,7 +82,7 @@ th, td {
 }
 
     #fourthTable tr {
-        height: 15px;
+        /*height: 15px;*/
     }
 
 #customerPhoto {
@@ -95,11 +98,7 @@ th, td {
     font-size: 9px;
 }
 
-#divAccountInfo {
+#tableMiddle {
     margin: 0 auto;
-    height: 100px;
+    height: auto;
 }
-
-    #divAccountInfo tr {
-        height: 15px;
-    }
