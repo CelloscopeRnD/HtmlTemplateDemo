@@ -9,6 +9,7 @@
     /*changing width to 100% causes huge overflow and wrap*/    
     overflow: hidden;
     background: #FFF; 
+   
     font-size: 9.5pt;
     height:3.0in;
     width: 7.5in;
@@ -64,9 +65,9 @@ th, td {
 }
 
 #main {
-    width: 7.5in;
+    width: 7.4in;
     height: 3.0in;
-    background-color: #ffeedd;
+    background-color: gray;
     /*padding: 0.25in 0.25in 0.25in 0.75in;*/
 }
 
