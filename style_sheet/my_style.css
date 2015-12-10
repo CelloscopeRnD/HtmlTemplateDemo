@@ -4,15 +4,15 @@
 }
 @media print {
   * { margin: 0 !important; padding: 0 !important; }
-  #controls, .footer, .footerarea{ display: none; }
+  .header, .footer, .footerarea{ display: none; }
   html, body {
-    /*changing width to 100% causes huge overflow and wrap*/    
+    /*changing width to 100% causes huge overflow and wrap*/
     overflow: hidden;
-    background: #FFF; 
-   
-    font-size: 9.5pt;
-    height:3.0in;
-    width: 7.5in;
+    background: #FFF;
+
+   /* font-size: 9.5pt;
+    height:3.5in;
+    width: 8.5in;*/
   }
 
   /*.template { width: auto; left:0; top:0; }
@@ -22,7 +22,8 @@
 
 @page {
    size: 8.5in 11in;
-   margin: .26in .25in .25in .75in;
+   margin: .05in .17in .05in .62in;
+   /*margin: .25in .25in .25in .75in;*/
 }
 
 @font-face {
@@ -65,8 +66,8 @@ th, td {
 }
 
 #main {
-    width: 7.40in;
-    height: 2.90in;
+    width: 7.5in;
+    height: 3.0in;
     background-color: gray;
     /*padding: 0.25in 0.25in 0.25in 0.75in;*/
 }
