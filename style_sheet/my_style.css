@@ -1,63 +1,105 @@
-﻿@page {
-    size: A4;
+﻿* {
     margin: 0;
     padding: 0;
 }
 
-* {
-        margin: 0;
-        padding: 0;
-    }
+@font-face {
+    font-family: "kalpurush";
+    src: url(../Fonts/kalpurush.ttf) format("truetype");
+}
 
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    background-color: white;
+    font-family: 'Arial Narrow', kalpurush;
+}
 
-.page-third {
-    width: 100%;
-    height: 33.33%;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+th, td {
+    padding: 0px;
+    text-align: left;
+}
+
+.label {
+    font-size: 9pt;
+}
+
+#main {
+    width: 8.5in;
+    height: 3.5in;
     background-color: lightgray;
-}
-
-#first-part {
-    background-color: #e5dfdf;
-}
-
-#second-part {
-    background-color: #757070;
-}
-
-#third-part {
-    background-color: #494848;
-}
-
-
-#logo {
-    max-height: 2cm;
+    padding: 0.25in 0.25in 0.25in 0.75in;
 }
 
 #agent_banking_logo {
-    float: left;
-    max-width: 4cm;
-}
-
-#photo{
-    max-width: 2cm;
-    max-height: 2cm;
+    width: .85in;
+    max-height: .40in;
+    float: right;
 }
 
 #logo {
-    float: right;
-    max-width: 4cm;
+    width: .85in;
+    max-height: .5in;
+    float: left;
 }
 
-.center {
-    text-align: center;
-    width: auto;
-    background-color: gold;
-    margin-left: auto;
-    margin-right: auto;
+
+
+
+#second-table {
+    float: left;
+    width: 100%;
 }
+
+.tdSide {
+    width: 20%;
+    vertical-align: top;
+}
+
+.tdMiddle {
+    width: 60%;
+}
+
+#thirdTable {
+    float: left;
+    width: 100%;
+}
+
+    #thirdTable tr {
+        height: 15px;
+    }
+
+#fourthTable {
+    float: left;
+    width: 100%;
+}
+
+    #fourthTable tr {
+        height: 15px;
+    }
+
+#customerPhoto {
+    width: .85in;
+    height: .75in;
+    float: left;
+    background-color: burlywood;
+}
+
+#addressDiv {
+    background-color: #ffd800;
+    float: right;
+    font-size: 9px;
+}
+
+#divAccountInfo {
+    margin: 0 auto;
+    height: 100px;
+}
+
+    #divAccountInfo tr {
+        height: 15px;
+    }

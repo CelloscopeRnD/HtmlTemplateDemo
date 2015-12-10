@@ -4,128 +4,57 @@
     <title>Receipt Layout Generic</title>
     <script src="scripts/index.js"></script>
     <meta charset="utf-8" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #main {
-            width: 8.5in;
-            height: 3.5in;
-            background-color: #ff0000;
-            padding: 0.25in 0.25in 0.25in 0.75in;
-        }
-
-        #logoDiv {
-            height: .5in;
-            background-color: #808080;
-        }
-
-        #agent_banking_logo {
-            width: .85in;
-            max-height: .40in;
-            float: right;
-        }
-
-        #logo {
-            width: .85in;
-            max-height: .5in;
-            float: left;
-        }
-
-        #second-div {
-            background-color: blueviolet;
-            float: left;
-            width: 100%;
-        }
-
-        #second-table {
-            background-color: blueviolet;
-            float: left;
-            width: 100%;
-        }
-
-        .tdSide {
-            width: 20%;
-            vertical-align: top;
-        }
-
-        .tdMiddle {
-            width: 60%;
-        }
-
-        #thirdTable {
-            background-color: #0094ff;
-            float: left;
-            width: 100%;
-        }
-        #thirdTable tr {
-           height: 15px;
-       }
-        #fourthTable {
-            background-color: #b200ff;
-            float: left;
-            width: 100%;
-        }
-        #fourthTable tr {
-           height: 15px;
-       }
-        #divCustomerPhoto {
-            width: .85in;
-            height: .75in;
-            float: left;
-            background: #bbb;
-        }
-
-        #addressDiv {
-            background-color: #ffd800;
-            float: right;
-            font-size: 9px;
-        }
-
-        #divAccountInfo {
-            margin: 0 auto;
-            background-color: beige;
-            height: 100px;
-        }
-
-       #divAccountInfo tr {
-                height: 15px;
-        }
-       
-    </style>
 </head>
 <body>
     <div id="main">
-        <div id="logoDiv">
-            <img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" />
-
-            <img id="logo" src="#LOGO" alt="logo" />
-        </div>
         <table id="second-table">
             <tr>
                 <td class="tdSide">
-                    <div id="divCustomerPhoto">
-
-                    </div>
+                    <img id="logo" src="#LOGO" alt="logo" />
                 </td>
                 <td class="tdMiddle">
                     <table id="divAccountInfo">
                         <tr>
-                            <td>Account Number</td>
-                            <td>:</td>
-                            <td>2001158500126</td>
+                            <td id="savingsAccountTitle" colspan="3">#SAVINGS_ACCOUNT_TITLE</td>
                         </tr>
                         <tr>
-                            <td>Customer ID</td>
+                            <td id="agentNameLabel১" class="label">সিটি এজেন্ট সেভিংস একাউন্ট</td>
                             <td>:</td>
-                            <td>158500</td>
+                            <td id="agentName">#AGENT_NAME</td>
                         </tr>
                         <tr>
-                            <td>Account Type</td>
+                            <td id="e">#ACCOUNT_TYPE_LABEL</td>
                             <td>:</td>
-                            <td>Savings</td>
+                            <td id="f">#SAVINGS_ACCOUNT_TYPE</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="tdSide">
+                    <img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" />
+                </td>
+            </tr>
+        </table>
+        <table id="second-table">
+            <tr>
+                <td class="tdSide">
+                    <img id="customerPhoto" src="#PHOTO" alt="Customer Photo" />
+                </td>
+                <td class="tdMiddle">
+                    <table id="divAccountInfo">
+                        <tr>
+                            <td id="accountNoLabel" class="label">#ACCOUNT_NO_LABEL</td>
+                            <td>:</td>
+                            <td id="accountNo">#ACCOUNT_NO</td>
+                        </tr>
+                        <tr>
+                            <td id="customerIdLabel"  class="label">#CUSTOMER_ID_LABEL</td>
+                            <td>:</td>
+                            <td id="customerId">#CUSTOMER_ID</td>
+                        </tr>
+                        <tr>
+                            <td id="accountTypeLabel" class="label">#ACCOUNT_TYPE_LABEL</td>
+                            <td>:</td>
+                            <td id="savingsAccountType">#SAVINGS_ACCOUNT_TYPE</td>
                         </tr>
                         <tr>
                             <td> </td>
@@ -141,27 +70,30 @@
                 </td>
                 <td class="tdSide">
                     <div id="addressDiv">
-                        <p>Agent Banking Division</p>
-                        <p>The City Bank Ltd.</p>
-                        <p>City Bank Center, 136</p>
-                        <p>Gulshan Avenue, Dhaka - 1212</p>
+                        <p>এজেন্ট ব্যাংকিং ডিভিশন</p>
+                        <p>সিটি ব্যাংক লিঃ</p>
+                        <p>সিটি ব্যাংক  সেন্টার ১৩৬</p>
+                        <p>গুলশান এভিনিউ, ঢাকা-১২১২</p>
                     </div>
                 </td>
             </tr>
         </table>
         <table id="thirdTable">
             <tr>
-                <td>Customer Name</td>
+                <td>গ্রাহকের নাম</td>
                 <td>:</td>
-                <td>MD ARIF GAZI</td>
-                <td>Phone Number</td>
+                <td id="customerName">#CUSTOMER_NAME</td>
+                <td>ফোন নং</td>
                 <td>:</td>
-                <td>0198745454</td>
+                <td id="contactNo">#CONTACT_NO</td>
             </tr>
             <tr>
-                <td></td>
+                <td>গ্রাহকের নাম</td>
                 <td>:</td>
-                <td></td>
+                <td>MD ARIF GAZI</td>
+                <td>ফোন নং</td>
+                <td>:</td>
+                <td>0198745454</td>
             </tr>
             <tr>
                 <td></td>
@@ -181,17 +113,20 @@
         </table>
         <table id="fourthTable">
             <tr>
-                <td>Account Name</td>
+                <td>একাউন্ট নাম</td>
                 <td>:</td>
-                <td>MD ARIF GAZI</td>
-                <td>Initial Deposit</td>
+                <td id="accountName">#ACCOUNT_NAME</td>
+                <td>প্রারম্ভিক জমার পরিমান</td>
                 <td>:</td>
-                <td>BDT 5000</td>
+                <td id="initialDeposit">#INITIAL_DEPOSIT</td>
             </tr>
             <tr>
-                <td></td>
+                <td>একাউন্ট খোলার তারিখ</td>
                 <td>:</td>
-                <td></td>
+                <td id="accountOpeningDate">#ACCOUNT_OPENING_DATE</td>
+                <td>Print Date &amp; Time</td>
+                <td>:</td>
+                <td>30-NOV-2015 03:15:16 PM</td>
             </tr>
             <tr>
                 <td></td>
