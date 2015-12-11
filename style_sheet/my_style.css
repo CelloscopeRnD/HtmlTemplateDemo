@@ -91,12 +91,15 @@ tr {
     vertical-align: bottom;
     margin: auto;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #main {
     width: 7.5in;
     height: 3.0in;
     background-color: gray;
+    position: relative;
 }
 
 #agent_banking_logo {
