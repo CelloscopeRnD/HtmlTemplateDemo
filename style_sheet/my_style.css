@@ -18,6 +18,12 @@
         background: #FFF;
         position: relative;
     }
+    #tableMiddle {
+    margin: 0 auto;
+}
+    .tdMiddle {
+    width: 60%;
+}
 }
 
 @page {
@@ -27,7 +33,7 @@
 
 @font-face {
     font-family: "kalpurush";
-    src: url(../Fonts/kalpurush.ttf) format("truetype");
+    src: url(file:///android_asset/fonts/kalpurush.ttf) format("truetype");
 }
 
 body {
@@ -97,7 +103,7 @@ tr {
 }
 
 #main {
-    width: 7.5in;
+    width: 7.2in;
     height: 3.0in;
     background-color: gray;
     position: relative;
