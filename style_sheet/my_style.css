@@ -42,34 +42,48 @@ table, th, td {
     padding: 0px;
 }
 
-.firstColumn{
+tr{
+    line-height: 10px;
+}
+
+#tableMiddle {
+    margin: 0 auto;
+}
+
+.firstColumn {
     width: 120px;
 }
 
-
-th, td {
-    padding: 0px;
-    text-align: left;
-    vertical-align: middle;
+.tdFirst {
+    width: 105px;
 }
 
+.tdFourth {
+    width: 110px;
+}
+
+.tdSixth {
+    width: 117px;
+}
+
+
 .topLabel {
-    font-size: 9pt;
+    font-size: 7pt;
     font-weight: bold;
 }
 
 .label {
-    font-size: 10pt;
+    font-size: 8pt;
     font-weight: bold;
+    height: 12px;
 }
 
 .topFieldValue {
-    font-size: 8pt;
+    font-size: 6pt;
 }
 
 .fieldValue {
-    font-size: 9pt;
-    color: red;
+    font-size: 7pt;
 }
 
 #main {
@@ -95,10 +109,7 @@ th, td {
     width: 100%;
 }
 
-.tdSide {
-    width: 20%;
-    vertical-align: top;
-}
+
 
 .tdMiddle {
     width: 60%;
@@ -123,9 +134,4 @@ th, td {
 #addressDiv {
     float: right;
     font-size: 9px;
-}
-
-#tableMiddle {
-    margin: 0 auto;
-    height: auto;
 }
