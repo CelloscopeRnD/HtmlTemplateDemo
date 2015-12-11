@@ -16,6 +16,7 @@
     html, body {
         overflow: hidden;
         background: #FFF;
+        position: relative;
     }
 }
 
@@ -86,7 +87,7 @@ tr {
     font-size: 7pt;
 }
 
-.footer {
+.tblFooter {
     font-size: 7pt;
     vertical-align: bottom;
     margin: auto;
