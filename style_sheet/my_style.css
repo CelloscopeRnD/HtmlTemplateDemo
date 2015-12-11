@@ -18,12 +18,27 @@
         background: #FFF;
         position: relative;
     }
+
     #tableMiddle {
-    margin: 0 auto;
-}
+        margin: 0 auto;
+    }
+
     .tdMiddle {
-    width: 60%;
-}
+        width: 60%;
+    }
+
+    .cellPaddingTop {
+        padding-top: 1px !important;
+        padding-bottom: 2px !important;
+    }
+
+    .cellPadding {
+        padding-bottom: 1px !important;
+    }
+
+    .label {
+        padding-left: 2px !important;
+    }
 }
 
 @page {
@@ -83,6 +98,7 @@ tr {
     font-size: 8pt;
     font-weight: bold;
     height: 12px;
+    padding-left: 2px;
 }
 
 .topFieldValue {
@@ -95,8 +111,9 @@ tr {
 
 .boldFieldValue {
     font-size: 7pt;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 .tblFooter {
     font-size: 7pt;
     vertical-align: bottom;
@@ -167,19 +184,19 @@ tr {
     width: .85in;
     height: .75in;
     float: right;
-    vertical-align:top;
+    vertical-align: top;
     margin: 3px 6px 0 0;
-    
 }
 
-.trBackground{
-        background: lightgrey;
+.trBackground {
+    background: lightgrey;
 }
 
-.cellPaddingTop{
-    padding-top:2px;
-   
+.cellPaddingTop {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
-.cellPadding{    
-    padding-bottom:1px !important;
+
+.cellPadding {
+    padding-bottom: 1px !important;
 }
