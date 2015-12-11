@@ -45,7 +45,8 @@ function replaceToken() {
     addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
     addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
     addText("customerName", "MD ARIF GAZI"); //#CUSTOMER_NAME
-    addText("printDate", "30-NOV-2015 11:15:15 AM"); // Print Date will be Timestamp #PRINT_DATE
+    addText("printDate", "30-NOV-2015 11:15:15 AM"); //#PRINT_DATE Print Date will be Timestamp 
+    addText("printDateLabel", "প্রিন্টের তারিখ"); //#PRINT_DATE_LABEL 
     addText("requestId", "736373736"); //#REQUEST_ID
     addText("savingsAccountTitle", "সিটি এজেন্ট সেভিংস একাউন্ট"); //#SAVINGS_ACCOUNT_TITLE
     addText("savingsAccountType", "Savings"); //#SAVINGS_ACCOUNT_TYPE
@@ -94,9 +95,3 @@ function addStyleSheet(href) {
 
     head.appendChild(link);
 }
-
-
-
-
-
-
