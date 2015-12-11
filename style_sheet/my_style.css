@@ -23,9 +23,7 @@
         margin: 0 auto;
     }
 
-    .tdMiddle {
-        width: 60%;
-    }
+    
 
     .cellPaddingTop {
         padding-top: 1px !important;
@@ -155,11 +153,6 @@ tr {
 
 .tdMiddle {
     width: 60%;
-}
-
-#thirdTable {
-    float: left;
-    width: 100%;
 }
 
 #fourthTable {
