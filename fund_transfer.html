@@ -1,97 +1,173 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
+<html>
 <head>
-    <meta charset="utf-8" />
-
-    <link href="style_sheet/styles.css" rel="stylesheet" />
     <title>Fund Transfer</title>
     <script src="scripts/index.js"></script>
+    <meta charset="utf-8" />
 </head>
-
 <body>
     <div id="main">
-
-        <div id="header">
-            <table style="margin-top:10px; width:100%; height:auto">
-                <tr>
-                    <td style="width:33%"><img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" /><p class="content3">এজেন্ট ব্যাংকিং ডিভিশন<br />সিটি ব্যাংক  সেন্টার ১৩৬, গুলশান এভিনিউ , গুলশান-২<br />ঢাকা-১২১২, বাংলাদেশ</p></td>
-                    <td><p class="content2">Agent Name: <span id="agentName">#AGENT_NAME</span><br />Agent Point: <span id="agentPoint">#AGENT_POINT</span>  <br />Address: <span id="boothAddress">#BOOTH_ADDRESS</span></p></td>
-                    <td><img id="logo" src="#LOGO" alt="logo" /></td>
-                </tr>
-            </table>
-        </div>
-
-        <div style="margin-left:25px">
-            <table style="width:100%;">
-                <tr style="width:100%;">
-                    <td style="text-align:center;">ফান্ড ট্রান্সফার</td>
-                </tr>
-            </table>
-        </div>
-
-        <div style="margin-left:25px; margin-top:10px;">
-            <table>
-                <tr>
-                    <td style="width:500px;">
-                        <table class="content1">
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Account Title</td>
-                                <td>:</td>
-                                <td>MD Saifur Hossain</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Account No</td>
-                                <td>:</td>
-                                <td id="accountNo">1083459000001</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Transaction Date</td>
-                                <td>:</td>
-                                <td id="transactionDate">30-NOV-2016</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Transaction ID</td>
-                                <td>:</td>
-                                <td id="transactionId">TR00068</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Transaction Type</td>
-                                <td>:</td>
-                                <td id="cashDeposit">Fund Transfer</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;" id="agentId">User ID</td>
-                                <td>:</td>
-                                <td id="userId">ASIK</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right; padding-right:10px;">Amount (In Taka)</td>
-                                <td>:</td>
-                                <td id="depositAmount">2512.5 Tk.</td>
-                            </tr>
-                        </table>
-
-                    </td>
-                    <td><p class="content1" style="margin-right:10px; margin-bottom:10px; text-align:center">Credited To: MD Ratan<br />Account No: 1083459000004</p><img style="margin-bottom:20px" id="barcode" src="#BARCODE"></td>
-                </tr>
-            </table>
-        </div>
-
-
-
-        <div style="margin-left:10px; margin-top:20px;">
-            <table style="width:100%; height:auto">
-                <tr style="width:100%;">
-                    <td style="width:27%;"> <p class="content" style="text-align:left">ফোন: +৮৮ ০২ ৫৮৮১৩৪৮৩, ৫৮৮১৪৩৭৫, ৫৮৮১৩১২৬<br />ফ্যাক্সঃ +৮৮ ০২ ৯৮৮৪৪৬</p></td>
-                    <td style="width:47%;"><p class="content" style="text-align:center">সিটি ব্যাংকের এজেন্ট ব্যাংকিং সেবা গ্রহনের জন্য আপনাকে ধন্যবাদ<br />এখানে কোনো স্বাক্ষর করবেন না, আপনার সকল তথ্য কম্পিউটারের মাধ্যমে স্বয়ংক্রিয়ভাবে প্রস্তুত হয়ে যাবে</p></td>
-                    <td style="width:25%;"><p class="content" style="text-align:center">ইমেইল: agent.banking@thecitybank.com<br />ওয়েবসাইট: www.thecitybank.com</p></td>
-                </tr>
-            </table>
-        </div>
+        <table id="threeColumnTable">
+            <tr>
+                <td class="tdFirst">
+                    <img id="logo" src="#LOGO" alt="logo" />
+                </td>
+                <td class="tdMiddle" align="center" valign="middle">
+                    <table id="tableMiddle">
+                        <tr>
+                            <td colspan="7" align="center" style="line-height:15px"><h3 id="savingsAccountTitle">#SAVINGS_ACCOUNT_TITLE</h3></td>
+                        </tr>
+                        <tr>
+                            <td id="agentNameLabel" class="topLabel">#AGENT_NAME_LABEL</td>
+                            <td class="topFieldValue">:</td>
+                            <td id="agentName" class="topFieldValue">#AGENT_NAME</td>
+                            <td>&nbsp;&nbsp;</td>
+                            <td id="userIdLabel" class="topLabel">#USER_ID_LABEL</td>
+                            <td class="topFieldValue">:</td>
+                            <td id="userId" class="topFieldValue">#USER_ID</td>
+                        </tr>
+                        <tr>
+                            <td class="addressLabel topLabel">#ADDRESS_LABEL</td>
+                            <td class="topFieldValue">:</td>
+                            <td id="boothAddress" colspan="5" class="topFieldValue">#BOOTH_ADDRESS</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="tdFirst">
+                    <img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" />
+                </td>
+            </tr>
+        </table>
+        <table id="thirdTable">
+            <tr>
+                <td class="tdFirst">
+                    <img id="customerPhoto" src="#PHOTO" alt="Customer Photo" />
+                </td>
+                <td colspan="5" align="center" valign="middle">
+                    <table id="tableMiddle">
+                        <tr>
+                            <td id="accountNoLabel" class="label">#ACCOUNT_NO_LABEL</td>
+                            <td class="fieldValue">:</td>
+                            <td id="accountNo" class="boldFieldValue">#ACCOUNT_NO</td>
+                        </tr>
+                        <tr>
+                            <td id="customerIdLabel" class="label">#CUSTOMER_ID_LABEL</td>
+                            <td class="fieldValue">:</td>
+                            <td id="customerId" class="boldFieldValue">#CUSTOMER_ID</td>
+                        </tr>
+                        <tr>
+                            <td id="accountTypeLabel" class="label">#ACCOUNT_TYPE_LABEL</td>
+                            <td class="fieldValue">:</td>
+                            <td id="savingsAccountType" class="boldFieldValue">#SAVINGS_ACCOUNT_TYPE</td>
+                        </tr>
+                        <tr>
+                            <td class="label">&nbsp;</td>
+                            <td class="fieldValue"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="label">&nbsp;</td>
+                            <td class="fieldValue"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top">
+                    <div id="addressDiv">
+                        <p>এজেন্ট ব্যাংকিং ডিভিশন</p>
+                        <p>সিটি ব্যাংক লিঃ</p>
+                        <p>সিটি ব্যাংক  সেন্টার ১৩৬</p>
+                        <p>গুলশান এভিনিউ, ঢাকা-১২১২</p>
+                    </div>
+                </td>
+            </tr>
+            <tr><td colspan="6" class="cellPadding"><hr /></td></tr>
+            <tr>
+                <td class="label trBackground">গ্রাহকের নাম</td>
+                <td class="fieldValue trBackground">:</td>
+                <td id="customerName" class="fieldValue trBackground">#CUSTOMER_NAME</td>
+                <td id="mobileNoLabel" class="label tdFourth trBackground">#MOBILE_NO_LABEL</td>
+                <td class="fieldValue trBackground">:</td>
+                <td id="mobileNo" class="fieldValue tdSixth trBackground">#MOBILE_NO</td>
+                <td class="lastColumn" rowspan="9" valign="top">
+                    <img id="qr" src="#QRCODE" class="qrCodeImg" alt="QR Code" />
+                </td>
+            </tr>
+            <tr>
+                <td class="addressLabel label trBackground">#ADDRESS_LABEL</td>
+                <td class="fieldValue trBackground">:</td>
+                <td id="customerAddress" rowspan="2" colspan="2" class="fieldValue trBackground">#CUSTOMER_ADDRESS</td>
+                <td class="trBackground">&nbsp;</td>
+                <td class="trBackground">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="trBackground">&nbsp;</td>
+                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
+                <td class="trBackground"></td>
+            </tr>
+            <tr>
+                <td class="trBackground">&nbsp;</td>
+                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
+                <td class="trBackground"></td>
+                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
+            </tr>
+            <tr>
+                <td class="trBackground">&nbsp;</td>
+                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
+                <td class="trBackground"></td>
+                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
+            </tr>
+            <tr><td colspan="6" class="cellPaddingTop"><hr /></td></tr>
+            <tr>
+                <td class="label">একাউন্ট নাম</td>
+                <td class="fieldValue">:</td>
+                <td id="accountName" class="fieldValue">#ACCOUNT_NAME</td>
+                <td class="label">প্রারম্ভিক জমার পরিমান</td>
+                <td class="fieldValue">:</td>
+                <td id="initialDeposit" class="fieldValue">#INITIAL_DEPOSIT</td>
+            </tr>
+            <tr>
+                <td class="label">একাউন্ট খোলার তারিখ</td>
+                <td class="fieldValue">:</td>
+                <td id="accountOpeningDate" class="fieldValue">#ACCOUNT_OPENING_DATE</td>
+                <td id="printDateLabel" class="label">#PRINT_DATE_LABEL</td>
+                <td class="fieldValue">:</td>
+                <td id="printDate" class="fieldValue">#PRINT_DATE</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="fieldValue"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="fieldValue"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="tblFooter">
+            <tr>
+                <td>ফোন: +৮৮ ০২ ৫৮৮১৩৪৮৩, ৫৮৮১৪৩৭৫, ৫৮৮১৩১২৬</td>
+                <td align="center">সিটি ব্যাংকের এজেন্ট ব্যাংকিং সেবা গ্রহনের জন্য আপনাকে ধন্যবাদ</td>
+                <td align="center">ইমেইল: agent.banking@thecitybank.com</td>
+            </tr>
+            <tr>
+                <td>ফ্যাক্সঃ +৮৮ ০২ ৯৮৮৪৪৬</td>
+                <td align="center">এখানে কোনো স্বাক্ষর করবেন না, আপনার সকল তথ্য কম্পিউটারের মাধ্যমে স্বয়ংক্রিয়ভাবে প্রস্তুত হয়ে যাবে</td>
+                <td align="center">ওয়েবসাইট: www.thecitybank.com</td>
+            </tr>
+        </table>
     </div>
-
-
-
 </body>
 </html>
