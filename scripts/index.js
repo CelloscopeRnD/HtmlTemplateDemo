@@ -4,8 +4,8 @@
 }
 
 function replaceToken() {
-    addImage("agent_banking_logo", "images/agent_bangking_logo.bmp");
-    addImage("logo", "images/logo.png");
+    addImage("agent_banking_logo", "images/AGENT-BANKING-LOGO_Small.png");
+    addImage("logo", "images/CityBankLogo.png");
     addImage("customerPhoto", "images/photo.png");
     addImage("qr", "images/qr.png");
 
