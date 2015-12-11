@@ -43,7 +43,7 @@ body {
 }
 
 table, th, td {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
@@ -93,6 +93,10 @@ tr {
     font-size: 7pt;
 }
 
+.boldFieldValue {
+    font-size: 7pt;
+    font-weight:bold;
+}
 .tblFooter {
     font-size: 7pt;
     vertical-align: bottom;
@@ -105,7 +109,7 @@ tr {
 #main {
     width: 7.2in;
     height: 3.0in;
-    background-color: gray;
+    /*background-color: gray;*/
     position: relative;
 }
 
@@ -150,9 +154,32 @@ tr {
     width: .85in;
     height: .75in;
     float: left;
+    padding: 2px 0 5px 2px;
 }
 
 #addressDiv {
     float: right;
     font-size: 9px;
+    margin: 3px 5px 0 0;
+}
+
+.qrCodeImg {
+    width: .85in;
+    height: .75in;
+    float: right;
+    vertical-align:top;
+    margin: 3px 6px 0 0;
+    
+}
+
+.trBackground{
+        background: lightgrey;
+}
+
+.cellPaddingTop{
+    padding-top:2px;
+   
+}
+.cellPadding{    
+    padding-bottom:1px !important;
 }
