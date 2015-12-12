@@ -83,6 +83,17 @@ function replaceToken() {
     addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
     addText("maturitAmount", "BDT 2,26,047.00"); //#MATURITY_AMOUNT
     addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
+
+
+    addText("cashDepositTitle", "নগদ জমা"); //#CASH_DEPOSIT_TITLE
+    addText("transactionDateLabel", "ট্রানজাকশানের তারিখ"); //#TRANSACTION_DATE_LABEL   
+    addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
+    addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
+    addText("transactionCodeLabel", "ট্রানজাকশান কোড"); //#TRANSACTION_CODE_LABEL
+    addText("transactionCode", "TR222369"); //#TRANSACTION_CODE
+    addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
+    addText("amountInWords", "THREE THOUSANDS ONLY"); //#AMOUNT_IN_WORDS
+    addText("amount", "BDT 3,000.00"); //#AMOUNT
     
 }
 
