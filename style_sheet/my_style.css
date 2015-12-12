@@ -10,7 +10,6 @@
     }*/
 
     html {
-       
         margin: .15in 0in 0in 0in;
     }
 
@@ -58,7 +57,7 @@
 
 body {
     background-color: white;
-    font-family: 'Arial Narrow', kalpurush;
+    font-family: 'Arial Narrow', 'Kalpurush ANSI';
     font-size: 11pt;
 }
 
@@ -77,30 +76,16 @@ tr {
     margin: 0 auto;
 }
 
-.firstColumn {
-    width: 120px;
-}
 
-.tdFirst {
-    width: 105px;
-}
-
-.tdFourth {
-    width: 110px;
-}
-
-.tdSixth {
-    width: 117px;
-}
 
 
 .topLabel {
-    font-size: 7pt;
+    font-size: 6pt;
     font-weight: bold;
 }
 
 .label {
-    font-size: 8pt;
+    font-size: 7pt;
     font-weight: bold;
     height: 12px;
     padding-left: 2px;
@@ -108,19 +93,22 @@ tr {
 
 .topFieldValue {
     font-size: 6pt;
+    text-transform: uppercase;
 }
 
 .fieldValue {
     font-size: 7pt;
+    text-transform: uppercase;
 }
 
 .boldFieldValue {
     font-size: 7pt;
     font-weight: bold;
+    text-transform:uppercase;
 }
 
 .tblFooter {
-    font-size: 6pt;
+    font-size: 5pt;
     vertical-align: bottom;
     margin: auto;
     width: 100%;
@@ -142,20 +130,26 @@ tr {
 }
 
 #logo {
-    width: .64in; /*it was .85in X .50in; now it is .64in X .40 in*/
+    width: .658in; /*it was .85in X .50in; now it is .64in X .40 in*/
     height: .4in;
-    float: left;
-}
-
-#logo {
-    width: .85in;
-    max-height: .5in;
     float: left;
 }
 
 #threeColumnTable {
     float: left;
     width: 100%;
+}
+
+.firstColumn {
+    width: 110px;
+}
+
+.fourthColumn {
+    width: 110px;
+}
+
+.sixthColumn {
+    width: 130px;
 }
 
 .lastColumn {
@@ -178,12 +172,20 @@ tr {
     height: .75in;
     float: left;
     padding: 5px 0 5px 2px;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
 }
 
 #addressDiv {
     float: right;
-    font-size: 9px;
+    font-size: 8px;
     margin: 3px 5px 0 0;
+    text-align: right;
+}
+
+
+#tableMiddle tr td.label {
     text-align: right;
 }
 
@@ -196,7 +198,7 @@ tr {
 }
 
 .trBackground {
-    background: lightgrey;
+    background: #E6E7E8;
 }
 
 .cellPaddingTop {

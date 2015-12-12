@@ -19,7 +19,7 @@ function replaceToken() {
     // BDT will be used for currency
     // Comma will be used for amount 
     // date format will be 30-NOV-2015
-    addText("accountName", "MD ARIF GAZI"); //#ACCOUNT_NAME
+    addText("accountName", "MD Arif Gazi"); //#ACCOUNT_NAME
     addText("accountNo", "2001158500126"); //#ACCOUNT_NO, Account Number will be 13 characters
     addText("accountNoLabel", "একাউন্ট নম্বর"); //#ACCOUNT_NO_LABEL
     addText("accountOpeningDate", "30-NOV-2015"); //#ACCOUNT_OPENING_DATE
@@ -40,15 +40,17 @@ function replaceToken() {
     addText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
     addText("customerIdLabel", "কাষ্টমার আইডি"); //#CUSTOMER_ID_LABEL,
     addText("initialDeposit", "BDT 3,000.00"); //#INITIAL_DEPOSIT, BDT will be used for currency and comma will be used for currency
-    addText("linkAccountNumber", "100-5000001-001"); //#LINK_ACCOUNT_NUMBER
+    addText("linkAccountNumber", "2001158500126"); //#LINK_ACCOUNT_NUMBER
     addText("mobileNo", "01617877595"); //#MOBILE_NO
     addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
     addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
-    addText("customerName", "MD ARIF GAZI"); //#CUSTOMER_NAME
+    addText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
     addText("printDate", "30-NOV-2015 11:15:15 AM"); //#PRINT_DATE Print Date will be Timestamp 
     addText("printDateLabel", "প্রিন্টের তারিখ"); //#PRINT_DATE_LABEL 
     addText("requestId", "736373736"); //#REQUEST_ID
     addText("savingsAccountTitle", "সিটি এজেন্ট সেভিংস একাউন্ট"); //#SAVINGS_ACCOUNT_TITLE
+    addText("dpsAccountTitle", "সাধারন ডিপিএস একাউন্ট"); //#DPS_ACCOUNT_TITLE
+    addText("dpsAccount", "DPS"); //#DPS_ACCOUNT_TITLE
     addText("savingsAccountType", "Savings"); //#SAVINGS_ACCOUNT_TYPE
     addText("subDistrict", "SONAGAZI"); //#SUB_DISTRICT
     addText("duration", "১২ YEARS"); //#DURATION
@@ -59,6 +61,20 @@ function replaceToken() {
     addText("userId", "11009 (NAIM ISLAM)"); //#USER_ID
     addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
     addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
+
+
+    addText("monthlyDepositLabel", "মাসিক জমা"); //#MONTHLY_DEPOSIT_LABEL
+    addText("montylyDeposit", "BDT 3,000.00"); //#MONTHLY_DEPOSIT
+    addText("productTenorLabel", "সময়কাল"); //#PRODUCT_TENOR_LABEL
+    addText("productTenor", "5 Years (60 Months)"); //#PRODUCT_TENOR
+    addText("startDateLabel", "একাউন্ট খোলার তারিখ"); //#START_DATE_LABEL
+    addText("startDate", "30-JAN-2016"); //#START_DATE
+    addText("maturityDateLabel", "মেয়াদান্তের তারিখ"); //#MATURITY_DATE_LABEL
+    addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
+    addText("maturityValueLabel", "মেয়াদান্তে টাকার পরিমান"); //#MATURITY_VALUE_LABEL
+    addText("maturityValue", "BDT 2,26,047.00"); //#MATURITY_VALUE
+    addText("accountNameLabel", "একাউন্ট নাম"); //#ACCOUNT_NAME_LABEL
+    addText("linkAccountNumberLabel", "লিংক একাউন্ট নম্বর"); //#LINK_ACCOUNT_NUMBER_LABEL
 }
 
 function addImage(elementId, path) {
