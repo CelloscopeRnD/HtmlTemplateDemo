@@ -51,7 +51,7 @@
 
 body {
     background-color: white;
-    /*font-family: 'Arial Narrow', kalpurush;*/
+    font-family: 'Arial Narrow', kalpurush;
     font-size: 11pt;
 }
 
@@ -113,7 +113,7 @@ tr {
 }
 
 .tblFooter {
-    font-size: 7pt;
+    font-size: 6pt;
     vertical-align: bottom;
     margin: auto;
     width: 100%;
@@ -132,6 +132,12 @@ tr {
     width: .85in;
     max-height: .40in;
     float: right;
+}
+
+#logo {
+    width: .64in; /*it was .85in X .50in; now it is .64in X .40 in*/
+    height: .4in;
+    float: left;
 }
 
 #logo {
@@ -161,10 +167,10 @@ tr {
 }
 
 #customerPhoto {
-    width: .85in;
+    width: .75in;
     height: .75in;
     float: left;
-    padding: 2px 0 5px 2px;
+    padding: 5px 0 5px 2px;
 }
 
 #addressDiv {
