@@ -51,13 +51,18 @@
 }
 
 @font-face {
-    font-family: "kalpurush";
-    src: url(file:///android_asset/fonts/kalpurush.ttf) format("truetype");
+    font-family: "SULEKHA";
+    /*src: url(file:///android_asset/fonts/SULEKHA.TTF) format("truetype");
+    src: url(file:///android_asset/fonts/SULEKHAB.TTF) format("truetype");
+    src: url(file:///android_asset/fonts/SULEKHAI.TTF) format("truetype");*/
+    /*src: url('../Fonts/SULEKHA.TTF') format('truetype');
+    src: url('../Fonts/SULEKHAB.TTF') format('truetype');
+    src: url('../Fonts/SULEKHAI.TTF') format('truetype');*/
 }
 
 body {
     background-color: white;
-    font-family: 'Arial Narrow', 'Kalpurush ANSI';
+    font-family: 'Arial Narrow', SULEKHA;
     font-size: 11pt;
 }
 
@@ -72,11 +77,20 @@ tr {
     line-height: 10px;
 }
 
+
+
 #tableMiddle {
     margin: 0 auto;
 }
 
-
+table tr td.colon {
+    width: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-size: 7pt;
+    font-weight: bold;
+}
 
 
 .topLabel {
@@ -99,12 +113,13 @@ tr {
 .fieldValue {
     font-size: 7pt;
     text-transform: uppercase;
+    /*vertical-align: bottom;*/
 }
 
 .boldFieldValue {
     font-size: 7pt;
     font-weight: bold;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .tblFooter {
