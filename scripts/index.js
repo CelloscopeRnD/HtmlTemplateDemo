@@ -58,7 +58,7 @@ function replaceToken() {
     addText("transactionId", "TR025552"); //#TRANSACTION_ID
     addText("village", "SUJAPUR"); //#VILLAGE
     addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
-    addText("userId", "11009 (NAIM ISLAM)"); //#USER_ID
+    addText("userId", "615001001"); //#USER_ID
     addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
     addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
     addText("monthlyDepositLabel", "মাসিক জমা"); //#MONTHLY_DEPOSIT_LABEL
@@ -73,10 +73,6 @@ function replaceToken() {
     addText("maturityValue", "BDT 2,26,047.00"); //#MATURITY_VALUE
     addText("accountNameLabel", "একাউন্ট নাম"); //#ACCOUNT_NAME_LABEL
     addText("linkAccountNumberLabel", "লিংক একাউন্ট নম্বর"); //#LINK_ACCOUNT_NUMBER_LABEL
-
-
-
-
     addText("fixedDepositTitle", "সিটি এজেন্ট ফিক্সড ডিপোজিট"); //#FIXED_DEPOSIT_TITLE
     addText("principalAmount", "আসল টাকার পরিমান"); //#PRINCIPAL_AMOUNT_LABEL   
     addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
