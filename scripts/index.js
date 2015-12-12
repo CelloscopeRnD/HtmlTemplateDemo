@@ -58,7 +58,7 @@ function replaceToken() {
     addText("transactionId", "TR025552"); //#TRANSACTION_ID
     addText("village", "SUJAPUR"); //#VILLAGE
     addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
-    addText("userId", "615001001"); //#USER_ID
+    addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
     addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
     addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
     addText("monthlyDepositLabel", "মাসিক জমা"); //#MONTHLY_DEPOSIT_LABEL
@@ -83,8 +83,6 @@ function replaceToken() {
     addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
     addText("maturitAmount", "BDT 2,26,047.00"); //#MATURITY_AMOUNT
     addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
-
-
     addText("cashDepositTitle", "নগদ জমা"); //#CASH_DEPOSIT_TITLE
     addText("transactionDateLabel", "ট্রানজাকশানের তারিখ"); //#TRANSACTION_DATE_LABEL   
     addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
@@ -94,7 +92,17 @@ function replaceToken() {
     addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
     addText("amountInWords", "THREE THOUSANDS ONLY"); //#AMOUNT_IN_WORDS
     addText("amount", "BDT 3,000.00"); //#AMOUNT
-    
+    addText("cashWithdrawTitle", "নগদ উত্তোলন"); //#CASH_WITHDRAW_TITLE
+    addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
+    addText("amountInWordsWithCharge", "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY"); //#AMOUNT_IN_WORDS_WITH_CHARGE
+
+    addText("fundTransferTitle", "ফান্ড ট্রান্সফার"); //#FUND_TRANSFER_TITLE
+    addText("senderAccountNameLabel", "প্রেরকের একাউন্ট নাম"); //#SENDER_ACCOUNT_NAME_LABEL
+    addText("senderAccountNoLabel", "প্রেরকের একাউন্ট নম্বর"); //#SENDER_ACCOUNT_NO_LABEL
+    addText("receiverAccountNoLabel", "প্রাপকের একাউন্ট নম্বর"); //#RECEIVER_ACCOUNT_NO_LABEL
+    addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
+    addText("receiverAccountNameLabel", "প্রাপকের একাউন্ট নাম"); //#RECEIVER_ACCOUNT_NAME_LABEL
+    addText("receiverAccountName", "SUJON PATWARY"); //#RECEIVER_ACCOUNT_NAME
 }
 
 function addImage(elementId, path) {

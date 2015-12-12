@@ -9,13 +9,15 @@
     <div id="main">
         <table id="threeColumnTable">
             <tr>
-                <td class="tdFirst">
+                <td>
                     <img id="logo" src="#LOGO" alt="logo" />
                 </td>
                 <td class="tdMiddle" align="center" valign="middle">
                     <table id="tableMiddle">
                         <tr>
-                            <td colspan="7" align="center" style="line-height:15px"><h3 id="savingsAccountTitle">#SAVINGS_ACCOUNT_TITLE</h3></td>
+                            <td colspan="7" align="center" style="line-height:22px">
+                                <h4 id="cashWithdrawTitle">#CASH_WITHDRAW_TITLE</h4>
+                            </td>
                         </tr>
                         <tr>
                             <td id="agentNameLabel" class="topLabel">#AGENT_NAME_LABEL</td>
@@ -33,14 +35,14 @@
                         </tr>
                     </table>
                 </td>
-                <td class="tdFirst">
+                <td>
                     <img id="agent_banking_logo" src="#AGENT_BANKING_LOGO" alt="Agent Banking Logo" />
                 </td>
             </tr>
         </table>
         <table id="thirdTable">
             <tr>
-                <td class="tdFirst">
+                <td>
                     <img id="customerPhoto" src="#PHOTO" alt="Customer Photo" />
                 </td>
                 <td colspan="5" align="center" valign="middle">
@@ -81,28 +83,35 @@
                     </div>
                 </td>
             </tr>
-            <tr><td colspan="6" class="cellPadding"><hr /></td></tr>
+            <tr>
+                <td colspan="6" class="cellPadding"><hr /></td>
+            </tr>
             <tr>
                 <td class="label trBackground">গ্রাহকের নাম</td>
-                <td class="fieldValue trBackground">:</td>
+                <td class="colon trBackground">:</td>
                 <td id="customerName" class="fieldValue trBackground">#CUSTOMER_NAME</td>
-                <td id="mobileNoLabel" class="label tdFourth trBackground">#MOBILE_NO_LABEL</td>
-                <td class="fieldValue trBackground">:</td>
-                <td id="mobileNo" class="fieldValue tdSixth trBackground">#MOBILE_NO</td>
-                <td class="lastColumn" rowspan="9" valign="top">
+                <td class="trBackground" colspan="3">
+                    <p style="text-align:right; padding-right:10px;">
+                        <span id="mobileNoLabel" class="label">#MOBILE_NO_LABEL</span>
+                        <span class="colon">:</span>
+                        <span id="mobileNo" class="fieldValue">#MOBILE_NO</span>
+                    </p>
+                </td>
+
+                <td class="lastColumn" rowspan="10" valign="top">
                     <img id="qr" src="#QRCODE" class="qrCodeImg" alt="QR Code" />
                 </td>
             </tr>
             <tr>
-                <td class="addressLabel label trBackground">#ADDRESS_LABEL</td>
-                <td class="fieldValue trBackground">:</td>
+                <td class="addressLabel label trBackground firstColumn">#ADDRESS_LABEL</td>
+                <td class="colon trBackground">:</td>
                 <td id="customerAddress" rowspan="2" colspan="2" class="fieldValue trBackground">#CUSTOMER_ADDRESS</td>
-                <td class="trBackground">&nbsp;</td>
-                <td class="trBackground">&nbsp;</td>
+                <td class="trBackground"></td>
+                <td class="trBackground"></td>
             </tr>
             <tr>
                 <td class="trBackground">&nbsp;</td>
-                <td class="fieldValue trBackground"></td>
+                <td class="trBackground"></td>
                 <td class="trBackground"></td>
                 <td class="trBackground"></td>
             </tr>
@@ -124,33 +133,33 @@
             </tr>
             <tr><td colspan="6" class="cellPaddingTop"><hr /></td></tr>
             <tr>
-                <td class="label">একাউন্ট নাম</td>
+                <td class="label" id="accountNameLabel">#ACCOUNT_NAME_LABEL</td>
                 <td class="colon">:</td>
                 <td id="accountName" class="fieldValue">#ACCOUNT_NAME</td>
-                <td class="label">প্রারম্ভিক জমার পরিমান</td>
+                <td class="label fourthColumn" id="transactionDateLabel">#TRANSACTION_DATE_LABEL</td>
                 <td class="colon">:</td>
-                <td id="initialDeposit" class="fieldValue">#INITIAL_DEPOSIT</td>
+                <td id="transactionDate" class="fieldValue sixthColumn">#TRANSACTION_DATE</td>
             </tr>
             <tr>
-                <td class="label">একাউন্ট খোলার তারিখ</td>
+                <td class="label" id="amountLabel">#AMOUNT_LABEL</td>
                 <td class="colon">:</td>
-                <td id="accountOpeningDate" class="fieldValue">#ACCOUNT_OPENING_DATE</td>
+                <td id="amountWithCharge" class="fieldValue">#AMOUNT_WITH_CHARGE</td>
+                <td id="transactionCodeLabel" class="label">#TRANSACTION_CODE_LABEL</td>
+                <td class="colon">:</td>
+                <td id="transactionCode" class="fieldValue">#TRANSACTION_CODE</td>
+            </tr>
+            <tr>
+                <td class="label" id="amountInWordsLabel">#AMOUNT_IN_WORDS_LABEL</td>
+                <td class="colon">:</td>
+                <td id="amountInWordsWithCharge" class="fieldValue" rowspan="2">#AMOUNT_IN_WORDS_WITH_CHARGE</td>
                 <td id="printDateLabel" class="label">#PRINT_DATE_LABEL</td>
                 <td class="colon">:</td>
                 <td id="printDate" class="fieldValue">#PRINT_DATE</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="colon"></td>
                 <td class="fieldValue"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="fieldValue"></td>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
