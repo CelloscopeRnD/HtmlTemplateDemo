@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 @media print {
     /** {
         margin: 0 !important;
@@ -83,7 +85,7 @@ tr {
     margin: 0 auto;
 }
 
-table tr td.colon {
+table tr td.colon, span.colon {
     width: 7px;
     text-align: center;
     text-transform: uppercase;
@@ -92,6 +94,15 @@ table tr td.colon {
     font-weight: bold;
 }
 
+
+span.colon {
+    width: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    font-size: 7pt;
+    font-weight: bold;
+}
 
 .topLabel {
     font-size: 6pt;
