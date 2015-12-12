@@ -9,6 +9,13 @@
         padding: 0 !important;
     }*/
 
+    html {
+       
+        margin: .15in 0in 0in 0in;
+    }
+
+
+
     .header, .footer, .footerarea {
         display: none;
     }
