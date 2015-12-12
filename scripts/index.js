@@ -61,13 +61,11 @@ function replaceToken() {
     addText("userId", "11009 (NAIM ISLAM)"); //#USER_ID
     addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
     addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
-
-
     addText("monthlyDepositLabel", "মাসিক জমা"); //#MONTHLY_DEPOSIT_LABEL
     addText("montylyDeposit", "BDT 3,000.00"); //#MONTHLY_DEPOSIT
     addText("productTenorLabel", "সময়কাল"); //#PRODUCT_TENOR_LABEL
     addText("productTenor", "5 Years (60 Months)"); //#PRODUCT_TENOR
-    addText("startDateLabel", "একাউন্ট খোলার তারিখ"); //#START_DATE_LABEL
+    addText("accountOpeningDateLabel", "একাউন্ট খোলার তারিখ"); //#ACCOUNT_OPENING_DATE_LABEL
     addText("startDate", "30-JAN-2016"); //#START_DATE
     addText("maturityDateLabel", "মেয়াদান্তের তারিখ"); //#MATURITY_DATE_LABEL
     addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
@@ -75,6 +73,21 @@ function replaceToken() {
     addText("maturityValue", "BDT 2,26,047.00"); //#MATURITY_VALUE
     addText("accountNameLabel", "একাউন্ট নাম"); //#ACCOUNT_NAME_LABEL
     addText("linkAccountNumberLabel", "লিংক একাউন্ট নম্বর"); //#LINK_ACCOUNT_NUMBER_LABEL
+
+
+
+
+    addText("fixedDepositTitle", "সিটি এজেন্ট ফিক্সড ডিপোজিট"); //#FIXED_DEPOSIT_TITLE
+    addText("principalAmount", "আসল টাকার পরিমান"); //#PRINCIPAL_AMOUNT_LABEL   
+    addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
+    addText("maturityDate", "30-JAN-2016"); //#MATURITY_DATE
+    addText("profitRateLabel", "মুনাফার হার"); //#PROFIT_RATE_LABEL
+    addText("profitRate", "8.85% (Yearly)"); //#PROFIT_RATE
+    addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
+    addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
+    addText("maturitAmount", "BDT 2,26,047.00"); //#MATURITY_AMOUNT
+    addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
+    
 }
 
 function addImage(elementId, path) {
