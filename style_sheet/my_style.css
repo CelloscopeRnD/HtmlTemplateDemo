@@ -4,10 +4,10 @@
 }
 
 @media print {
-    * {
+    /** {
         margin: 0 !important;
         padding: 0 !important;
-    }
+    }*/
 
     .header, .footer, .footerarea {
         display: none;
