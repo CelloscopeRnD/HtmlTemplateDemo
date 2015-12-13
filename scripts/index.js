@@ -95,7 +95,6 @@ function replaceToken() {
     addText("cashWithdrawTitle", "নগদ উত্তোলন"); //#CASH_WITHDRAW_TITLE
     addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
     addText("amountInWordsWithCharge", "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY"); //#AMOUNT_IN_WORDS_WITH_CHARGE
-
     addText("fundTransferTitle", "ফান্ড ট্রান্সফার"); //#FUND_TRANSFER_TITLE
     addText("senderAccountNameLabel", "প্রেরকের একাউন্ট নাম"); //#SENDER_ACCOUNT_NAME_LABEL
     addText("senderAccountNoLabel", "প্রেরকের একাউন্ট নম্বর"); //#SENDER_ACCOUNT_NO_LABEL
@@ -103,6 +102,14 @@ function replaceToken() {
     addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
     addText("receiverAccountNameLabel", "প্রাপকের একাউন্ট নাম"); //#RECEIVER_ACCOUNT_NAME_LABEL
     addText("receiverAccountName", "SUJON PATWARY"); //#RECEIVER_ACCOUNT_NAME
+
+
+
+    addText("accountBalanceTitle", "একাউন্ট ব্যালান্স"); //#ACCOUNT_BALANCE_TITLE
+    addText("balanceAmountLabel", "ব্যালান্সের পরিমান"); //#BALANCE_AMOUNT_LABEL
+    addText("balanceAmount", "BDT 80,550.00"); //#BALANCE_AMOUNT
+    addText("balanceAmountInWords", "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY"); //#BALANCE_AMOUNT_IN_WORDS
+    addText("balanceAmountInWordsLabel", "ব্যালান্সের পরিমান কথায়"); //#BALANCE_AMOUNT_IN_WORDS_LABEL
 }
 
 function addImage(elementId, path) {
