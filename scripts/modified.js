@@ -1,4 +1,5 @@
 ﻿window.onload = function () {
+
     var url = window.location.search;
     url = url.replace("?", ''); // remove the ?
 
@@ -12,7 +13,7 @@ var receipts = {
     CASH_DEPOSIT: 2,
     CASH_WITHDRAW: 3,
     DPS_ACCOUNT: 4,
-    FIXED_ACCOUNT: 5,
+    FIXED_DEPOSIT: 5,
     FUND_TRANSFER: 6,
     SAVINGS_ACCOUNT: 7
 };
@@ -106,6 +107,17 @@ function replaceToken(receipt) {
     addText("receiverAccountName", "SUJON PATWARY"); //#RECEIVER_ACCOUNT_NAME
     addText("startDate", "30-JAN-2016"); //#START_DATE
 
+
+
+
+    addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
+    addText("transactionCode", "TR222369"); //#TRANSACTION_CODE
+    addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
+    addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
+    addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
+    addText("village", "SUJAPUR"); //#VILLAGE
+    addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
+
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
             addText("title", "একাউন্ট ব্যালান্স"); //#TITLE
@@ -119,7 +131,7 @@ function replaceToken(receipt) {
         case receipts.DPS_ACCOUNT:
             addText("title", "সাধারন ডিপিএস একাউন্ট"); //#TITLE
             break;
-        case receipts.FIXED_ACCOUNT:
+        case receipts.FIXED_DEPOSIT:
             addText("title", "সিটি এজেন্ট ফিক্সড ডিপোজিট"); //#TITLE
             break;
         case receipts.FUND_TRANSFER:
@@ -131,15 +143,6 @@ function replaceToken(receipt) {
         default:
             break;
     }
-
-
-    addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-    addText("transactionCode", "TR222369"); //#TRANSACTION_CODE
-    addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
-    addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
-    addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
-    addText("village", "SUJAPUR"); //#VILLAGE
-    addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
 }
 
 function addImage(elementId, path) {
