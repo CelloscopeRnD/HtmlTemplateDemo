@@ -110,7 +110,6 @@ function replaceToken(receipt) {
 
 
     addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-
     addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
     addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
     addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
@@ -119,7 +118,7 @@ function replaceToken(receipt) {
 
 
     var accountBalanceText = "একাউন্ট ব্যালান্স";
-    var balanceAmountInWordsText = "ব্যালান্সের পরিমান কথায়";
+    var inWords = "কথায়";
     var cashDepositText = "নগদ জমা";
     var cashWithdrawText = "নগদ উত্তোলন";
     var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
@@ -133,6 +132,7 @@ function replaceToken(receipt) {
     var transactionDateText = "ট্রানজাকশানের তারিখ";
     var transactionCodeText = "ট্রানজাকশান কোড";
     var balanceAmountText = "ব্যালান্সের পরিমান";
+    var depositAmountText = "জমার পরিমান";
 
     var t01LabelId = "t01Label"; //#T_01_LABEL
     var t01ValueId = "t01Value"; //#T_01_VALUE
@@ -163,12 +163,21 @@ function replaceToken(receipt) {
     var currentDate = getDateString(new Date());
     var savingsAccountTypeValue = "Savings";
     var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
+    var depositAmountInWordsValue = "THREE THOUSAND ONLY";
     var balanceAmountValue = "BDT 80,550.00";
+    var depositAmountValue = "BDT 3,000.00";
     //var printDateValue = "30-NOV-2015 11:15:15 AM";
     var printDateValue = getTimestampString(new Date());
     var transactionCodeValue = "TR222369";
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
+            addText(titleId, accountBalanceText);
+
+            addText(accountTypeId, savingsAccountTypeValue);
+            addText(linkAccountNumberColonId, emptyText);
+            addText(linkAccountNumberLabelId, emptyText);
+            addText(linkAccountNumberId, emptyText);
+
             addText(t01LabelId, transactionDateText);
             addText(t01ValueId, currentDate);
 
@@ -177,7 +186,7 @@ function replaceToken(receipt) {
             addText(t11LabelId, transactionCodeText);
             addText(t11ValueId, transactionCodeValue);
 
-            addText(t20LabelId, balanceAmountInWordsText);
+            addText(t20LabelId, inWords);
             addText(t20ValueId, balanceAmountInWordsValue);
             addText(t21LabelId, printDateText);
             addText(t21ValueId, printDateValue);
@@ -188,18 +197,34 @@ function replaceToken(receipt) {
             addText(t31LabelId, emptyText);
             addText(t31ColonId, emptyText);
             addText(t31ValueId, emptyText);
+            break;
+        case receipts.CASH_DEPOSIT:
+            addText("title", cashDepositText); //#TITLE
 
             addText(accountTypeId, savingsAccountTypeValue);
             addText(linkAccountNumberColonId, emptyText);
             addText(linkAccountNumberLabelId, emptyText);
             addText(linkAccountNumberId, emptyText);
-            addText(titleId, accountBalanceText);
-            break;
-        case receipts.CASH_DEPOSIT:
-            addText(linkAccountNumberColonId, colonText); //#LINK_ACCOUNT_NUMBER_COLON
-            addText(linkAccountNumberLabelId, linkAccountNumberText); //#LINK_ACCOUNT_NUMBER_LABEL
-            addText("linkAccountNumber", "2001158500126"); //#LINK_ACCOUNT_NUMBER
-            addText("title", cashDepositText); //#TITLE
+
+            addText(t01LabelId, transactionDateText);
+            addText(t01ValueId, currentDate);
+
+            addText(t10LabelId, depositAmountText);
+            addText(t10ValueId, depositAmountValue);
+            addText(t11LabelId, transactionCodeText);
+            addText(t11ValueId, transactionCodeValue);
+
+            addText(t20LabelId, inWords);
+            addText(t20ValueId, depositAmountInWordsValue);
+            addText(t21LabelId, printDateText);
+            addText(t21ValueId, printDateValue);
+
+            addText(t30LabelId, emptyText);
+            addText(t30ColonId, emptyText);
+            addText(t30ValueId, emptyText);
+            addText(t31LabelId, emptyText);
+            addText(t31ColonId, emptyText);
+            addText(t31ValueId, emptyText);
             break;
         case receipts.CASH_WITHDRAW:
             addText(linkAccountNumberColonId, colonText); //#LINK_ACCOUNT_NUMBER_COLON
