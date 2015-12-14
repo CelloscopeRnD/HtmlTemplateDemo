@@ -68,7 +68,6 @@ function replaceToken(receipt) {
     addText("agentName", "BADRUL ALOM"); //#AGENT_NAME
     addText("amount", "BDT 3,000.00"); //#AMOUNT
     addText("amountInWords", "THREE THOUSANDS ONLY"); //#AMOUNT_IN_WORDS
-    addText("amountInWordsWithCharge", "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY"); //#AMOUNT_IN_WORDS_WITH_CHARGE
     addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
 
 
@@ -133,6 +132,7 @@ function replaceToken(receipt) {
     var transactionCodeText = "ট্রানজাকশান কোড";
     var balanceAmountText = "ব্যালান্সের পরিমান";
     var depositAmountText = "জমার পরিমান";
+    var withdrawAmountText = "উত্তোলনের পরিমান";
 
     var t01LabelId = "t01Label"; //#T_01_LABEL
     var t01ValueId = "t01Value"; //#T_01_VALUE
@@ -164,8 +164,10 @@ function replaceToken(receipt) {
     var savingsAccountTypeValue = "Savings";
     var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
     var depositAmountInWordsValue = "THREE THOUSAND ONLY";
+    var withdrawsAmountInWordsValue = "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY";
     var balanceAmountValue = "BDT 80,550.00";
     var depositAmountValue = "BDT 3,000.00";
+    var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
     //var printDateValue = "30-NOV-2015 11:15:15 AM";
     var printDateValue = getTimestampString(new Date());
     var transactionCodeValue = "TR222369";
@@ -227,10 +229,32 @@ function replaceToken(receipt) {
             addText(t31ValueId, emptyText);
             break;
         case receipts.CASH_WITHDRAW:
-            addText(linkAccountNumberColonId, colonText); //#LINK_ACCOUNT_NUMBER_COLON
-            addText(linkAccountNumberLabelId, linkAccountNumberText); //#LINK_ACCOUNT_NUMBER_LABEL
-            addText("linkAccountNumber", "2001158500126"); //#LINK_ACCOUNT_NUMBER
             addText("title", cashWithdrawText); //#TITLE
+
+            addText(accountTypeId, savingsAccountTypeValue);
+            addText(linkAccountNumberColonId, emptyText);
+            addText(linkAccountNumberLabelId, emptyText);
+            addText(linkAccountNumberId, emptyText);
+
+            addText(t01LabelId, transactionDateText);
+            addText(t01ValueId, currentDate);
+
+            addText(t10LabelId, withdrawAmountText);
+            addText(t10ValueId, withdrawAmountValue);
+            addText(t11LabelId, transactionCodeText);
+            addText(t11ValueId, transactionCodeValue);
+
+            addText(t20LabelId, inWords);
+            addText(t20ValueId, withdrawsAmountInWordsValue);
+            addText(t21LabelId, printDateText);
+            addText(t21ValueId, printDateValue);
+
+            addText(t30LabelId, emptyText);
+            addText(t30ColonId, emptyText);
+            addText(t30ValueId, emptyText);
+            addText(t31LabelId, emptyText);
+            addText(t31ColonId, emptyText);
+            addText(t31ValueId, emptyText);
             break;
         case receipts.DPS_ACCOUNT:
             addText(linkAccountNumberColon, colonText); //#LINK_ACCOUNT_NUMBER_COLON
