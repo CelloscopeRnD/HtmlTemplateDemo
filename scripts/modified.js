@@ -18,26 +18,38 @@ var receipts = {
     SAVINGS_ACCOUNT: 7
 };
 
+//addText("receiverAccountNameLabel", ""); //#RECEIVER_ACCOUNT_NAME_LABEL
+//addText("receiverAccountNoLabel", ""); //#RECEIVER_ACCOUNT_NO_LABEL
+//addText("senderAccountNameLabel", ""); //#SENDER_ACCOUNT_NAME_LABEL
 
-
-var accountBalanceText = "একাউন্ট ব্যালান্স";
-var accountOpeningDateText = "একাউন্ট খোলার তারিখ";
+var accountNoText = "হিসাব নম্বর";
+var senderAccountNoText = "প্রেরকের হিসাব নম্বর";
+var sendrAccountNameText = "প্রেরকের হিসাব নাম";
+var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
+var receiverAccountNameText = "প্রাপকের হিসাব নাম";
+var accountNameText = "হিসাব নাম";
+var accountBalanceText = "হিসাব ব্যালান্স";
+var accountOpeningDateText = "হিসাব খোলার তারিখ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
+var transferAmountText = "ট্রান্সফারের পরিমান";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
-var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস একাউন্ট";
+var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস হিসাব";
 var colonText = ":";
 var depositAmountText = "জমার পরিমান";
 var emptyText = "";
 var fundTrasferText = "ফান্ড ট্রান্সফার";
-var generalDPSAccountText = "সাধারন ডিপিএস একাউন্ট";
+var generalDPSAccountText = "সাধারন ডিপিএস হিসাব";
 var inWordsText = "কথায়";
-var linkAccountNumberText = "লিংক একাউন্ট নম্বর";
+var linkAccountNumberText = "লিংক হিসাব নম্বর";
 var maturityDateText = "মেয়াদান্তের তারিখ";
 var printDateText = "প্রিন্টের তারিখ";
 var transactionDateText = "ট্রানজাকশানের তারিখ";
+var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
+
 var transactionCodeText = "ট্রানজাকশান কোড";
+var transactionIdText = "লেনদেন আইডি";
 var withdrawAmountText = "উত্তোলনের পরিমান";
 var productTenorText = "মেয়াদ";
 var monthlyDepositText = "মাসিক জমা";
@@ -45,6 +57,8 @@ var maturityAmountText = "মেয়াদান্তে টাকার পর�
 var profitRateText = "মুনাফার হার";
 var principalAmountText = "আসল টাকার পরিমান";
 
+var t00LabelId = "t00Label"; //#T_00_LABEL
+var t00ValueId = "t00Value"; //#T_00_VALUE
 var t01LabelId = "t01Label"; //#T_01_LABEL
 var t01ValueId = "t01Value"; //#T_01_VALUE
 
@@ -65,7 +79,7 @@ var t31LabelId = "t31Label"; //#T_31_LABEL
 var t31ColonId = "t31Colon"; //#COLON
 var t31ValueId = "t31Value"; //#T_31_VALUE
 
-
+var accountNoLabelId = "accountNoLabel";
 var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
 var accountTypeId = "accountType";  //#ACCOUNT_TYPE
 var linkAccountNumberColonId = "linkAccountNumberColon"; //#LINK_ACCOUNT_NUMBER_COLON
@@ -74,6 +88,8 @@ var linkAccountNumberId = "linkAccountNumber"; //#LINK_ACCOUNT_NUMBER
 var titleId = "title";  //#TITLE
 
 
+var accountNameValue = "MD Arif Gazi";
+var receiverAccountNameValue = "SUJON PATWARY";
 
 var accountNumberValue = "2001158500126";
 var balanceAmountValue = "BDT 80,550.00";
@@ -89,7 +105,7 @@ var depositAmountValue = "BDT 3,000.00";
 var printDateValue = getTimestampString(new Date());
 var savingsAccountTypeValue = "Savings";
 var transactionCodeValue = "TR222369";
-var linkAccountNumberValue = "2005246987126";
+var linkAccountNumberValue = "2005246987526";
 var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
 var withdrawsAmountInWordsValue = "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY";
 var productTenorValue = "5 Years";
@@ -104,10 +120,10 @@ function replaceToken(receipt) {
     addImage("agent_banking_logo", "images/agent_bangking_logo.png");
     addImage("logo", "images/logo.png");
 
-    addText("accountNoLabel", "একাউন্ট নম্বর"); //#ACCOUNT_NO_LABEL
-    addText("accountTypeLabel", "একাউন্টের ধরন"); //#ACCOUNT_TYPE_LABEL
+
+    addText("accountTypeLabel", "হিসাবের ধরন"); //#ACCOUNT_TYPE_LABEL
     addClassText("addressLabel", "ঠিকানা"); //#ADDRESS_LABEL
-    addText("accountNameLabel", "একাউন্ট নাম"); //#ACCOUNT_NAME_LABEL
+
 
     addText("agentNameLabel", "এজেন্টের নাম"); //#AGENT_NAME_LABEL
     addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
@@ -117,17 +133,15 @@ function replaceToken(receipt) {
     addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
     addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
 
-    
+
     addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
 
-     
 
 
-    
-    addText("receiverAccountNameLabel", "প্রাপকের একাউন্ট নাম"); //#RECEIVER_ACCOUNT_NAME_LABEL
-    addText("receiverAccountNoLabel", "প্রাপকের একাউন্ট নম্বর"); //#RECEIVER_ACCOUNT_NO_LABEL
-    addText("senderAccountNameLabel", "প্রেরকের একাউন্ট নাম"); //#SENDER_ACCOUNT_NAME_LABEL
-    addText("senderAccountNoLabel", "প্রেরকের একাউন্ট নম্বর"); //#SENDER_ACCOUNT_NO_LABEL
+
+
+
+
 
     addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
     addImage("customerPhoto", "images/photo.png");
@@ -137,7 +151,7 @@ function replaceToken(receipt) {
     // BDT will be used for currency
     // Comma will be used for amount 
     // date format will be 30-NOV-2015
-    addText("accountName", "MD Arif Gazi"); //#ACCOUNT_NAME
+
 
 
     addText("agentName", "BADRUL ALOM"); //#AGENT_NAME
@@ -171,15 +185,15 @@ function replaceToken(receipt) {
     addText("transactionDate", "30-NOV-201"); //#TRANSACTION_DATE
     addText("transactionId", "TR025552"); //#TRANSACTION_ID
     addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
-   
 
-    
+
+
     addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
-    addText("receiverAccountName", "SUJON PATWARY"); //#RECEIVER_ACCOUNT_NAME
+    
     addText("startDate", "30-JAN-2016"); //#START_DATE
 
     addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-   
+
     addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
     addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
     addText("village", "SUJAPUR"); //#VILLAGE
@@ -215,12 +229,15 @@ function replaceToken(receipt) {
 function setAccountBalance() {
     addText(titleId, accountBalanceText);
 
+    addText(accountNoLabelId, accountNoText);
     addText(accountNumberId, accountNumberValue);
     addText(accountTypeId, savingsAccountTypeValue);
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
     addText(t01LabelId, transactionDateText);
     addText(t01ValueId, currentDate);
 
@@ -244,12 +261,15 @@ function setAccountBalance() {
 function setCashDeposit() {
     addText("title", cashDepositText); //#TITLE
 
+    addText(accountNoLabelId, accountNoText);
     addText(accountNumberId, accountNumberValue);
     addText(accountTypeId, savingsAccountTypeValue);
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
     addText(t01LabelId, transactionDateText);
     addText(t01ValueId, currentDate);
 
@@ -273,12 +293,15 @@ function setCashDeposit() {
 function setCashWithdraw() {
     addText("title", cashWithdrawText); //#TITLE
 
+    addText(accountNoLabelId, accountNoText);
     addText(accountNumberId, accountNumberValue);
     addText(accountTypeId, savingsAccountTypeValue);
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
     addText(t01LabelId, transactionDateText);
     addText(t01ValueId, currentDate);
 
@@ -302,12 +325,15 @@ function setCashWithdraw() {
 function setDPSAccount() {
     addText("title", generalDPSAccountText); //#TITLE
 
-    addText(accountNumberId, emptyText);
+    addText(accountNoLabelId, accountNoText);
+    addText(accountNumberId, accountNumberValue);
     addText(accountTypeId, dpsAccountTypeValue);
     addText(linkAccountNumberLabelId, linkAccountNumberText);
     addText(linkAccountNumberColonId, colonText);
     addText(linkAccountNumberId, linkAccountNumberValue);
 
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
     addText(t01LabelId, productTenorText);
     addText(t01ValueId, productTenorValue);
 
@@ -331,12 +357,15 @@ function setDPSAccount() {
 function setFixedDeposit() {
     addText("title", cityAgentFixedDepositText); //#TITLE
 
+    addText(accountNoLabelId, accountNoText);
     addText(accountNumberId, emptyText);
     addText(accountTypeId, termDepositAccountTypeValue);
     addText(linkAccountNumberLabelId, linkAccountNumberText);
     addText(linkAccountNumberColonId, colonText);
     addText(linkAccountNumberId, linkAccountNumberValue);
 
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
     addText(t01LabelId, productTenorText);
     addText(t01ValueId, productTenorValue);
 
@@ -359,6 +388,36 @@ function setFixedDeposit() {
 }
 function setFundTrasfer() {
     addText("title", fundTrasferText); //#TITLE
+
+    addText(accountNoLabelId, senderAccountNoText);
+    addText(accountNumberId, accountNumberValue);
+    addText(accountNumberId, accountNumberValue);
+    addText(accountTypeId, savingsAccountTypeValue);
+    addText(linkAccountNumberLabelId, emptyText);
+    addText(linkAccountNumberColonId, emptyText);
+    addText(linkAccountNumberId, emptyText);
+
+    addText(t00LabelId, sendrAccountNameText);
+    addText(t00ValueId, accountNameValue);
+    addText(t01LabelId, fundTransferDateText);
+    addText(t01ValueId, currentDate);
+
+    addText(t10LabelId, receiverAccountNameText);
+    addText(t10ValueId, receiverAccountNameValue);
+    addText(t11LabelId, receiverAccountNoText);
+    addText(t11ValueId, linkAccountNumberValue);
+
+    addText(t20LabelId, transferAmountText);
+    addText(t20ValueId, depositAmountValue);
+    addText(t21LabelId, transactionIdText);
+    addText(t21ValueId, transactionCodeValue);
+
+    addText(t30LabelId, inWordsText);
+    addText(t30ColonId, colonText);
+    addText(t30ValueId, depositAmountInWordsValue);
+    addText(t31LabelId, printDateText);
+    addText(t31ColonId, colonText);
+    addText(t31ValueId, printDateValue);
 }
 function setSavingsAccount() {
     addText("title", fundTrasferText); //#TITLE
