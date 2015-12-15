@@ -47,6 +47,8 @@ var linkAccountNumberText = "লিংক হিসাব নম্বর";
 var maturityDateText = "মেয়াদান্তের তারিখ";
 var printDateText = "প্রিন্টের তারিখ";
 var transactionDateText = "ট্রানজাকশানের তারিখ";
+var depositDateText = "জমার তারিখ";
+
 var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
 
 var transactionCodeText = "ট্রানজাকশান কোড";
@@ -275,12 +277,12 @@ function setCashDeposit() {
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, transactionDateText);
+    addText(t01LabelId, depositDateText);
     addText(t01ValueId, currentDate);
 
     addText(t10LabelId, depositAmountText);
     addText(t10ValueId, depositAmountValue);
-    addText(t11LabelId, transactionCodeText);
+    addText(t11LabelId, transactionIdText);
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
