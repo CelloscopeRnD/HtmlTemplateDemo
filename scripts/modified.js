@@ -113,7 +113,7 @@ var savingsAccountTypeValue = "Savings";
 var transactionCodeValue = "TR222369";
 var linkAccountNumberValue = "2005246987526";
 var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
-var withdrawsAmountInWordsValue = "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY";
+var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
 var productTenorValue = "5 Years";
 var maturityAmountValue = "BDT 2,26,047.00";
 var termDepositAccountTypeValue = "TERM DEPOSIT";
@@ -162,7 +162,7 @@ function replaceToken(receipt) {
 
     addText("agentName", "BADRUL ALOM"); //#AGENT_NAME
     addText("amount", "BDT 3,000.00"); //#AMOUNT
-    addText("amountInWords", "THREE THOUSANDS ONLY"); //#AMOUNT_IN_WORDS
+    addText("amountInWords", "THREE THOUSAND ONLY"); //#AMOUNT_IN_WORDS
     addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
 
     addText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
