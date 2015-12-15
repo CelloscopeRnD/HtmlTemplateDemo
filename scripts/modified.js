@@ -132,7 +132,7 @@ function replaceToken(receipt) {
     addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
     addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
 
-    addText("customerIdLabel", "কাষ্টমার আইডি"); //#CUSTOMER_ID_LABEL,
+    addText("customerIdLabel", "কাস্টমার আইডি"); //#CUSTOMER_ID_LABEL,
     addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
     addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
 
