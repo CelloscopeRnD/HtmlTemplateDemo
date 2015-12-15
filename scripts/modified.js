@@ -28,7 +28,7 @@ var sendrAccountNameText = "প্রেরকের হিসাব নাম";
 var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
 var receiverAccountNameText = "প্রাপকের হিসাব নাম";
 var accountNameText = "হিসাব নাম";
-var accountBalanceText = "হিসাব ব্যালান্স";
+var accountBalanceText = "ব্যালান্স";
 var accountOpeningDateText = "হিসাব খোলার তারিখ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
 var transferAmountText = "ট্রান্সফারের পরিমান";
@@ -48,6 +48,7 @@ var maturityDateText = "মেয়াদান্তের তারিখ";
 var printDateText = "প্রিন্টের তারিখ";
 var transactionDateText = "ট্রানজাকশানের তারিখ";
 var depositDateText = "জমার তারিখ";
+var withdrawDateText = "উত্তোলনের তারিখ";
 
 var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
 
@@ -134,7 +135,7 @@ function replaceToken(receipt) {
     addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
     addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
 
-    addText("customerIdLabel", "কাস্টমার আইডি"); //#CUSTOMER_ID_LABEL,
+    addText("customerIdLabel", "গ্রাহক আইডি"); //#CUSTOMER_ID_LABEL,
     addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
     addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
 
@@ -311,12 +312,12 @@ function setCashWithdraw() {
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, transactionDateText);
+    addText(t01LabelId, withdrawDateText);
     addText(t01ValueId, currentDate);
 
     addText(t10LabelId, withdrawAmountText);
     addText(t10ValueId, withdrawAmountValue);
-    addText(t11LabelId, transactionCodeText);
+    addText(t11LabelId, transactionIdText);
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
