@@ -195,7 +195,7 @@ function replaceToken(receipt) {
 
 
     addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
-    
+
     addText("startDate", "30-JAN-2016"); //#START_DATE
 
     addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
@@ -322,6 +322,7 @@ function setCashWithdraw() {
 
     addText(t20LabelId, inWordsText);
     addText(t20ColonId, colonText);
+    document.getElementById(t20ValueId).rowSpan = 2;
     addText(t20ValueId, withdrawsAmountInWordsValue);
     addText(t21LabelId, printDateText);
     addText(t21ColonId, colonText);
