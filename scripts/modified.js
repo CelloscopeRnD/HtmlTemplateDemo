@@ -46,7 +46,7 @@ var inWordsText = "কথায়";
 var linkAccountNumberText = "লিংক হিসাব নম্বর";
 var maturityDateText = "মেয়াদান্তের তারিখ";
 var printDateText = "প্রিন্টের তারিখ";
-var transactionDateText = "ট্রানজাকশানের তারিখ";
+var balanceDateText = "ব্যালান্সের তারিখ";
 var depositDateText = "জমার তারিখ";
 var withdrawDateText = "উত্তোলনের তারিখ";
 
@@ -60,6 +60,7 @@ var monthlyDepositText = "মাসিক জমা";
 var maturityAmountText = "মেয়াদান্তে টাকার পরিমান";
 var profitRateText = "মুনাফার হার";
 var principalAmountText = "আসল টাকার পরিমান";
+var chargeText = "চার্জ";
 
 var t00LabelId = "t00Label"; //#T_00_LABEL
 var t00ValueId = "t00Value"; //#T_00_VALUE
@@ -119,6 +120,7 @@ var maturityAmountValue = "BDT 2,26,047.00";
 var termDepositAccountTypeValue = "TERM DEPOSIT";
 var profitRateValue = "8.85% (Yearly)";
 var principalAmountValue = "BDT 1,00,000.00";
+var chargeVaue = "BDT 7.50";
 
 
 
@@ -244,7 +246,7 @@ function setAccountBalance() {
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, transactionDateText);
+    addText(t01LabelId, balanceDateText);
     addText(t01ValueId, currentDate);
 
     addText(t10LabelId, balanceAmountText);
@@ -316,21 +318,20 @@ function setCashWithdraw() {
     addText(t01ValueId, currentDate);
 
     addText(t10LabelId, withdrawAmountText);
-    addText(t10ValueId, withdrawAmountValue);
+    addText(t10ValueId, depositAmountValue);
     addText(t11LabelId, transactionIdText);
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
     addText(t20ColonId, colonText);
-    document.getElementById(t20ValueId).rowSpan = 2;
-    addText(t20ValueId, withdrawsAmountInWordsValue);
+    addText(t20ValueId, depositAmountInWordsValue);
     addText(t21LabelId, printDateText);
     addText(t21ColonId, colonText);
     addText(t21ValueId, printDateValue);
 
-    addText(t30LabelId, emptyText);
-    addText(t30ColonId, emptyText);
-    addText(t30ValueId, emptyText);
+    addText(t30LabelId, chargeText);
+    addText(t30ColonId, colonText);
+    addText(t30ValueId, chargeVaue);
     addText(t31LabelId, emptyText);
     addText(t31ColonId, emptyText);
     addText(t31ValueId, emptyText);
