@@ -211,9 +211,9 @@ span.colon {
 }
 
 
-#tableMiddle tr td.label {
+/*#tableMiddle tr td.label {
     text-align: right;
-}
+}*/
 
 .qrCodeImg {
     width: .85in;

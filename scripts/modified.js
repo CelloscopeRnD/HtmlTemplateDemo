@@ -28,14 +28,14 @@ var sendrAccountNameText = "প্রেরকের হিসাব নাম";
 var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
 var receiverAccountNameText = "প্রাপকের হিসাব নাম";
 var accountNameText = "হিসাব নাম";
-var accountBalanceText = "একাউন্ট ব্যালান্স";
+var accountBalanceText = "হিসাব ব্যালান্স";
 var accountOpeningDateText = "হিসাব খোলার তারিখ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
 var transferAmountText = "ট্রান্সফারের পরিমান";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
-var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস একাউন্ট";
+var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস হিসাব";
 var colonText = ":";
 var depositAmountText = "জমার পরিমান";
 var emptyText = "";
@@ -250,8 +250,10 @@ function setAccountBalance() {
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, balanceAmountInWordsValue);
     addText(t21LabelId, printDateText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, printDateValue);
 
     addText(t30LabelId, emptyText);
@@ -282,8 +284,10 @@ function setCashDeposit() {
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, depositAmountInWordsValue);
     addText(t21LabelId, printDateText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, printDateValue);
 
     addText(t30LabelId, emptyText);
@@ -314,8 +318,10 @@ function setCashWithdraw() {
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, withdrawsAmountInWordsValue);
     addText(t21LabelId, printDateText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, printDateValue);
 
     addText(t30LabelId, emptyText);
@@ -346,8 +352,10 @@ function setDPSAccount() {
     addText(t11ValueId, maturityDate);
 
     addText(t20LabelId, monthlyDepositText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, depositAmountValue);
     addText(t21LabelId, printDateText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, printDateValue);
 
     addText(t30LabelId, maturityAmountText);
@@ -378,8 +386,10 @@ function setFixedDeposit() {
     addText(t11ValueId, maturityDate);
 
     addText(t20LabelId, profitRateText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, profitRateValue);
     addText(t21LabelId, maturityAmountText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, maturityAmountValue);
 
     addText(t30LabelId, principalAmountText);
@@ -411,8 +421,10 @@ function setFundTrasfer() {
     addText(t11ValueId, linkAccountNumberValue);
 
     addText(t20LabelId, transferAmountText);
+    addText(t20ColonId, colonText);
     addText(t20ValueId, depositAmountValue);
     addText(t21LabelId, transactionIdText);
+    addText(t21ColonId, colonText);
     addText(t21ValueId, transactionCodeValue);
 
     addText(t30LabelId, inWordsText);
