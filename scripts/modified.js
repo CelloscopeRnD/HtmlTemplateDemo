@@ -39,9 +39,11 @@ var printDateText = "প্রিন্টের তারিখ";
 var transactionDateText = "ট্রানজাকশানের তারিখ";
 var transactionCodeText = "ট্রানজাকশান কোড";
 var withdrawAmountText = "উত্তোলনের পরিমান";
-var productTenorText = "সময়কাল";
+var productTenorText = "মেয়াদ";
 var monthlyDepositText = "মাসিক জমা";
 var maturityAmountText = "মেয়াদান্তে টাকার পরিমান";
+var profitRateText = "মুনাফার হার";
+var principalAmountText = "আসল টাকার পরিমান";
 
 var t01LabelId = "t01Label"; //#T_01_LABEL
 var t01ValueId = "t01Value"; //#T_01_VALUE
@@ -92,6 +94,10 @@ var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
 var withdrawsAmountInWordsValue = "THREE THOUSANDS SEVEN TAKA FIFTY PAISA ONLY";
 var productTenorValue = "5 Years";
 var maturityAmountValue = "BDT 2,26,047.00";
+var termDepositAccountTypeValue = "TERM DEPOSIT";
+var profitRateValue = "8.85% (Yearly)";
+var principalAmountValue = "BDT 1,00,000.00";
+
 
 
 function replaceToken(receipt) {
@@ -114,10 +120,10 @@ function replaceToken(receipt) {
     
     addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
 
-    addText("principalAmount", "আসল টাকার পরিমান"); //#PRINCIPAL_AMOUNT_LABEL   
+     
 
 
-    addText("profitRateLabel", "মুনাফার হার"); //#PROFIT_RATE_LABEL
+    
     addText("receiverAccountNameLabel", "প্রাপকের একাউন্ট নাম"); //#RECEIVER_ACCOUNT_NAME_LABEL
     addText("receiverAccountNoLabel", "প্রাপকের একাউন্ট নম্বর"); //#RECEIVER_ACCOUNT_NO_LABEL
     addText("senderAccountNameLabel", "প্রেরকের একাউন্ট নাম"); //#SENDER_ACCOUNT_NAME_LABEL
@@ -167,13 +173,13 @@ function replaceToken(receipt) {
     addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
    
 
-    addText("profitRate", "8.85% (Yearly)"); //#PROFIT_RATE
+    
     addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
     addText("receiverAccountName", "SUJON PATWARY"); //#RECEIVER_ACCOUNT_NAME
     addText("startDate", "30-JAN-2016"); //#START_DATE
 
     addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-    addText("termDepositAccount", "TERM DEPOSIT"); //#TERM_DEPOSIT_ACCOUNT
+   
     addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
     addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
     addText("village", "SUJAPUR"); //#VILLAGE
@@ -324,6 +330,32 @@ function setDPSAccount() {
 }
 function setFixedDeposit() {
     addText("title", cityAgentFixedDepositText); //#TITLE
+
+    addText(accountNumberId, emptyText);
+    addText(accountTypeId, termDepositAccountTypeValue);
+    addText(linkAccountNumberLabelId, linkAccountNumberText);
+    addText(linkAccountNumberColonId, colonText);
+    addText(linkAccountNumberId, linkAccountNumberValue);
+
+    addText(t01LabelId, productTenorText);
+    addText(t01ValueId, productTenorValue);
+
+    addText(t10LabelId, accountOpeningDateText);
+    addText(t10ValueId, currentDate);
+    addText(t11LabelId, maturityDateText);
+    addText(t11ValueId, maturityDate);
+
+    addText(t20LabelId, profitRateText);
+    addText(t20ValueId, profitRateValue);
+    addText(t21LabelId, maturityAmountText);
+    addText(t21ValueId, maturityAmountValue);
+
+    addText(t30LabelId, principalAmountText);
+    addText(t30ColonId, colonText);
+    addText(t30ValueId, principalAmountValue);
+    addText(t31LabelId, printDateText);
+    addText(t31ColonId, colonText);
+    addText(t31ValueId, printDateValue);
 }
 function setFundTrasfer() {
     addText("title", fundTrasferText); //#TITLE
