@@ -28,19 +28,20 @@ var sendrAccountNameText = "প্রেরকের হিসাব নাম";
 var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
 var receiverAccountNameText = "প্রাপকের হিসাব নাম";
 var accountNameText = "হিসাব নাম";
-var accountBalanceText = "হিসাব ব্যালান্স";
+var accountBalanceText = "একাউন্ট ব্যালান্স";
 var accountOpeningDateText = "হিসাব খোলার তারিখ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
 var transferAmountText = "ট্রান্সফারের পরিমান";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
-var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস হিসাব";
+var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস একাউন্ট";
 var colonText = ":";
 var depositAmountText = "জমার পরিমান";
 var emptyText = "";
 var fundTrasferText = "ফান্ড ট্রান্সফার";
 var generalDPSAccountText = "সাধারন ডিপিএস হিসাব";
+var initialDepositText = "প্রারম্ভিক জমার পরিমান";
 var inWordsText = "কথায়";
 var linkAccountNumberText = "লিংক হিসাব নম্বর";
 var maturityDateText = "মেয়াদান্তের তারিখ";
@@ -68,8 +69,10 @@ var t11LabelId = "t11Label"; //#T_11_LABEL
 var t11ValueId = "t11Value"; //#T_11_VALUE
 
 var t20LabelId = "t20Label"; //#T_20_LABEL
+var t20ColonId = "t20Colon"; //#COLON
 var t20ValueId = "t20Value"; //#T_20_VALUE
 var t21LabelId = "t21Label"; //#T_21_LABEL
+var t21ColonId = "t21Colon"; //#COLON
 var t21ValueId = "t21Value"; //#T_21_VALUE
 
 var t30LabelId = "t30Label"; //#T_30_LABEL
@@ -420,7 +423,38 @@ function setFundTrasfer() {
     addText(t31ValueId, printDateValue);
 }
 function setSavingsAccount() {
-    addText("title", fundTrasferText); //#TITLE
+    addText("title", cityAgentSavingsAccountText); //#TITLE
+
+    addText(accountNoLabelId, accountNoText);
+    addText(accountNumberId, accountNumberValue);
+    addText(accountTypeId, savingsAccountTypeValue);
+    addText(linkAccountNumberColonId, emptyText);
+    addText(linkAccountNumberLabelId, emptyText);
+    addText(linkAccountNumberId, emptyText);
+
+    addText(t00LabelId, accountNameText);
+    addText(t00ValueId, accountNameValue);
+    addText(t01LabelId, initialDepositText);
+    addText(t01ValueId, depositAmountValue);
+
+    addText(t10LabelId, accountOpeningDateText);
+    addText(t10ValueId, currentDate);
+    addText(t11LabelId, printDateText);
+    addText(t11ValueId, printDateValue);
+
+    addText(t20LabelId, emptyText);
+    addText(t20ColonId, emptyText);
+    addText(t20ValueId, emptyText);
+    addText(t21LabelId, emptyText);
+    addText(t21ColonId, emptyText);
+    addText(t21ValueId, emptyText);
+
+    addText(t30LabelId, emptyText);
+    addText(t30ColonId, emptyText);
+    addText(t30ValueId, emptyText);
+    addText(t31LabelId, emptyText);
+    addText(t31ColonId, emptyText);
+    addText(t31ValueId, emptyText);
 }
 function getDateString(date) {
 
