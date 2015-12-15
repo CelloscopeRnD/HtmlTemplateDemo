@@ -220,7 +220,7 @@ span.colon {
     height: .75in;
     float: right;
     vertical-align: top;
-    margin: 3px 6px 0 0;
+    margin: -4px 6px 0 0;
 }
 
 .trBackground {

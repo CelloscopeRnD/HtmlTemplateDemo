@@ -52,7 +52,7 @@ var withdrawDateText = "উত্তোলনের তারিখ";
 
 var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
 
-var transactionCodeText = "ট্রানজাকশান কোড";
+
 var transactionIdText = "লেনদেন আইডি";
 var withdrawAmountText = "উত্তোলনের পরিমান";
 var productTenorText = "মেয়াদ";
@@ -249,7 +249,7 @@ function setAccountBalance() {
 
     addText(t10LabelId, balanceAmountText);
     addText(t10ValueId, balanceAmountValue);
-    addText(t11LabelId, transactionCodeText);
+    addText(t11LabelId, transactionIdText);
     addText(t11ValueId, transactionCodeValue);
 
     addText(t20LabelId, inWordsText);
