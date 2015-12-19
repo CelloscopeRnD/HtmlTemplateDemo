@@ -4,7 +4,7 @@
     url = url.replace("?", ''); // remove the ?
 
 
-    addStyleSheet('style_sheet/my_style.css');
+    addStyleSheet('style_sheet/style.css');
     replaceToken(parseInt(url));
 }
 
