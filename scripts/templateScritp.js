@@ -1,8 +1,6 @@
 ﻿window.onload = function () {
-
     var url = window.location.search;
     url = url.replace("?", ''); // remove the ?
-
 
     addStyleSheet('style_sheet/style.css');
     replaceToken(parseInt(url));
@@ -18,49 +16,61 @@ var receipts = {
     SAVINGS_ACCOUNT: 7
 };
 
-//addText("receiverAccountNameLabel", ""); //#RECEIVER_ACCOUNT_NAME_LABEL
-//addText("receiverAccountNoLabel", ""); //#RECEIVER_ACCOUNT_NO_LABEL
-//addText("senderAccountNameLabel", ""); //#SENDER_ACCOUNT_NAME_LABEL
-
 var accountNoText = "হিসাব নম্বর";
-var senderAccountNoText = "প্রেরকের হিসাব নম্বর";
-var sendrAccountNameText = "প্রেরকের হিসাব নাম";
-var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
-var receiverAccountNameText = "প্রাপকের হিসাব নাম";
 var accountNameText = "হিসাব নাম";
 var accountBalanceText = "ব্যালান্স";
 var accountOpeningDateText = "হিসাব খোলার তারিখ";
+var accountTypeText = "হিসাবের ধরন";
+var addressLine1Text = "এজেন্ট ব্যাংকিং ডিভিশন";
+var addressLine2Text = "সিটি ব্যাংক লিঃ";
+var addressLine3Text = "সিটি ব্যাংক  সেন্টার ১৩৬";
+var addressLine4Text = "গুলশান এভিনিউ, ঢাকা-১২১২";
+var addressText = "ঠিকানা";
+var agentNameText = "এজেন্টের নাম";
 var balanceAmountText = "ব্যালান্সের পরিমান";
-var transferAmountText = "ট্রান্সফারের পরিমান";
+var balanceDateText = "ব্যালান্সের তারিখ";
+var chargeText = "চার্জ";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
 var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস হিসাব";
 var colonText = ":";
+var customerIdText = "গ্রাহক আইডি";
+var customerNameText = "গ্রাহকের নাম";
 var depositAmountText = "জমার পরিমান";
+var depositDateText = "জমার তারিখ";
 var emptyText = "";
+var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
 var fundTrasferText = "ফান্ড ট্রান্সফার";
 var generalDPSAccountText = "সাধারন ডিপিএস হিসাব";
 var initialDepositText = "প্রারম্ভিক জমার পরিমান";
 var inWordsText = "কথায়";
 var linkAccountNumberText = "লিংক হিসাব নম্বর";
+var maturityAmountText = "মেয়াদান্তে টাকার পরিমান";
 var maturityDateText = "মেয়াদান্তের তারিখ";
+var mobileNoText = "মোবাইল নং";
+var monthlyDepositText = "মাসিক জমা";
+var profitRateText = "মুনাফার হার";
 var printDateText = "প্রিন্টের তারিখ";
-var balanceDateText = "ব্যালান্সের তারিখ";
-var depositDateText = "জমার তারিখ";
+var principalAmountText = "আসল টাকার পরিমান";
+var productTenorText = "মেয়াদ";
+var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
+var receiverAccountNameText = "প্রাপকের হিসাব নাম";
+var senderAccountNoText = "প্রেরকের হিসাব নম্বর";
+var sendrAccountNameText = "প্রেরকের হিসাব নাম";
+var transferAmountText = "ট্রান্সফারের পরিমান";
+var transactionIdText = "লেনদেন আইডি";
+var userText = "ইউজার";
+var withdrawAmountText = "উত্তোলনের পরিমান";
 var withdrawDateText = "উত্তোলনের তারিখ";
 
-var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
-
-
-var transactionIdText = "লেনদেন আইডি";
-var withdrawAmountText = "উত্তোলনের পরিমান";
-var productTenorText = "মেয়াদ";
-var monthlyDepositText = "মাসিক জমা";
-var maturityAmountText = "মেয়াদান্তে টাকার পরিমান";
-var profitRateText = "মুনাফার হার";
-var principalAmountText = "আসল টাকার পরিমান";
-var chargeText = "চার্জ";
+var accountNoLabelId = "accountNoLabel";
+var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
+var accountTypeId = "accountType";  //#ACCOUNT_TYPE
+var linkAccountNumberColonId = "linkAccountNumberColon"; //#LINK_ACCOUNT_NUMBER_COLON
+var linkAccountNumberLabelId = "linkAccountNumberLabel"; //#LINK_ACCOUNT_NUMBER_LABEL
+var linkAccountNumberId = "linkAccountNumber"; //#LINK_ACCOUNT_NUMBER
+var titleId = "title";  //#TITLE
 
 var t00LabelId = "t00Label"; //#T_00_LABEL
 var t00ValueId = "t00Value"; //#T_00_VALUE
@@ -86,126 +96,98 @@ var t31LabelId = "t31Label"; //#T_31_LABEL
 var t31ColonId = "t31Colon"; //#COLON
 var t31ValueId = "t31Value"; //#T_31_VALUE
 
-var accountNoLabelId = "accountNoLabel";
-var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
-var accountTypeId = "accountType";  //#ACCOUNT_TYPE
-var linkAccountNumberColonId = "linkAccountNumberColon"; //#LINK_ACCOUNT_NUMBER_COLON
-var linkAccountNumberLabelId = "linkAccountNumberLabel"; //#LINK_ACCOUNT_NUMBER_LABEL
-var linkAccountNumberId = "linkAccountNumber"; //#LINK_ACCOUNT_NUMBER
-var titleId = "title";  //#TITLE
-
 
 var accountNameValue = "MD Arif Gazi";
-var receiverAccountNameValue = "SUJON PATWARY";
 
 var accountNumberValue = "2001158500126";
 var balanceAmountValue = "BDT 80,550.00";
 var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
 
+var chargeVaue = "BDT 7.50";
 var today = new Date();
 var currentDate = getDateString(today);
-var maturityDate = getDateString(new Date(today.getFullYear() + 5, today.getMonth(), today.getDate()));
-var savingsAccountTypeValue = "Savings";
-var dpsAccountTypeValue = "DPS";
 var depositAmountInWordsValue = "THREE THOUSAND ONLY";
 var depositAmountValue = "BDT 3,000.00";
+var dpsAccountTypeValue = "DPS";
+var linkAccountNumberValue = "2005246987526";
+var maturityAmountValue = "BDT 2,26,047.00";
+var maturityDate = getDateString(new Date(today.getFullYear() + 5, today.getMonth(), today.getDate()));
+var principalAmountValue = "BDT 1,00,000.00";
 var printDateValue = getTimestampString(new Date());
+var productTenorValue = "5 Years";
+var profitRateValue = "8.85% (Yearly)";
+var receiverAccountNameValue = "SUJON PATWARY";
+var termDepositAccountTypeValue = "TERM DEPOSIT";
+var savingsAccountTypeValue = "Savings";
 var savingsAccountTypeValue = "Savings";
 var transactionCodeValue = "TR222369";
-var linkAccountNumberValue = "2005246987526";
 var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
 var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
-var productTenorValue = "5 Years";
-var maturityAmountValue = "BDT 2,26,047.00";
-var termDepositAccountTypeValue = "TERM DEPOSIT";
-var profitRateValue = "8.85% (Yearly)";
-var principalAmountValue = "BDT 1,00,000.00";
-var chargeVaue = "BDT 7.50";
-
-
 
 function replaceToken(receipt) {
     addImage("agent_banking_logo", "images/agent_bangking_logo.png");
     addImage("logo", "images/logo.png");
+    addText("addressLine1Label", addressLine1Text); //#ADDRESS_LINE_1
+    addText("addressLine2Label", addressLine2Text); //#ADDRESS_LINE_2
+    addText("addressLine3Label", addressLine3Text); //#ADDRESS_LINE_3
+    addText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4
 
-
-    addText("accountTypeLabel", "হিসাবের ধরন"); //#ACCOUNT_TYPE_LABEL
-    addClassText("addressLabel", "ঠিকানা"); //#ADDRESS_LABEL
-
-
-    addText("agentNameLabel", "এজেন্টের নাম"); //#AGENT_NAME_LABEL
-    addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
-    addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
-
-    addText("customerIdLabel", "গ্রাহক আইডি"); //#CUSTOMER_ID_LABEL,
-    addText("mobileNoLabel", "মোবাইল নং"); //#MOBILE_NO_LABEL
-    addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
-
-
-    addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
-
-
-
-
-
-
-
-
-    addText("userIdLabel", "ইউজার"); //#USER_ID_LABEL
-    addImage("customerPhoto", "images/photo.png");
     addImage("qr", "images/qr.png");
+    addImage("customerPhoto", "images/photo.png");
 
-    // Value will be all caps
-    // BDT will be used for currency
-    // Comma will be used for amount 
-    // date format will be 30-NOV-2015
-
-
-
+    addText("agentNameLabel", agentNameText); //#AGENT_NAME_LABEL
     addText("agentName", "BADRUL ALOM"); //#AGENT_NAME
-    addText("amount", "BDT 3,000.00"); //#AMOUNT
-    addText("amountInWords", "THREE THOUSAND ONLY"); //#AMOUNT_IN_WORDS
-    addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
-
-    addText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
-    addText("cashDeposit", "CASH DEPOSIT"); //#CASH_DEPOSIT    
-    addText("cashWithdraw", "CASH WITHDRAW"); //#CASH_WITHDRAW
-    addText("currentAccountType", "CURRENT ACCCOUNT"); //#CURRENT_ACCOUNT_TYPE
-    addText("customerAddress", "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA"); //  
-    addText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
-    addText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
-    addText("depositAmount", "1000Tk. ONE THOUSAND ONLY. "); //#DEPOSIT_AMOUNT
-
-    addText("dpsAccount", "DPS"); //#DPS_ACCOUNT_TITLE
-    addText("duration", "১২ YEARS"); //#DURATION
-    addText("endDate", "30-NOV-2027"); //#END_DATE
-    addText("expiryAmount", "32,000 টাকা"); //#EXPIRY_AMOUNT
-    addText("expireDate", "30-NOV-2027"); //#EXPAIRE_DATE
-    addText("initialDeposit", "BDT 3,000.00"); //#INITIAL_DEPOSIT, BDT will be used for currency and comma will be used for currency
-
-    addText("mobileNo", "01617877595"); //#MOBILE_NO
-    addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
-    addText("montylyDeposit", "BDT 3,000.00"); //#MONTHLY_DEPOSIT
-    addText("outletName", "Vairab Chowdhurir Hath, Sonagazi"); //#OUTLATE_NAME
-
-    addText("requestId", "736373736"); //#REQUEST_ID
-
-    addText("transactionDate", "30-NOV-201"); //#TRANSACTION_DATE
-    addText("transactionId", "TR025552"); //#TRANSACTION_ID
-    addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
-
-
-
-    addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
-
-    addText("startDate", "30-JAN-2016"); //#START_DATE
-
-    addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-
-    addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
+    addText("userIdLabel", userText); //#USER_ID_LABEL
     addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
-    addText("village", "SUJAPUR"); //#VILLAGE
-    addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
+    addClassText("addressLabel", addressText); //#ADDRESS_LABEL
+    addText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
+    addText("customerIdLabel", customerIdText); //#CUSTOMER_ID_LABEL,
+    addText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
+    addText("accountTypeLabel", accountTypeText); //#ACCOUNT_TYPE_LABEL
+    addText("customerNameLabel", customerNameText); //#CUSTOMER_NAME_LABEL
+    addText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
+    addText("mobileNoLabel", mobileNoText); //#MOBILE_NO_LABEL
+    addText("mobileNo", "01617877595"); //#MOBILE_NO
+    addText("customerAddress", "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA"); //  
+
+
+
+
+
+
+
+
+    //addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
+    //addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
+    //addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
+    //addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
+    //addText("amount", "BDT 3,000.00"); //#AMOUNT
+    //addText("amountInWords", "THREE THOUSAND ONLY"); //#AMOUNT_IN_WORDS
+    //addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
+
+    //addText("cashDeposit", "CASH DEPOSIT"); //#CASH_DEPOSIT    
+    //addText("cashWithdraw", "CASH WITHDRAW"); //#CASH_WITHDRAW
+    //addText("currentAccountType", "CURRENT ACCCOUNT"); //#CURRENT_ACCOUNT_TYPE
+    //addText("depositAmount", "1000Tk. ONE THOUSAND ONLY. "); //#DEPOSIT_AMOUNT
+    //addText("dpsAccount", "DPS"); //#DPS_ACCOUNT_TITLE
+    //addText("duration", "১২ YEARS"); //#DURATION
+    //addText("endDate", "30-NOV-2027"); //#END_DATE
+    //addText("expiryAmount", "32,000 টাকা"); //#EXPIRY_AMOUNT
+    //addText("expireDate", "30-NOV-2027"); //#EXPAIRE_DATE
+    //addText("initialDeposit", "BDT 3,000.00"); //#INITIAL_DEPOSIT, BDT will be used for currency and comma will be used for currency
+    //addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
+    //addText("montylyDeposit", "BDT 3,000.00"); //#MONTHLY_DEPOSIT
+    //addText("outletName", "Vairab Chowdhurir Hath, Sonagazi"); //#OUTLATE_NAME
+    //addText("requestId", "736373736"); //#REQUEST_ID
+    //addText("transactionDate", "30-NOV-201"); //#TRANSACTION_DATE
+    //addText("transactionId", "TR025552"); //#TRANSACTION_ID
+    //addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
+    //addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
+    //addText("startDate", "30-JAN-2016"); //#START_DATE
+    //addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
+    //addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
+    //addText("village", "SUJAPUR"); //#VILLAGE
+    //addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
 
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
@@ -233,7 +215,6 @@ function replaceToken(receipt) {
             break;
     }
 }
-
 function setAccountBalance() {
     addText(titleId, accountBalanceText);
 
