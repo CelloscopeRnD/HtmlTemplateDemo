@@ -129,27 +129,27 @@ var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
 function replaceToken(receipt) {
     addImage("agent_banking_logo", "images/agent_bangking_logo.png");
     addImage("logo", "images/logo.png");
-    addText("addressLine1Label", addressLine1Text); //#ADDRESS_LINE_1
-    addText("addressLine2Label", addressLine2Text); //#ADDRESS_LINE_2
-    addText("addressLine3Label", addressLine3Text); //#ADDRESS_LINE_3
-    addText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4
+    addClassText("addressLine1Label", addressLine1Text); //#ADDRESS_LINE_1
+    addClassText("addressLine2Label", addressLine2Text); //#ADDRESS_LINE_2
+    addClassText("addressLine3Label", addressLine3Text); //#ADDRESS_LINE_3
+    addClassText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4
 
     addImage("qr", "images/qr.png");
     addImage("customerPhoto", "images/photo.png");
 
-    addText("agentNameLabel", agentNameText); //#AGENT_NAME_LABEL
-    addText("agentName", "BADRUL ALOM"); //#AGENT_NAME
-    addText("userIdLabel", userText); //#USER_ID_LABEL
-    addText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
+    addClassText("agentNameLabel", agentNameText); //#AGENT_NAME_LABEL
+    addClassText("agentName", "BADRUL ALOM"); //#AGENT_NAME
+    addClassText("userIdLabel", userText); //#USER_ID_LABEL
+    addClassText("userId", "615001001 (NAIM ISLAM)"); //#USER_ID
     addClassText("addressLabel", addressText); //#ADDRESS_LABEL
-    addText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
-    addText("customerIdLabel", customerIdText); //#CUSTOMER_ID_LABEL,
-    addText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
-    addText("accountTypeLabel", accountTypeText); //#ACCOUNT_TYPE_LABEL
-    addText("customerNameLabel", customerNameText); //#CUSTOMER_NAME_LABEL
-    addText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
-    addText("mobileNoLabel", mobileNoText); //#MOBILE_NO_LABEL
-    addText("mobileNo", "01617877595"); //#MOBILE_NO
+    addClassText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
+    addClassText("customerIdLabel", customerIdText); //#CUSTOMER_ID_LABEL,
+    addClassText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
+    addClassText("accountTypeLabel", accountTypeText); //#ACCOUNT_TYPE_LABEL
+    addClassText("customerNameLabel", customerNameText); //#CUSTOMER_NAME_LABEL
+    addClassText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
+    addClassText("mobileNoLabel", mobileNoText); //#MOBILE_NO_LABEL
+    addClassText("mobileNo", "01617877595"); //#MOBILE_NO
       
 
     switch (receipt) {
@@ -179,257 +179,257 @@ function replaceToken(receipt) {
     }
 }
 function setAccountBalance() {
-    addText(titleId, accountBalanceText);
+    addClassText(titleId, accountBalanceText);
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountTypeId, savingsAccountTypeValue);
-    addText(linkAccountNumberColonId, emptyText);
-    addText(linkAccountNumberLabelId, emptyText);
-    addText(linkAccountNumberId, emptyText);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountTypeId, savingsAccountTypeValue);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, balanceDateText);
-    addText(t01ValueId, currentDate);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, balanceDateText);
+    addClassText(t01ValueId, currentDate);
 
-    addText(t10LabelId, balanceAmountText);
-    addText(t10ValueId, balanceAmountValue);
-    addText(t11LabelId, transactionIdText);
-    addText(t11ValueId, transactionCodeValue);
+    addClassText(t10LabelId, balanceAmountText);
+    addClassText(t10ValueId, balanceAmountValue);
+    addClassText(t11LabelId, transactionIdText);
+    addClassText(t11ValueId, transactionCodeValue);
 
-    addText(t20LabelId, inWordsText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, balanceAmountInWordsValue);
-    addText(t21LabelId, printDateText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, printDateValue);
+    addClassText(t20LabelId, inWordsText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, balanceAmountInWordsValue);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, printDateValue);
 
-    addText(t30LabelId, emptyText);
-    addText(t30ColonId, emptyText);
-    addText(t30ValueId, emptyText);
-    addText(t31LabelId, emptyText);
-    addText(t31ColonId, emptyText);
-    addText(t31ValueId, emptyText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
+    addClassText(t30ValueId, emptyText);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 }
 function setCashDeposit() {
-    addText("title", cashDepositText); //#TITLE
+    addClassText("title", cashDepositText); //#TITLE
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountTypeId, savingsAccountTypeValue);
-    addText(linkAccountNumberColonId, emptyText);
-    addText(linkAccountNumberLabelId, emptyText);
-    addText(linkAccountNumberId, emptyText);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountTypeId, savingsAccountTypeValue);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, depositDateText);
-    addText(t01ValueId, currentDate);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, depositDateText);
+    addClassText(t01ValueId, currentDate);
 
-    addText(t10LabelId, depositAmountText);
-    addText(t10ValueId, depositAmountValue);
-    addText(t11LabelId, transactionIdText);
-    addText(t11ValueId, transactionCodeValue);
+    addClassText(t10LabelId, depositAmountText);
+    addClassText(t10ValueId, depositAmountValue);
+    addClassText(t11LabelId, transactionIdText);
+    addClassText(t11ValueId, transactionCodeValue);
 
-    addText(t20LabelId, inWordsText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, depositAmountInWordsValue);
-    addText(t21LabelId, printDateText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, printDateValue);
+    addClassText(t20LabelId, inWordsText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, depositAmountInWordsValue);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, printDateValue);
 
-    addText(t30LabelId, emptyText);
-    addText(t30ColonId, emptyText);
-    addText(t30ValueId, emptyText);
-    addText(t31LabelId, emptyText);
-    addText(t31ColonId, emptyText);
-    addText(t31ValueId, emptyText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
+    addClassText(t30ValueId, emptyText);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 }
 function setCashWithdraw() {
-    addText("title", cashWithdrawText); //#TITLE
+    addClassText("title", cashWithdrawText); //#TITLE
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountTypeId, savingsAccountTypeValue);
-    addText(linkAccountNumberColonId, emptyText);
-    addText(linkAccountNumberLabelId, emptyText);
-    addText(linkAccountNumberId, emptyText);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountTypeId, savingsAccountTypeValue);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, withdrawDateText);
-    addText(t01ValueId, currentDate);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, withdrawDateText);
+    addClassText(t01ValueId, currentDate);
 
-    addText(t10LabelId, withdrawAmountText);
-    addText(t10ValueId, depositAmountValue);
-    addText(t11LabelId, transactionIdText);
-    addText(t11ValueId, transactionCodeValue);
+    addClassText(t10LabelId, withdrawAmountText);
+    addClassText(t10ValueId, depositAmountValue);
+    addClassText(t11LabelId, transactionIdText);
+    addClassText(t11ValueId, transactionCodeValue);
 
-    addText(t20LabelId, inWordsText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, depositAmountInWordsValue);
-    addText(t21LabelId, printDateText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, printDateValue);
+    addClassText(t20LabelId, inWordsText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, depositAmountInWordsValue);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, printDateValue);
 
-    addText(t30LabelId, chargeText);
-    addText(t30ColonId, colonText);
-    addText(t30ValueId, chargeVaue);
-    addText(t31LabelId, emptyText);
-    addText(t31ColonId, emptyText);
-    addText(t31ValueId, emptyText);
+    addClassText(t30LabelId, chargeText);
+    addClassText(t30ColonId, colonText);
+    addClassText(t30ValueId, chargeVaue);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 }
 function setDPSAccount() {
-    addText("title", generalDPSAccountText); //#TITLE
+    addClassText("title", generalDPSAccountText); //#TITLE
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, emptyText);
-    addText(accountTypeId, dpsAccountTypeValue);
-    addText(linkAccountNumberLabelId, linkAccountNumberText);
-    addText(linkAccountNumberColonId, colonText);
-    addText(linkAccountNumberId, linkAccountNumberValue);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, emptyText);
+    addClassText(accountTypeId, dpsAccountTypeValue);
+    addClassText(linkAccountNumberLabelId, linkAccountNumberText);
+    addClassText(linkAccountNumberColonId, colonText);
+    addClassText(linkAccountNumberId, linkAccountNumberValue);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, productTenorText);
-    addText(t01ValueId, productTenorValue);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, productTenorText);
+    addClassText(t01ValueId, productTenorValue);
 
-    addText(t10LabelId, accountOpeningDateText);
-    addText(t10ValueId, currentDate);
-    addText(t11LabelId, maturityDateText);
-    addText(t11ValueId, maturityDate);
+    addClassText(t10LabelId, accountOpeningDateText);
+    addClassText(t10ValueId, currentDate);
+    addClassText(t11LabelId, maturityDateText);
+    addClassText(t11ValueId, maturityDate);
 
-    addText(t20LabelId, monthlyDepositText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, depositAmountValue);
-    addText(t21LabelId, printDateText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, printDateValue);
+    addClassText(t20LabelId, monthlyDepositText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, depositAmountValue);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, printDateValue);
 
-    addText(t30LabelId, maturityAmountText);
-    addText(t30ColonId, colonText);
-    addText(t30ValueId, maturityAmountValue);
-    addText(t31LabelId, emptyText);
-    addText(t31ColonId, emptyText);
-    addText(t31ValueId, emptyText);
+    addClassText(t30LabelId, maturityAmountText);
+    addClassText(t30ColonId, colonText);
+    addClassText(t30ValueId, maturityAmountValue);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 }
 function setFixedDeposit() {
-    addText("title", cityAgentFixedDepositText); //#TITLE
+    addClassText("title", cityAgentFixedDepositText); //#TITLE
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, emptyText);
-    addText(accountTypeId, termDepositAccountTypeValue);
-    addText(linkAccountNumberLabelId, linkAccountNumberText);
-    addText(linkAccountNumberColonId, colonText);
-    addText(linkAccountNumberId, linkAccountNumberValue);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, emptyText);
+    addClassText(accountTypeId, termDepositAccountTypeValue);
+    addClassText(linkAccountNumberLabelId, linkAccountNumberText);
+    addClassText(linkAccountNumberColonId, colonText);
+    addClassText(linkAccountNumberId, linkAccountNumberValue);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, productTenorText);
-    addText(t01ValueId, productTenorValue);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, productTenorText);
+    addClassText(t01ValueId, productTenorValue);
 
-    addText(t10LabelId, accountOpeningDateText);
-    addText(t10ValueId, currentDate);
-    addText(t11LabelId, maturityDateText);
-    addText(t11ValueId, maturityDate);
+    addClassText(t10LabelId, accountOpeningDateText);
+    addClassText(t10ValueId, currentDate);
+    addClassText(t11LabelId, maturityDateText);
+    addClassText(t11ValueId, maturityDate);
 
-    addText(t20LabelId, profitRateText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, profitRateValue);
-    addText(t21LabelId, maturityAmountText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, maturityAmountValue);
+    addClassText(t20LabelId, profitRateText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, profitRateValue);
+    addClassText(t21LabelId, maturityAmountText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, maturityAmountValue);
 
-    addText(t30LabelId, principalAmountText);
-    addText(t30ColonId, colonText);
-    addText(t30ValueId, principalAmountValue);
-    addText(t31LabelId, printDateText);
-    addText(t31ColonId, colonText);
-    addText(t31ValueId, printDateValue);
+    addClassText(t30LabelId, principalAmountText);
+    addClassText(t30ColonId, colonText);
+    addClassText(t30ValueId, principalAmountValue);
+    addClassText(t31LabelId, printDateText);
+    addClassText(t31ColonId, colonText);
+    addClassText(t31ValueId, printDateValue);
 }
 function setFundTrasfer() {
-    addText("title", fundTrasferText); //#TITLE
+    addClassText("title", fundTrasferText); //#TITLE
 
-    addText(accountNoLabelId, senderAccountNoText);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountTypeId, savingsAccountTypeValue);
-    addText(linkAccountNumberLabelId, emptyText);
-    addText(linkAccountNumberColonId, emptyText);
-    addText(linkAccountNumberId, emptyText);
+    addClassText(accountNoLabelId, senderAccountNoText);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountTypeId, savingsAccountTypeValue);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
 
-    addText(customerAddressId, customerAddressValue);
+    addClassText(customerAddressId, customerAddressValue);
 
-    addText(t00LabelId, sendrAccountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, fundTransferDateText);
-    addText(t01ValueId, currentDate);
+    addClassText(t00LabelId, sendrAccountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, fundTransferDateText);
+    addClassText(t01ValueId, currentDate);
 
-    addText(t10LabelId, receiverAccountNameText);
-    addText(t10ValueId, receiverAccountNameValue);
-    addText(t11LabelId, receiverAccountNoText);
-    addText(t11ValueId, linkAccountNumberValue);
+    addClassText(t10LabelId, receiverAccountNameText);
+    addClassText(t10ValueId, receiverAccountNameValue);
+    addClassText(t11LabelId, receiverAccountNoText);
+    addClassText(t11ValueId, linkAccountNumberValue);
 
-    addText(t20LabelId, transferAmountText);
-    addText(t20ColonId, colonText);
-    addText(t20ValueId, depositAmountValue);
-    addText(t21LabelId, transactionIdText);
-    addText(t21ColonId, colonText);
-    addText(t21ValueId, transactionCodeValue);
+    addClassText(t20LabelId, transferAmountText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, depositAmountValue);
+    addClassText(t21LabelId, transactionIdText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, transactionCodeValue);
 
-    addText(t30LabelId, inWordsText);
-    addText(t30ColonId, colonText);
-    addText(t30ValueId, depositAmountInWordsValue);
-    addText(t31LabelId, printDateText);
-    addText(t31ColonId, colonText);
-    addText(t31ValueId, printDateValue);
+    addClassText(t30LabelId, inWordsText);
+    addClassText(t30ColonId, colonText);
+    addClassText(t30ValueId, depositAmountInWordsValue);
+    addClassText(t31LabelId, printDateText);
+    addClassText(t31ColonId, colonText);
+    addClassText(t31ValueId, printDateValue);
 }
 function setSavingsAccount() {
-    addText("title", cityAgentSavingsAccountText); //#TITLE
+    addClassText("title", cityAgentSavingsAccountText); //#TITLE
 
-    addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, accountNumberValue);
-    addText(accountTypeId, savingsAccountTypeValue);
-    addText(linkAccountNumberColonId, emptyText);
-    addText(linkAccountNumberLabelId, emptyText);
-    addText(linkAccountNumberId, emptyText);
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, accountNumberValue);
+    addClassText(accountTypeId, savingsAccountTypeValue);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
 
-    addText(customerAddressId, emptyText);
+    addClassText(customerAddressId, emptyText);
 
-    addText(t00LabelId, accountNameText);
-    addText(t00ValueId, accountNameValue);
-    addText(t01LabelId, initialDepositText);
-    addText(t01ValueId, depositAmountValue);
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, accountNameValue);
+    addClassText(t01LabelId, initialDepositText);
+    addClassText(t01ValueId, depositAmountValue);
 
-    addText(t10LabelId, accountOpeningDateText);
-    addText(t10ValueId, currentDate);
-    addText(t11LabelId, printDateText);
-    addText(t11ValueId, printDateValue);
+    addClassText(t10LabelId, accountOpeningDateText);
+    addClassText(t10ValueId, currentDate);
+    addClassText(t11LabelId, printDateText);
+    addClassText(t11ValueId, printDateValue);
 
-    addText(t20LabelId, emptyText);
-    addText(t20ColonId, emptyText);
-    addText(t20ValueId, emptyText);
-    addText(t21LabelId, emptyText);
-    addText(t21ColonId, emptyText);
-    addText(t21ValueId, emptyText);
+    addClassText(t20LabelId, emptyText);
+    addClassText(t20ColonId, emptyText);
+    addClassText(t20ValueId, emptyText);
+    addClassText(t21LabelId, emptyText);
+    addClassText(t21ColonId, emptyText);
+    addClassText(t21ValueId, emptyText);
 
-    addText(t30LabelId, emptyText);
-    addText(t30ColonId, emptyText);
-    addText(t30ValueId, emptyText);
-    addText(t31LabelId, emptyText);
-    addText(t31ColonId, emptyText);
-    addText(t31ValueId, emptyText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
+    addClassText(t30ValueId, emptyText);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 }
 function getDateString(date) {
 
@@ -457,9 +457,12 @@ function getTimestampString(date) {
     return ((dd[1] ? dd : "0" + dd[0]) + '-' + monthNames[mm] + '-' + yyyy + ' ' + hh + ':' + min + ':' + sec + ' ' + ((hh >= 12) ? "PM" : "AM"));
 };
 function addImage(elementId, path) {
-    var id = document.getElementById(elementId);
-    if (id != null) {
-        id.src = path;
+    var elements = document.getElementsByClassName(elementId);
+
+    if (elements != null) {
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].src = path;
+        }
     }
 }
 function addClassText(elementId, innerHtml) {

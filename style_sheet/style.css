@@ -132,26 +132,35 @@ span.colon {
     bottom: 0;
 }
 
-#main {
+.main {
     width: 7.2in;
     height: 3.0in;
-    /*background-color: gray;*/
     position: relative;
 }
 
-#agent_banking_logo {
+.agent_banking_logo {
     width: .85in;
     max-height: .40in;
     float: right;
 }
 
-#logo {
+.logo {
     width: .658in; /*it was .85in X .50in; now it is .64in X .40 in*/
     height: .4in;
     float: left;
 }
 
-#threeColumnTable {
+.customerPhoto {
+    width: .75in;
+    height: .75in;
+    float: left;
+    padding: 5px 0 5px 2px;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.threeColumnTable {
     float: left;
     width: 100%;
 }
@@ -194,15 +203,7 @@ span.colon {
     width: 100%;
 }
 
-#customerPhoto {
-    width: .75in;
-    height: .75in;
-    float: left;
-    padding: 5px 0 5px 2px;
-    filter: gray;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-}
+
 
 #addressDiv {
     float: right;
