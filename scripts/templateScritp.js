@@ -67,6 +67,7 @@ var withdrawDateText = "উত্তোলনের তারিখ";
 var accountNoLabelId = "accountNoLabel";
 var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
 var accountTypeId = "accountType";  //#ACCOUNT_TYPE
+var customerAddressId = "customerAddress";
 var linkAccountNumberColonId = "linkAccountNumberColon"; //#LINK_ACCOUNT_NUMBER_COLON
 var linkAccountNumberLabelId = "linkAccountNumberLabel"; //#LINK_ACCOUNT_NUMBER_LABEL
 var linkAccountNumberId = "linkAccountNumber"; //#LINK_ACCOUNT_NUMBER
@@ -106,6 +107,7 @@ var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
 var chargeVaue = "BDT 7.50";
 var today = new Date();
 var currentDate = getDateString(today);
+var customerAddressValue = "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA";
 var depositAmountInWordsValue = "THREE THOUSAND ONLY";
 var depositAmountValue = "BDT 3,000.00";
 var dpsAccountTypeValue = "DPS";
@@ -148,7 +150,7 @@ function replaceToken(receipt) {
     addText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
     addText("mobileNoLabel", mobileNoText); //#MOBILE_NO_LABEL
     addText("mobileNo", "01617877595"); //#MOBILE_NO
-    addText("customerAddress", "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA"); //  
+      
 
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
@@ -186,6 +188,8 @@ function setAccountBalance() {
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(customerAddressId, customerAddressValue);
+
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
     addText(t01LabelId, balanceDateText);
@@ -219,6 +223,8 @@ function setCashDeposit() {
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
+
+    addText(customerAddressId, customerAddressValue);
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
@@ -254,6 +260,8 @@ function setCashWithdraw() {
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(customerAddressId, customerAddressValue);
+
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
     addText(t01LabelId, withdrawDateText);
@@ -282,11 +290,13 @@ function setDPSAccount() {
     addText("title", generalDPSAccountText); //#TITLE
 
     addText(accountNoLabelId, accountNoText);
-    addText(accountNumberId, accountNumberValue);
+    addText(accountNumberId, emptyText);
     addText(accountTypeId, dpsAccountTypeValue);
     addText(linkAccountNumberLabelId, linkAccountNumberText);
     addText(linkAccountNumberColonId, colonText);
     addText(linkAccountNumberId, linkAccountNumberValue);
+
+    addText(customerAddressId, customerAddressValue);
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
@@ -321,6 +331,8 @@ function setFixedDeposit() {
     addText(linkAccountNumberLabelId, linkAccountNumberText);
     addText(linkAccountNumberColonId, colonText);
     addText(linkAccountNumberId, linkAccountNumberValue);
+
+    addText(customerAddressId, customerAddressValue);
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);
@@ -357,6 +369,8 @@ function setFundTrasfer() {
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberId, emptyText);
 
+    addText(customerAddressId, customerAddressValue);
+
     addText(t00LabelId, sendrAccountNameText);
     addText(t00ValueId, accountNameValue);
     addText(t01LabelId, fundTransferDateText);
@@ -390,6 +404,8 @@ function setSavingsAccount() {
     addText(linkAccountNumberColonId, emptyText);
     addText(linkAccountNumberLabelId, emptyText);
     addText(linkAccountNumberId, emptyText);
+
+    addText(customerAddressId, emptyText);
 
     addText(t00LabelId, accountNameText);
     addText(t00ValueId, accountNameValue);

@@ -115,7 +115,6 @@ span.colon {
 .fieldValue {
     font-size: 7pt;
     text-transform: uppercase;
-    /*vertical-align: bottom;*/
 }
 
 .boldFieldValue {
@@ -157,20 +156,31 @@ span.colon {
     width: 100%;
 }
 
+#customerAddress {
+    vertical-align: top;
+}
+
+#thirdTable {
+    width: 100%;
+}
+
 .firstColumn {
-    width: 110px;
+    width: 17%;
+}
+
+.thirdColumn {
 }
 
 .fourthColumn {
-    width: 110px;
+    width: 17%;
 }
 
 .sixthColumn {
-    width: 93px;
+    width:14%;
 }
 
 .lastColumn {
-    width: 120px;
+    width: 15%;
 }
 
 
