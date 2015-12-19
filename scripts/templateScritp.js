@@ -150,45 +150,6 @@ function replaceToken(receipt) {
     addText("mobileNo", "01617877595"); //#MOBILE_NO
     addText("customerAddress", "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA"); //  
 
-
-
-
-
-
-
-
-    //addText("amountInWordsLabel", "টাকার পরিমান কথায়"); //#AMOUNT_IN_WORDS_LABEL
-    //addText("amountLabel", "টাকার পরিমান"); //#AMOUNT_LABEL
-    //addText("maturitAmountLabel", "মেয়াদোত্তীর্ণে টাকার পরিমান"); //#MATURITY_AMOUNT_LABEL
-    //addText("maturityDateLabel2", "মেয়াদোত্তীর্ণের তারিখ"); //#MATURITY_DATE_LABEL_2
-    //addText("amount", "BDT 3,000.00"); //#AMOUNT
-    //addText("amountInWords", "THREE THOUSAND ONLY"); //#AMOUNT_IN_WORDS
-    //addText("amountWithCharge", "BDT 3,000.00 + 7.5 (Charge)"); //#AMOUNT_WITH_CHARGE
-
-    //addText("cashDeposit", "CASH DEPOSIT"); //#CASH_DEPOSIT    
-    //addText("cashWithdraw", "CASH WITHDRAW"); //#CASH_WITHDRAW
-    //addText("currentAccountType", "CURRENT ACCCOUNT"); //#CURRENT_ACCOUNT_TYPE
-    //addText("depositAmount", "1000Tk. ONE THOUSAND ONLY. "); //#DEPOSIT_AMOUNT
-    //addText("dpsAccount", "DPS"); //#DPS_ACCOUNT_TITLE
-    //addText("duration", "১২ YEARS"); //#DURATION
-    //addText("endDate", "30-NOV-2027"); //#END_DATE
-    //addText("expiryAmount", "32,000 টাকা"); //#EXPIRY_AMOUNT
-    //addText("expireDate", "30-NOV-2027"); //#EXPAIRE_DATE
-    //addText("initialDeposit", "BDT 3,000.00"); //#INITIAL_DEPOSIT, BDT will be used for currency and comma will be used for currency
-    //addText("monthlyDeposit", "1000  টাকা"); //#MONTHLY_DEPOSIT
-    //addText("montylyDeposit", "BDT 3,000.00"); //#MONTHLY_DEPOSIT
-    //addText("outletName", "Vairab Chowdhurir Hath, Sonagazi"); //#OUTLATE_NAME
-    //addText("requestId", "736373736"); //#REQUEST_ID
-    //addText("transactionDate", "30-NOV-201"); //#TRANSACTION_DATE
-    //addText("transactionId", "TR025552"); //#TRANSACTION_ID
-    //addText("maturityDate", "30-JAN-2021"); //#MATURITY_DATE
-    //addText("receiverAccountNo", "2001167500227"); //#RECEIVER_ACCOUNT_NO
-    //addText("startDate", "30-JAN-2016"); //#START_DATE
-    //addText("transactionDate", "30-NOV-2015"); //#TRANSACTION_DATE
-    //addText("union", "VHAIRAB CHOWDHURIR HAT"); //#UNION
-    //addText("village", "SUJAPUR"); //#VILLAGE
-    //addText("withdrawAmount", "15000Tk. FIFTEEN THOUSAND ONLY. "); //#WITHDRAW_AMOUNT
-
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
             setAccountBalance();
