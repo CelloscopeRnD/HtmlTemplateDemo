@@ -6,16 +6,9 @@
 
 
 @media print {
-    /** {
-        margin: 0 !important;
-        padding: 0 !important;
-    }*/
-
     html {
         margin: .15in 0in 0in 0in;
     }
-
-
 
     .header, .footer, .footerarea {
         display: none;
@@ -30,8 +23,6 @@
     #tableMiddle {
         margin: 0 auto;
     }
-
-
 
     .cellPaddingTop {
         padding-top: 1px !important;
@@ -171,11 +162,11 @@ span.colon {
 }
 
 .fourthColumn {
-    width: 125px;
+    width: 110px;
 }
 
 .sixthColumn {
-    width: 130px;
+    width: 93px;
 }
 
 .lastColumn {
