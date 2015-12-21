@@ -20,7 +20,7 @@
         position: relative;
     }
 
-    #tableMiddle {
+    .tableMiddle {
         margin: 0 auto;
     }
 
@@ -72,7 +72,7 @@ tr {
 
 
 
-#tableMiddle {
+.tableMiddle {
     margin: 0 auto;
 }
 
@@ -160,16 +160,23 @@ span.colon {
     -webkit-filter: grayscale(1);
 }
 
+.copy {
+    position: absolute;
+    margin-left: -45px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+}
+
 .threeColumnTable {
     float: left;
     width: 100%;
 }
 
-#customerAddress {
+.customerAddress {
     vertical-align: top;
 }
 
-#thirdTable {
+.thirdTable {
     width: 100%;
 }
 
@@ -189,7 +196,7 @@ span.colon {
 }
 
 .lastColumn {
-    width: 15%;
+    width: 16%;
 }
 
 
@@ -198,24 +205,15 @@ span.colon {
     width: 60%;
 }
 
-#fourthTable {
-    float: left;
-    width: 100%;
-}
 
 
 
-#addressDiv {
+.addressDiv {
     float: right;
     font-size: 8px;
     margin: 3px 5px 0 0;
     text-align: right;
 }
-
-
-/*#tableMiddle tr td.label {
-    text-align: right;
-}*/
 
 .qrCodeImg {
     width: .85in;
