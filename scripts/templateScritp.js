@@ -91,7 +91,7 @@ var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
 
 
 var accountNoLabelId = "accountNoLabel";
-var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
+var accountNumberId = "accountNumber";  //#ACCOUNT_NUMBER
 var accountTypeId = "accountType";  //#ACCOUNT_TYPE
 var customerAddressId = "customerAddress";
 var linkAccountNumberColonId = "linkAccountNumberColon"; //#LINK_ACCOUNT_NUMBER_COLON
