@@ -64,6 +64,32 @@ var userText = "ইউজার";
 var withdrawAmountText = "উত্তোলনের পরিমান";
 var withdrawDateText = "উত্তোলনের তারিখ";
 
+var accountNameValue = "MD Arif Gazi";
+var accountNumberValue = "2001158500126";
+var balanceAmountValue = "BDT 80,550.00";
+var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
+var chargeVaue = "BDT 7.50";
+var today = new Date();
+var currentDate = getDateString(today);
+var customerAddressValue = "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA";
+var depositAmountInWordsValue = "THREE THOUSAND ONLY";
+var depositAmountValue = "BDT 3,000.00";
+var dpsAccountTypeValue = "DPS";
+var linkAccountNumberValue = "2005246987526";
+var maturityAmountValue = "BDT 2,26,047.00";
+var maturityDate = getDateString(new Date(today.getFullYear() + 5, today.getMonth(), today.getDate()));
+var principalAmountValue = "BDT 1,00,000.00";
+var printDateValue = getTimestampString(new Date());
+var productTenorValue = "5 Years";
+var profitRateValue = "8.85% (Yearly)";
+var receiverAccountNameValue = "SUJON PATWARY";
+var termDepositAccountTypeValue = "TERM DEPOSIT";
+var savingsAccountTypeValue = "Savings";
+var transactionCodeValue = "TR222369";
+var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
+var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
+
+
 var accountNoLabelId = "accountNoLabel";
 var accountNumberId = "accountNumber";  //ACCOUNT_NUMBER
 var accountTypeId = "accountType";  //#ACCOUNT_TYPE
@@ -98,44 +124,19 @@ var t31ColonId = "t31Colon"; //#COLON
 var t31ValueId = "t31Value"; //#T_31_VALUE
 
 
-var accountNameValue = "MD Arif Gazi";
 
-var accountNumberValue = "2001158500126";
-var balanceAmountValue = "BDT 80,550.00";
-var balanceAmountInWordsValue = "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY";
-
-var chargeVaue = "BDT 7.50";
-var today = new Date();
-var currentDate = getDateString(today);
-var customerAddressValue = "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA";
-var depositAmountInWordsValue = "THREE THOUSAND ONLY";
-var depositAmountValue = "BDT 3,000.00";
-var dpsAccountTypeValue = "DPS";
-var linkAccountNumberValue = "2005246987526";
-var maturityAmountValue = "BDT 2,26,047.00";
-var maturityDate = getDateString(new Date(today.getFullYear() + 5, today.getMonth(), today.getDate()));
-var principalAmountValue = "BDT 1,00,000.00";
-var printDateValue = getTimestampString(new Date());
-var productTenorValue = "5 Years";
-var profitRateValue = "8.85% (Yearly)";
-var receiverAccountNameValue = "SUJON PATWARY";
-var termDepositAccountTypeValue = "TERM DEPOSIT";
-var savingsAccountTypeValue = "Savings";
-var savingsAccountTypeValue = "Savings";
-var transactionCodeValue = "TR222369";
-var withdrawAmountValue = "BDT 3,000.00 + 7.5 (Charge)";
-var withdrawsAmountInWordsValue = "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY";
 
 function replaceToken(receipt) {
-    addImage("agent_banking_logo", "images/agent_bangking_logo.png");
+    addImage("agent_banking_logo", "images/agent_banking_logo.png");
     addImage("logo", "images/logo.png");
+    addImage("qr", "images/qr.png");
+    addImage("customerPhoto", "images/photo.png");
+
+
     addClassText("addressLine1Label", addressLine1Text); //#ADDRESS_LINE_1
     addClassText("addressLine2Label", addressLine2Text); //#ADDRESS_LINE_2
     addClassText("addressLine3Label", addressLine3Text); //#ADDRESS_LINE_3
-    addClassText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4
-
-    addImage("qr", "images/qr.png");
-    addImage("customerPhoto", "images/photo.png");
+    addClassText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4  
 
     addClassText("agentNameLabel", agentNameText); //#AGENT_NAME_LABEL
     addClassText("agentName", "BADRUL ALOM"); //#AGENT_NAME
