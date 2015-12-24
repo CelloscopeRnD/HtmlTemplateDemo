@@ -1,53 +1,49 @@
-﻿@media print {
-}
-
-* {
+﻿* {
     margin: 0;
     padding: 0;
 }
 
+
+
+@media print {
+
+    html {
+        margin: .15in 0in 0in 0in;
+    }
+
+    .header, .footer, .footerarea {
+        display: none;
+    }
+
+    html, body {
+        overflow: hidden;
+        background: #FFF;
+        position: relative;
+      
+    }
+
+    .tableMiddle {
+        margin: 0 auto;
+    }
+
+    .cellPaddingTop {
+        padding-top: 1px !important;
+        padding-bottom: 2px !important;
+    }
+
+    .cellPadding {
+        padding-bottom: 1px !important;
+    }
+
+    .label {
+        padding-left: 2px !important;
+    }
+}
+
 @page {
-    size: letter;
-    margin: .25in .25in .25in .75in;
+    size: 8.5in 11in;
+    margin: .05in .17in 7.5in .62in;
 }
-
-.main {
-    box-sizing: border-box;
-    width: 7.5in;
-    height: 3in;
-    position: relative;
-    margin-bottom: 7.5in;
-}
-
-.tblFooter {
-    font-size: 5pt;
-    background-color: yellow;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-/*.label {
-    font-size: 7pt;
-    font-weight: bold;
-    height: 12px;
-    padding-left: 2px;
-}
-
-
-
-.cellPaddingTop {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.cellPadding {
-    padding-bottom: 1px !important;
-}*/
-
-
-
-
 
 @font-face {
     font-family: "SULEKHA";
@@ -60,18 +56,18 @@
 }
 
 body {
-    /*background-color: white;
+    background-color: white;
     font-family: 'Arial Narrow', SULEKHA;
-    font-size: 11pt;*/
+    font-size: 11pt;
 }
 
 table, th, td {
     /*border: 1px solid black;*/
-    /*border-collapse: collapse;
+    border-collapse: collapse;
     margin: 0px;
-    padding: 0px;*/
+    padding: 0px;
 }
-/*
+
 tr {
     line-height: 10px;
 }
@@ -106,6 +102,12 @@ span.colon {
     font-weight: bold;
 }
 
+.label {
+    font-size: 7pt;
+    font-weight: bold;
+    height: 12px;
+    padding-left: 2px;
+}
 
 .topFieldValue {
     font-size: 6pt;
@@ -123,9 +125,20 @@ span.colon {
     text-transform: uppercase;
 }
 
+.tblFooter {
+    font-size: 5pt;
+    vertical-align: bottom;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 
-
-
+.main {
+    width: 7.2in;
+    height: 3.0in;
+    position: relative;
+}
 
 .agent_banking_logo {
     width: .85in;
@@ -134,7 +147,7 @@ span.colon {
 }
 
 .logo {
-    width: .658in;
+    width: .658in; /*it was .85in X .50in; now it is .64in X .40 in*/
     height: .4in;
     float: left;
 }
@@ -214,7 +227,13 @@ span.colon {
 
 .trBackground {
     background: #E6E7E8;
-}*/
+}
 
+.cellPaddingTop {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
 
-
+.cellPadding {
+    padding-bottom: 1px !important;
+}
