@@ -1,0 +1,220 @@
+﻿@media print {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    size: letter;
+    margin: .25in .25in .25in .75in;
+}
+
+.main {
+    box-sizing: border-box;
+    width: 7.5in;
+    height: 3in;
+    position: relative;
+    margin-bottom: 7.5in;
+}
+
+.tblFooter {
+    font-size: 5pt;
+    background-color: yellow;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/*.label {
+    font-size: 7pt;
+    font-weight: bold;
+    height: 12px;
+    padding-left: 2px;
+}
+
+
+
+.cellPaddingTop {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.cellPadding {
+    padding-bottom: 1px !important;
+}*/
+
+
+
+
+
+@font-face {
+    font-family: "SULEKHA";
+    /*src: url(file:///android_asset/fonts/SULEKHA.TTF) format("truetype");
+    src: url(file:///android_asset/fonts/SULEKHAB.TTF) format("truetype");
+    src: url(file:///android_asset/fonts/SULEKHAI.TTF) format("truetype");*/
+    /*src: url('../Fonts/SULEKHA.TTF') format('truetype');
+    src: url('../Fonts/SULEKHAB.TTF') format('truetype');
+    src: url('../Fonts/SULEKHAI.TTF') format('truetype');*/
+}
+
+body {
+    /*background-color: white;
+    font-family: 'Arial Narrow', SULEKHA;
+    font-size: 11pt;*/
+}
+
+table, th, td {
+    /*border: 1px solid black;*/
+    /*border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;*/
+}
+/*
+tr {
+    line-height: 10px;
+}
+
+
+
+.tableMiddle {
+    margin: 0 auto;
+}
+
+table tr td.colon, span.colon {
+    width: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-size: 7pt;
+    font-weight: bold;
+}
+
+
+span.colon {
+    width: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    font-size: 7pt;
+    font-weight: bold;
+}
+
+.topLabel {
+    font-size: 6pt;
+    font-weight: bold;
+}
+
+
+.topFieldValue {
+    font-size: 6pt;
+    text-transform: uppercase;
+}
+
+.fieldValue {
+    font-size: 7pt;
+    text-transform: uppercase;
+}
+
+.boldFieldValue {
+    font-size: 7pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.agent_banking_logo {
+    width: .85in;
+    max-height: .40in;
+    float: right;
+}
+
+.logo {
+    width: .658in;
+    height: .4in;
+    float: left;
+}
+
+.customerPhoto {
+    width: .75in;
+    height: .75in;
+    float: left;
+    padding: 5px 0 5px 2px;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.copy {
+    position: absolute;
+    margin-left: -45px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+}
+
+.threeColumnTable {
+    float: left;
+    width: 100%;
+}
+
+.customerAddress {
+    vertical-align: top;
+}
+
+.thirdTable {
+    width: 100%;
+}
+
+.firstColumn {
+    width: 17%;
+}
+
+.thirdColumn {
+}
+
+.fourthColumn {
+    width: 17%;
+}
+
+.sixthColumn {
+    width: 95px;
+}
+
+.lastColumn {
+    width: 16%;
+}
+
+
+
+.tdMiddle {
+    width: 60%;
+}
+
+
+
+
+.addressDiv {
+    float: right;
+    font-size: 8px;
+    margin: 3px 5px 0 0;
+    text-align: right;
+}
+
+.qrCodeImg {
+    width: .85in;
+    height: .75in;
+    float: right;
+    vertical-align: top;
+    margin: -4px 6px 0 0;
+}
+
+.trBackground {
+    background: #E6E7E8;
+}*/
+
+
+

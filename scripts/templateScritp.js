@@ -1,8 +1,12 @@
 ﻿window.onload = function () {
     var url = window.location.search;
     url = url.replace("?", ''); // remove the ?
+    if (!url) {
+        url = receipts.ACCOUNT_BALANCE;
+    }
 
     addStyleSheet('style_sheet/style.css');
+    addStyleSheet('file:///android_asset/styles.css');
     replaceToken(parseInt(url));
 }
 
@@ -41,7 +45,7 @@ var depositAmountText = "জমার পরিমান";
 var depositDateText = "জমার তারিখ";
 var emptyText = "";
 var fundTransferDateText = "ফান্ড ট্রান্সফারের তারিখ"
-var fundTrasferText = "ফান্ড ট্রান্সফার";
+var fundTransferText = "ফান্ড ট্রান্সফার";
 var generalDPSAccountText = "সাধারন ডিপিএস হিসাব";
 var initialDepositText = "প্রারম্ভিক জমার পরিমান";
 var inWordsText = "কথায়";
@@ -132,11 +136,16 @@ function replaceToken(receipt) {
     addImage("qr", "images/qr.png");
     addImage("customerPhoto", "images/photo.png");
 
+    addImage("agent_banking_logo", "file:///android_asset/agent_banking_logo.png");
+    addImage("logo", "file:///android_asset/logo.gif");
+    addImage("qr", "file:///android_asset/qr.png");
+    addImage("customerPhoto", "file:///android_asset/photo.png");
+
 
     addClassText("addressLine1Label", addressLine1Text); //#ADDRESS_LINE_1
     addClassText("addressLine2Label", addressLine2Text); //#ADDRESS_LINE_2
     addClassText("addressLine3Label", addressLine3Text); //#ADDRESS_LINE_3
-    addClassText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4  
+    addClassText("addressLine4Label", addressLine4Text); //#ADDRESS_LINE_4
 
     addClassText("agentNameLabel", agentNameText); //#AGENT_NAME_LABEL
     addClassText("agentName", "BADRUL ALOM"); //#AGENT_NAME
@@ -145,13 +154,13 @@ function replaceToken(receipt) {
     addClassText("addressLabel", addressText); //#ADDRESS_LABEL
     addClassText("boothAddress", "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI"); //#BOOTH_ADDRESS
     addClassText("customerIdLabel", customerIdText); //#CUSTOMER_ID_LABEL,
-    addClassText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters 
+    addClassText("customerId", "CB1158500"); //#CUSTOMER_ID, ID will be 7 characters
     addClassText("accountTypeLabel", accountTypeText); //#ACCOUNT_TYPE_LABEL
     addClassText("customerNameLabel", customerNameText); //#CUSTOMER_NAME_LABEL
     addClassText("customerName", "MD Arif Gazi"); //#CUSTOMER_NAME
     addClassText("mobileNoLabel", mobileNoText); //#MOBILE_NO_LABEL
     addClassText("mobileNo", "01617877595"); //#MOBILE_NO
-      
+
 
     switch (receipt) {
         case receipts.ACCOUNT_BALANCE:
@@ -170,7 +179,7 @@ function replaceToken(receipt) {
             setFixedDeposit();
             break;
         case receipts.FUND_TRANSFER:
-            setFundTrasfer();
+            setFundTransfer();
             break;
         case receipts.SAVINGS_ACCOUNT:
             setSavingsAccount();
@@ -359,8 +368,8 @@ function setFixedDeposit() {
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, printDateValue);
 }
-function setFundTrasfer() {
-    addClassText("title", fundTrasferText); //#TITLE
+function setFundTransfer() {
+    addClassText("title", fundTransferText); //#TITLE
 
     addClassText(accountNoLabelId, senderAccountNoText);
     addClassText(accountNumberId, accountNumberValue);
@@ -459,13 +468,17 @@ function getTimestampString(date) {
 };
 function addImage(elementId, path) {
     var elements = document.getElementsByClassName(elementId);
-
     if (elements != null) {
         for (var i = 0; i < elements.length; i++) {
-            elements[i].src = path;
+            if (elements[i].src != null) {
+                elements[i].src = path;
+            }
         }
     }
 }
+
+
+
 function addClassText(elementId, innerHtml) {
     var elements = document.getElementsByClassName(elementId);
 
