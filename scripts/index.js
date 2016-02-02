@@ -5,7 +5,8 @@
     DPS_ACCOUNT: 4,
     FIXED_DEPOSIT: 5,
     FUND_TRANSFER: 6,
-    SAVINGS_ACCOUNT: 7
+    SAVINGS_ACCOUNT: 7,
+    ATM_DEBIT_CARD_REQUEST: 8
 };
 
 window.onload = function myfunction() {
@@ -36,5 +37,9 @@ window.onload = function myfunction() {
 
     document.getElementById("savingsAccount").onclick = function () {
         window.location.href = "../template1.html?" + receipts.SAVINGS_ACCOUNT;
+    }
+
+    document.getElementById("atmDebitCardRequest").onclick = function () {
+        window.location.href = "../template1.html?" + receipts.ATM_DEBIT_CARD_REQUEST;
     }
 }

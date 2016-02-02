@@ -28,7 +28,8 @@ var receipts = {
     DPS_ACCOUNT: 4,
     FIXED_DEPOSIT: 5,
     FUND_TRANSFER: 6,
-    SAVINGS_ACCOUNT: 7
+    SAVINGS_ACCOUNT: 7,
+    ATM_DEBIT_CARD_REQUEST: 8
 };
 
 var accountNoText = "হিসাব নম্বর";
@@ -42,8 +43,12 @@ var addressLine3Text = "সিটি ব্যাংক  সেন্টার �
 var addressLine4Text = "গুলশান এভিনিউ, ঢাকা-১২১২";
 var addressText = "ঠিকানা";
 var agentNameText = "এজেন্টের নাম";
+var atmDebitCardRequestText = "এটিএম / ডেবিটি কার্ডের অনুরোধ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
 var balanceDateText = "ব্যালান্সের তারিখ";
+var cardBrandText = "কার্ডের ব্রান্ড";
+var cardTitleText = "কার্ড টাইটেল";
+var cardTypeText = "কার্ডের ধরণ";
 var chargeText = "চার্জ";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
@@ -71,6 +76,8 @@ var principalAmountText = "আসল টাকার পরিমান";
 var productTenorText = "মেয়াদ";
 var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
 var receiverAccountNameText = "প্রাপকের হিসাব নাম";
+var requestIdText = "অনুরোধ আইডি";
+var requestReceiveTimeText = "অনুরোধ গ্রহনের সময়";
 var senderAccountNoText = "প্রেরকের হিসাব নম্বর";
 var sendrAccountNameText = "প্রেরকের হিসাব নাম";
 var transferAmountText = "ট্রান্সফারের পরিমান";
@@ -168,6 +175,9 @@ function replaceToken(receipt) {
             break;
         case receipts.SAVINGS_ACCOUNT:
             setSavingsAccount();
+            break;
+        case receipts.ATM_DEBIT_CARD_REQUEST:
+            setATMDebitCardRequest();
             break;
         default:
             break;
@@ -425,6 +435,42 @@ function setSavingsAccount() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+}
+function setATMDebitCardRequest() {
+    addClassText("title", atmDebitCardRequestText);
+
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, data.accountNumber);
+    addClassText(accountTypeId, data.savingsAccountType);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
+
+    addClassText(customerAddressId, data.customerAddress);
+
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, data.accountName);
+    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01ValueId, data.transactionDate);
+
+    addClassText(t10LabelId, cardTypeText);
+    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t11LabelId, requestIdText);
+    addClassText(t11ValueId, data.transactionCode);
+
+    addClassText(t20LabelId, cardBrandText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, data.printDate);
+
+    addClassText(t30LabelId, cardTitleText);
+    addClassText(t30ColonId, colonText);
+    addClassText(t30ValueId, emptyText);
+    addClassText(t31LabelId, chargeText);
+    addClassText(t31ColonId, colonText);
+    addClassText(t31ValueId, data.charge);
 }
 
 
