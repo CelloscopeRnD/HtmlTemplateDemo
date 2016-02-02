@@ -6,7 +6,6 @@
         window.data = JSON.parse(window.stringData);
     } else {
         window.data = { "accountName": "MD Arif Gazi", "accountNumber": "2001158500126", "agentName": "BADRUL ALOM", "balanceAmount": "BDT 80,550.00", "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY", "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI", "charge": "BDT 7.50", "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA", "customerId": "CB1158500", "customerName": "Md. Arif Gazi", "depositAmountInWords": "THREE THOUSAND ONLY", "depositAmount": "BDT 3,000.00", "dpsAccountType": "DPS", "linkAccountNumber": "2005246987526", "maturityAmount": "BDT 2,26,047.00", "maturityDate": "19-JAN-2021", "mobileNo": "01617877595", "principalAmount": "BDT 1,00,000.00", "printDate": "19-JAN-2016 13:13:15 PM", "productTenor": "5 Years", "profitRate": "8.85% (Yearly)", "receiverAccountName": "SUJON PATWARY", "termDepositAccountType": "TERM DEPOSIT", "transactionDate": "19-JAN-2016", "savingsAccountType": "Savings", "transactionCode": "TR222369", "userId": "615001001 (NAIM ISLAM)", "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)", "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY" };
-        window.data = { "agentName": "Badrul Alam", "accountName": "MD.ARIF ZIGA", "boothAddress": "Malibag", "accountNumber": "2001158500126", "savingsAccountType": "Savings", "customerName": "MD.ARIF GAZI", "customerId": "CB1158500", "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)", "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY", "charge": "7.5%", "transactionDate": "15-DEC-2016", "transactionCode": "TR222369", "userId": "676666011(NAIM ISLAM)", "printDate": "15-DEC-2016 7:09 PM", "customerAddress": "KALLAYANPUR", "mobileNo": "01617877595" };
     }
     //console.log(window);
 
@@ -133,6 +132,13 @@ var t31LabelId = "t31Label";
 var t31ColonId = "t31Colon";
 var t31ValueId = "t31Value";
 
+var t40LabelId = "t40Label";
+var t40ColonId = "t40Colon";
+var t40ValueId = "t40Value";
+var t41LabelId = "t41Label";
+var t41ColonId = "t41Colon";
+var t41ValueId = "t41Value";
+
 
 
 
@@ -247,6 +253,13 @@ function setAccountBalance() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setCashDeposit() {
     addClassText("title", cashDepositText);
@@ -283,6 +296,13 @@ function setCashDeposit() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setCashWithdraw() {
     addClassText("title", cashWithdrawText);
@@ -319,6 +339,13 @@ function setCashWithdraw() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setDPSAccount() {
     addClassText("title", generalDPSAccountText);
@@ -355,6 +382,13 @@ function setDPSAccount() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setFixedDeposit() {
     addClassText("title", cityAgentFixedDepositText);
@@ -391,6 +425,13 @@ function setFixedDeposit() {
     addClassText(t31LabelId, printDateText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.printDate);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setFundTransfer() {
     addClassText("title", fundTransferText);
@@ -428,6 +469,13 @@ function setFundTransfer() {
     addClassText(t31LabelId, printDateText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.printDate);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setSavingsAccount() {
     addClassText("title", cityAgentSavingsAccountText);
@@ -464,6 +512,13 @@ function setSavingsAccount() {
     addClassText(t31LabelId, emptyText);
     addClassText(t31ColonId, emptyText);
     addClassText(t31ValueId, emptyText);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 
 
@@ -518,6 +573,13 @@ function setATMDebitCardRequest() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setATMDebitCardDelivery() {
     addClassText("title", atmDebitCardDeliveryText);
@@ -554,6 +616,13 @@ function setATMDebitCardDelivery() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setATMDebitCardCancel() {
     addClassText("title", atmDebitCardCancelText);
@@ -590,6 +659,13 @@ function setATMDebitCardCancel() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setChequeBookRequisition() {
     addClassText("title", chequeBookRequisitionText);
@@ -626,6 +702,13 @@ function setChequeBookRequisition() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setChequeBookDelivery() {
     addClassText("title", chequeBookDeliveryText);
@@ -662,6 +745,13 @@ function setChequeBookDelivery() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setChequeStopPaymentSingle() {
     addClassText("title", chequeStopPaymentSingleText);
@@ -698,6 +788,13 @@ function setChequeStopPaymentSingle() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setChequeStopPaymentRange() {
     addClassText("title", chequeStopPaymentRangeText);
@@ -734,6 +831,13 @@ function setChequeStopPaymentRange() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 function setChequeStopPaymentCancel() {
     addClassText("title", chequeStopPaymentCancelText);
@@ -770,6 +874,13 @@ function setChequeStopPaymentCancel() {
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
 }
 
 function addImage(elementId, url, alternateUrl) {
