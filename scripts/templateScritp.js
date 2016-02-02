@@ -55,9 +55,6 @@ var atmDebitCardDeliveryText = "এটিএম / ডেবিট কার্�
 var atmDebitCardRequestText = "এটিএম / ডেবিটি কার্ডের অনুরোধ";
 var balanceAmountText = "ব্যালান্সের পরিমান";
 var balanceDateText = "ব্যালান্সের তারিখ";
-var cardBrandText = "কার্ডের ব্রান্ড";
-var cardTitleText = "কার্ড টাইটেল";
-var cardTypeText = "কার্ডের ধরণ";
 var chargeText = "চার্জ";
 var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
@@ -90,8 +87,6 @@ var principalAmountText = "আসল টাকার পরিমান";
 var productTenorText = "মেয়াদ";
 var receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
 var receiverAccountNameText = "প্রাপকের হিসাব নাম";
-var requestIdText = "অনুরোধ আইডি";
-var requestReceiveTimeText = "অনুরোধ গ্রহনের সময়";
 var senderAccountNoText = "প্রেরকের হিসাব নম্বর";
 var sendrAccountNameText = "প্রেরকের হিসাব নাম";
 var transferAmountText = "ট্রান্সফারের পরিমান";
@@ -471,6 +466,23 @@ function setSavingsAccount() {
     addClassText(t31ValueId, emptyText);
 }
 
+
+var cardTypeText = "কার্ডের ধরণ";
+var requestReceiveTimeText = "অনুরোধ গ্রহনের সময়";
+var requestIdText = "অনুরোধ আইডি";
+var cardTitleText = "কার্ড টাইটেল";
+var cardBrandText = "কার্ডের ব্রান্ড";
+var cardNumberText = "কার্ড নম্বর";
+var deliveryDateText = "হস্তান্তরের তারিখ";
+var leaveNumberText = "পাতার সংখ্যা";
+var chequeLostReasonText = "চেকটি";
+var chequeLeafNumberText = "চেক পাতার নম্বর";
+var amountOfTkText = "টাকার পরিমান";
+var receiverNameText = "প্রাপকের নাম";
+var retrieveFromText = "পুনরুদ্ধার হয়েছে";
+
+
+
 function setATMDebitCardRequest() {
     addClassText("title", atmDebitCardRequestText);
 
@@ -521,7 +533,7 @@ function setATMDebitCardDelivery() {
 
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
-    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01LabelId, deliveryDateText);
     addClassText(t01ValueId, data.transactionDate);
 
     addClassText(t10LabelId, cardTypeText);
