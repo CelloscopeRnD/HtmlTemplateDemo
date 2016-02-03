@@ -5,7 +5,21 @@
         url = receipt;
         window.data = JSON.parse(window.stringData);
     } else {
-        window.data = { "accountName": "MD Arif Gazi", "accountNumber": "2001158500126", "agentName": "BADRUL ALOM", "balanceAmount": "BDT 80,550.00", "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY", "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI", "charge": "BDT 7.50", "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA", "customerId": "CB1158500", "customerName": "Md. Arif Gazi", "depositAmountInWords": "THREE THOUSAND ONLY", "depositAmount": "BDT 3,000.00", "dpsAccountType": "DPS", "linkAccountNumber": "2005246987526", "maturityAmount": "BDT 2,26,047.00", "maturityDate": "19-JAN-2021", "mobileNo": "01617877595", "principalAmount": "BDT 1,00,000.00", "printDate": "19-JAN-2016 13:13:15 PM", "productTenor": "5 Years", "profitRate": "8.85% (Yearly)", "receiverAccountName": "SUJON PATWARY", "termDepositAccountType": "TERM DEPOSIT", "transactionDate": "19-JAN-2016", "savingsAccountType": "Savings", "transactionCode": "TR222369", "userId": "615001001 (NAIM ISLAM)", "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)", "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY" };
+        window.data = {
+            "accountName": "MD Arif Gazi", "accountNumber": "2001158500126", "agentName": "BADRUL ALOM", "balanceAmount": "BDT 80,550.00",
+            "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY", "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
+            "charge": "BDT 7.50", "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
+            "customerId": "CB1158500", "customerName": "Md. Arif Gazi", "depositAmountInWords": "THREE THOUSAND ONLY",
+            "depositAmount": "BDT 3,000.00", "dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
+            "maturityAmount": "BDT 2,26,047.00", "maturityDate": "19-JAN-2021", "mobileNo": "01617877595",
+            "principalAmount": "BDT 1,00,000.00", "printDate": "19-JAN-2016 13:13:15 PM", "productTenor": "5 Years",
+            "profitRate": "8.85% (Yearly)", "receiverAccountName": "SUJON PATWARY", "termDepositAccountType": "TERM DEPOSIT",
+            "transactionDate": "19-JAN-2016", "savingsAccountType": "Savings", "transactionCode": "TR222369",
+            "userId": "615001001 (NAIM ISLAM)", "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
+            "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY", "cardType": "ATM", "cardBrand": "VISA",
+            "cardNumber": "1234 1234 1234 1234", "noOfLeave": "10", "chequeLeafNumber": "123 456 789 123", "chequeAmount": "BDT 10,000.00",
+            "receiverName": "Asadul Haque", "chequeLostReason": "Lost"
+        };
     }
     //console.log(window);
 
@@ -60,8 +74,8 @@ var cashWithdrawText = "নগদ উত্তোলন";
 var chequeBookDeliveryText = "চেক বই হস্তান্তর";
 var chequeBookRequisitionText = "চেক বই প্রদানের অনুরোধ";
 var chequeStopPaymentCancelText = "চেক স্টপ পেমেন্ট নির্দেশনা বাতিলকরন";
-var chequeStopPaymentRangeText = "চেক স্টপ পেমেন্ট নির্দেশনা রেন্জ";
-var chequeStopPaymentSingleText = "চেক স্টপ পেমেন্ট নির্দেশনা সিঙ্গেল";
+var chequeStopPaymentRangeText = "চেক স্টপ পেমেন্ট নির্দেশনা - রেঞ্জ";
+var chequeStopPaymentSingleText = "চেক স্টপ পেমেন্ট নির্দেশনা - সিঙ্গেল";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
 var cityAgentSavingsAccountText = "সিটি এজেন্ট সেভিংস হিসাব";
 var colonText = ":";
@@ -529,7 +543,7 @@ var cardTitleText = "কার্ড টাইটেল";
 var cardBrandText = "কার্ডের ব্রান্ড";
 var cardNumberText = "কার্ড নম্বর";
 var deliveryDateText = "হস্তান্তরের তারিখ";
-var leaveNumberText = "পাতার সংখ্যা";
+var noOfLeaveText = "পাতার সংখ্যা";
 var chequeLostReasonText = "চেকটি";
 var chequeLeafNumberText = "চেক পাতার নম্বর";
 var amountOfTkText = "টাকার পরিমান";
@@ -556,20 +570,20 @@ function setATMDebitCardRequest() {
     addClassText(t01ValueId, data.transactionDate);
 
     addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10ValueId, data.cardType);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
     addClassText(t20LabelId, cardBrandText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.cardBrand);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
     addClassText(t30LabelId, cardTitleText);
     addClassText(t30ColonId, colonText);
-    addClassText(t30ValueId, emptyText);
+    addClassText(t30ValueId, data.accountName);
     addClassText(t31LabelId, chargeText);
     addClassText(t31ColonId, colonText);
     addClassText(t31ValueId, data.charge);
@@ -599,23 +613,23 @@ function setATMDebitCardDelivery() {
     addClassText(t01ValueId, data.transactionDate);
 
     addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10ValueId, data.cardType);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
     addClassText(t20LabelId, cardBrandText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.cardBrand);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
     addClassText(t30LabelId, cardTitleText);
     addClassText(t30ColonId, colonText);
-    addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
+    addClassText(t30ValueId, data.accountName);
+    addClassText(t31LabelId, cardNumberText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31ValueId, data.cardNumber);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -638,27 +652,27 @@ function setATMDebitCardCancel() {
 
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
-    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01LabelId, deliveryDateText);
     addClassText(t01ValueId, data.transactionDate);
 
     addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10ValueId, data.cardType);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
     addClassText(t20LabelId, cardBrandText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.cardBrand);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
     addClassText(t30LabelId, cardTitleText);
     addClassText(t30ColonId, colonText);
-    addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
+    addClassText(t30ValueId, data.accountName);
+    addClassText(t31LabelId, cardNumberText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31ValueId, data.cardNumber);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -684,24 +698,24 @@ function setChequeBookRequisition() {
     addClassText(t01LabelId, requestReceiveTimeText);
     addClassText(t01ValueId, data.transactionDate);
 
-    addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10LabelId, noOfLeaveText);
+    addClassText(t10ValueId, data.noOfLeave);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
-    addClassText(t20LabelId, cardBrandText);
+    addClassText(t20LabelId, chargeText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.charge);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
-    addClassText(t30LabelId, cardTitleText);
-    addClassText(t30ColonId, colonText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
     addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
-    addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -724,27 +738,27 @@ function setChequeBookDelivery() {
 
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
-    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01LabelId, deliveryDateText);
     addClassText(t01ValueId, data.transactionDate);
 
-    addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10LabelId, noOfLeaveText);
+    addClassText(t10ValueId, data.noOfLeave);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
-    addClassText(t20LabelId, cardBrandText);
-    addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20LabelId, emptyText);
+    addClassText(t20ColonId, emptyText);
+    addClassText(t20ValueId, emptyText);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
-    addClassText(t30LabelId, cardTitleText);
-    addClassText(t30ColonId, colonText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
     addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
-    addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31LabelId, emptyText);
+    addClassText(t31ColonId, emptyText);
+    addClassText(t31ValueId, emptyText);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -767,27 +781,27 @@ function setChequeStopPaymentSingle() {
 
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
-    addClassText(t01LabelId, requestReceiveTimeText);
-    addClassText(t01ValueId, data.transactionDate);
+    addClassText(t01LabelId, receiverNameText);
+    addClassText(t01ValueId, data.receiverName);
 
-    addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10LabelId, chequeLeafNumberText);
+    addClassText(t10ValueId, data.chequeLeafNumber);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
-    addClassText(t20LabelId, cardBrandText);
+    addClassText(t20LabelId, amountOfTkText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.chequeAmount);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
-    addClassText(t30LabelId, cardTitleText);
+    addClassText(t30LabelId, chargeText);
     addClassText(t30ColonId, colonText);
-    addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
+    addClassText(t30ValueId, data.charge);
+    addClassText(t31LabelId, chequeLostReasonText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31ValueId, data.chequeLostReason);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -813,24 +827,24 @@ function setChequeStopPaymentRange() {
     addClassText(t01LabelId, requestReceiveTimeText);
     addClassText(t01ValueId, data.transactionDate);
 
-    addClassText(t10LabelId, cardTypeText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10LabelId, chequeLeafNumberText);
+    addClassText(t10ValueId, data.chequeLeafNumber);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
-    addClassText(t20LabelId, cardBrandText);
+    addClassText(t20LabelId, chargeText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.charge);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
-    addClassText(t30LabelId, cardTitleText);
-    addClassText(t30ColonId, colonText);
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
     addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
+    addClassText(t31LabelId, chequeLostReasonText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31ValueId, data.chequeLostReason);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
@@ -853,27 +867,27 @@ function setChequeStopPaymentCancel() {
 
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
-    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01LabelId, receiverNameText);
     addClassText(t01ValueId, data.transactionDate);
 
-    addClassText(t10LabelId, cardTypeText);
+    addClassText(t10LabelId, chequeLeafNumberText);
     addClassText(t10ValueId, data.balanceAmount);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
-    addClassText(t20LabelId, cardBrandText);
+    addClassText(t20LabelId, amountOfTkText);
     addClassText(t20ColonId, colonText);
     addClassText(t20ValueId, data.balanceAmountInWords);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
-    addClassText(t30LabelId, cardTitleText);
+    addClassText(t30LabelId, chargeText);
     addClassText(t30ColonId, colonText);
     addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chargeText);
+    addClassText(t31LabelId, chequeLostReasonText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, data.charge);
+    addClassText(t31ValueId, emptyText);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);
