@@ -18,7 +18,7 @@
             "userId": "615001001 (NAIM ISLAM)", "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
             "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY", "cardType": "ATM", "cardBrand": "VISA",
             "cardNumber": "1234 1234 1234 1234", "noOfLeave": "10", "chequeLeafNumber": "123 456 789 123", "chequeAmount": "BDT 10,000.00",
-            "receiverName": "Asadul Haque", "chequeLostReason": "Lost"
+            "receiverName": "Asadul Haque", "chequeLostReason": "Lost", "retrieveFrom": "From Lost"
         };
     }
     //console.log(window);
@@ -49,7 +49,8 @@ var receipts = {
     CHEQUE_BOOK_DELIVERY: 12,
     CHEQUE_STOP_PAYMENT_SINGLE: 13,
     CHEQUE_STOP_PAYMENT_RANGE: 14,
-    CHEQUE_STOP_PAYMENT_CANCEL: 15
+    CHEQUE_STOP_PAYMENT_SINGLE_CANCEL: 15,
+    CHEQUE_STOP_PAYMENT_RANGE_CANCEL: 16
 };
 
 var accountNoText = "হিসাব নম্বর";
@@ -73,7 +74,8 @@ var cashDepositText = "নগদ জমা";
 var cashWithdrawText = "নগদ উত্তোলন";
 var chequeBookDeliveryText = "চেক বই হস্তান্তর";
 var chequeBookRequisitionText = "চেক বই প্রদানের অনুরোধ";
-var chequeStopPaymentCancelText = "চেক স্টপ পেমেন্ট নির্দেশনা বাতিলকরন";
+var chequeStopPaymentSingleCancelText = "চেক স্টপ পেমেন্ট - সিঙ্গেল নির্দেশনা বাতিলকরন";
+var chequeStopPaymentRangeCancelText = "চেক স্টপ পেমেন্ট - রেঞ্জ নির্দেশনা বাতিলকরন";
 var chequeStopPaymentRangeText = "চেক স্টপ পেমেন্ট নির্দেশনা - রেঞ্জ";
 var chequeStopPaymentSingleText = "চেক স্টপ পেমেন্ট নির্দেশনা - সিঙ্গেল";
 var cityAgentFixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
@@ -225,8 +227,11 @@ function replaceToken(receipt) {
         case receipts.CHEQUE_STOP_PAYMENT_RANGE:
             setChequeStopPaymentRange();
             break;
-        case receipts.CHEQUE_STOP_PAYMENT_CANCEL:
-            setChequeStopPaymentCancel();
+        case receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
+            setChequeStopPaymentSingleCancel();
+            break;
+        case receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
+            setChequeStopPaymentRangeCancel();
             break;
         default:
             break;
@@ -853,8 +858,8 @@ function setChequeStopPaymentRange() {
     addClassText(t41ColonId, emptyText);
     addClassText(t41ValueId, emptyText);
 }
-function setChequeStopPaymentCancel() {
-    addClassText("title", chequeStopPaymentCancelText);
+function setChequeStopPaymentSingleCancel() {
+    addClassText("title", chequeStopPaymentSingleCancelText);
 
     addClassText(accountNoLabelId, accountNoText);
     addClassText(accountNumberId, data.accountNumber);
@@ -868,26 +873,69 @@ function setChequeStopPaymentCancel() {
     addClassText(t00LabelId, accountNameText);
     addClassText(t00ValueId, data.accountName);
     addClassText(t01LabelId, receiverNameText);
-    addClassText(t01ValueId, data.transactionDate);
+    addClassText(t01ValueId, data.receiverName);
 
     addClassText(t10LabelId, chequeLeafNumberText);
-    addClassText(t10ValueId, data.balanceAmount);
+    addClassText(t10ValueId, data.chequeLeafNumber);
     addClassText(t11LabelId, requestIdText);
     addClassText(t11ValueId, data.transactionCode);
 
     addClassText(t20LabelId, amountOfTkText);
     addClassText(t20ColonId, colonText);
-    addClassText(t20ValueId, data.balanceAmountInWords);
+    addClassText(t20ValueId, data.chequeAmount);
     addClassText(t21LabelId, printDateText);
     addClassText(t21ColonId, colonText);
     addClassText(t21ValueId, data.printDate);
 
     addClassText(t30LabelId, chargeText);
     addClassText(t30ColonId, colonText);
-    addClassText(t30ValueId, emptyText);
-    addClassText(t31LabelId, chequeLostReasonText);
+    addClassText(t30ValueId, data.charge);
+    addClassText(t31LabelId, retrieveFromText);
     addClassText(t31ColonId, colonText);
-    addClassText(t31ValueId, emptyText);
+    addClassText(t31ValueId, data.retrieveFrom);
+
+    addClassText(t40LabelId, emptyText);
+    addClassText(t40ColonId, emptyText);
+    addClassText(t40ValueId, emptyText);
+    addClassText(t41LabelId, emptyText);
+    addClassText(t41ColonId, emptyText);
+    addClassText(t41ValueId, emptyText);
+}
+function setChequeStopPaymentRangeCancel() {
+    addClassText("title", chequeStopPaymentRangeCancelText);
+
+    addClassText(accountNoLabelId, accountNoText);
+    addClassText(accountNumberId, data.accountNumber);
+    addClassText(accountTypeId, data.savingsAccountType);
+    addClassText(linkAccountNumberColonId, emptyText);
+    addClassText(linkAccountNumberLabelId, emptyText);
+    addClassText(linkAccountNumberId, emptyText);
+
+    addClassText(customerAddressId, data.customerAddress);
+
+    addClassText(t00LabelId, accountNameText);
+    addClassText(t00ValueId, data.accountName);
+    addClassText(t01LabelId, requestReceiveTimeText);
+    addClassText(t01ValueId, data.transactionDate);
+
+    addClassText(t10LabelId, chequeLeafNumberText);
+    addClassText(t10ValueId, data.chequeLeafNumber);
+    addClassText(t11LabelId, requestIdText);
+    addClassText(t11ValueId, data.transactionCode);
+
+    addClassText(t20LabelId, chargeText);
+    addClassText(t20ColonId, colonText);
+    addClassText(t20ValueId, data.charge);
+    addClassText(t21LabelId, printDateText);
+    addClassText(t21ColonId, colonText);
+    addClassText(t21ValueId, data.printDate);
+
+    addClassText(t30LabelId, emptyText);
+    addClassText(t30ColonId, emptyText);
+    addClassText(t30ValueId, emptyText);
+    addClassText(t31LabelId, retrieveFromText);
+    addClassText(t31ColonId, colonText);
+    addClassText(t31ValueId, data.retrieveFrom);
 
     addClassText(t40LabelId, emptyText);
     addClassText(t40ColonId, emptyText);

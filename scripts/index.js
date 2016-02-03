@@ -13,7 +13,8 @@
     CHEQUE_BOOK_DELIVERY: 12,
     CHEQUE_STOP_PAYMENT_SINGLE: 13,
     CHEQUE_STOP_PAYMENT_RANGE: 14,
-    CHEQUE_STOP_PAYMENT_CANCEL: 15
+    CHEQUE_STOP_PAYMENT_SINGLE_CANCEL: 15,
+    CHEQUE_STOP_PAYMENT_RANGE_CANCEL: 16
 };
 
 window.onload = function myfunction() {
@@ -75,7 +76,11 @@ window.onload = function myfunction() {
         window.location.href = "../template1.html?" + receipts.CHEQUE_STOP_PAYMENT_RANGE;
     }
 
-    document.getElementById("chequeStopPaymentCancel").onclick = function () {
-        window.location.href = "../template1.html?" + receipts.CHEQUE_STOP_PAYMENT_CANCEL;
+    document.getElementById("chequeStopPaymentSingleCancel").onclick = function () {
+        window.location.href = "../template1.html?" + receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL;
+    }
+
+    document.getElementById("chequeStopPaymentRangeCancel").onclick = function () {
+        window.location.href = "../template1.html?" + receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL;
     }
 }
