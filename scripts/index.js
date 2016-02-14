@@ -1,23 +1,4 @@
-﻿//var receipts = {
-//    ACCOUNT_BALANCE: 1,
-//    CASH_DEPOSIT: 2,
-//    CASH_WITHDRAW: 3,
-//    DPS_ACCOUNT: 4,
-//    FIXED_DEPOSIT: 5,
-//    FUND_TRANSFER: 6,
-//    SAVINGS_ACCOUNT: 7,
-//    ATM_DEBIT_CARD_REQUEST: 8,
-//    ATM_DEBIT_CARD_DELIVERY: 9,
-//    ATM_DEBIT_CARD_CANCEL: 10,
-//    CHEQUE_BOOK_REQUISITION: 11,
-//    CHEQUE_BOOK_DELIVERY: 12,
-//    CHEQUE_STOP_PAYMENT_SINGLE: 13,
-//    CHEQUE_STOP_PAYMENT_RANGE: 14,
-//    CHEQUE_STOP_PAYMENT_SINGLE_CANCEL: 15,
-//    CHEQUE_STOP_PAYMENT_RANGE_CANCEL: 16
-//};
-
-var receipts = [
+﻿var receipts = [
     'ACCOUNT_BALANCE',
     'CASH_DEPOSIT',
     'CASH_WITHDRAW',
@@ -33,7 +14,9 @@ var receipts = [
     'CHEQUE_STOP_PAYMENT_SINGLE',
     'CHEQUE_STOP_PAYMENT_RANGE',
     'CHEQUE_STOP_PAYMENT_SINGLE_CANCEL',
-    'CHEQUE_STOP_PAYMENT_RANGE_CANCEL'];
+    'CHEQUE_STOP_PAYMENT_RANGE_CANCEL',
+    'MINI_STATEMENT'//17
+];
 
 window.onload = function myfunction() {
     var formSelect = document.getElementById('formSelect');
@@ -44,6 +27,10 @@ window.onload = function myfunction() {
         formSelect.appendChild(option);
     }
     document.getElementById("go").onclick = function () {
-        window.location.href = "../template1.html?" + (parseInt(formSelect.value) + 1);
+        if ((parseInt(formSelect.value) + 1 == 17)) {
+            window.location.href = "../miniStatementTemplate.html?" + (parseInt(formSelect.value) + 1);
+        } else {
+            window.location.href = "../template1.html?" + (parseInt(formSelect.value) + 1);
+        }
     }
 }
