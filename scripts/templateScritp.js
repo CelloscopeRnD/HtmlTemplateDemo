@@ -114,7 +114,7 @@ var retrieveFromText = "পুনরুদ্ধার হয়েছে";
 function replaceToken(receipt) {
     addImage("agent_banking_logo", "file:///android_asset/AGENT-BANKING-LOGO_Small.png", "images/AGENT-BANKING-LOGO_Small.png");
     addImage("logo", "file:///android_asset/logo.gif", "images/logo.png");
-    addImage("qr", "file:///android_asset/qr.png", "images/qr.png");
+    addImage("qr", "qr.png", "images/qr.png");
     addImage("customerPhoto", "photo.png", "images/photo.png");
 
     addClassText("addressLine1Label", addressLine1Text);
