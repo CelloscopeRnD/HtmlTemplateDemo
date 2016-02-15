@@ -28,7 +28,7 @@
                 ['12-Dec-2016', 'DEP-Personal A/C', '7000.00', '', '9000.00']]
         };
     }
-  
+
     addStyleSheet('style_sheet/styles.css'); addStyleSheet('file:///android_asset/styles.css');
     replaceToken(parseInt(url));
 }
@@ -253,7 +253,7 @@ function setCashWithdraw() {
        [[accountNameText, data.accountName], [withdrawDateText, data.transactionDate]],
        [[withdrawAmountText, data.withdrawAmount], [transactionIdText, data.transactionCode]],
        [[inWordsText, data.withdrawsAmountInWords], [printDateText, data.printDate]],
-       [[emptyText, emptyText], [emptyText, emptyText]],
+       [[chargeText, data.charge], [emptyText, emptyText]],
        [[emptyText, emptyText], [emptyText, emptyText]]
     ];
     replaceTableData(tableData);
@@ -540,9 +540,9 @@ function setMiniStatement() {
     addClassText(accountNoLabelId, accountNoText);
     addClassText(accountNumberId, data.accountNumber);
     addClassText(accountTypeId, data.savingsAccountType);
-    addClassText(linkAccountNumberColonId, emptyText);
-    addClassText(linkAccountNumberLabelId, emptyText);
-    addClassText(linkAccountNumberId, emptyText);
+    addClassText(linkAccountNumberColonId, colonText);
+    addClassText(linkAccountNumberLabelId, transactionIdText);
+    addClassText(linkAccountNumberId, data.transactionCode);
 
     addClassText(customerAddressId, data.customerAddress);
 
