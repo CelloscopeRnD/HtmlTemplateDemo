@@ -15,7 +15,9 @@
     'CHEQUE_STOP_PAYMENT_RANGE',
     'CHEQUE_STOP_PAYMENT_SINGLE_CANCEL',
     'CHEQUE_STOP_PAYMENT_RANGE_CANCEL',
-    'MINI_STATEMENT'//17
+    'MINI_STATEMENT',//17
+    'Remittance_Request',
+    'Remittance_Withdraw'
 ];
 
 window.onload = function myfunction() {
