@@ -128,11 +128,12 @@ var labelText = {
     accountBalanceText: "ব্যালান্স",
     accountOpeningDateText: "হিসাব খোলার তারিখ",
     accountTypeText: "হিসাবের ধরন",
+    accountStatement: "হিসাবের সার বিবরনী",
     addressLine1Text: "এজেন্ট ব্যাংকিং ডিভিশন",
     addressLine2Text: "সিটি ব্যাংক লিঃ",
     addressLine3Text: "সিটি ব্যাংক  সেন্টার ১৩৬",
     addressLine4Text: "গুলশান এভিনিউ, ঢাকা-১২১২",
-    addressText: "ঠিকানা",
+    addressText: "ঠিকানা;",
     agentNameText: "এজেন্টের নাম",
     atmDebitCardCancelText: "এটিএম / ডেবিট কার্ড বাতিলকরন",
     atmDebitCardDeliveryText: "এটিএম / ডেবিট কার্ড হস্তান্তর",
@@ -149,7 +150,7 @@ var labelText = {
     chequeStopPaymentRangeText: "চেক স্টপ পেমেন্ট নির্দেশনা - রেঞ্জ",
     chequeStopPaymentSingleText: "চেক স্টপ পেমেন্ট নির্দেশনা - সিঙ্গেল",
     cityAgentFixedDepositText: "সিটি এজেন্ট ফিক্সড ডিপোজিট",
-    cityAgentSavingsAccountText: "সিটি এজেন্ট সেভিংস হিসাব",
+    cityAgentSavingsAccountText: "সিটি এজেন্ট সঞ্চয়ী হিসাব",
     colonText: ":",
     customerIdText: "গ্রাহক আইডি",
     customerNameText: "গ্রাহকের নাম",
@@ -303,7 +304,7 @@ function setAccountBalance() {
     addClassText("boothAddressLabel", labelText.addressText);
     addClassText("boothAddress", data.boothAddress);
 
-    addClassText(labelText.titleId, labelText.accountBalanceText);
+    addClassText("title", labelText.accountBalanceText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText(labelText.accountNumberId, data.accountNumber);
@@ -834,7 +835,7 @@ function setMiniStatement() {
     addClassText("boothAddressLabel", labelText.addressText);
     addClassText("boothAddress", data.boothAddress);
 
-    addClassText("title", labelText.cityAgentSavingsAccountText);
+    addClassText("title", labelText.accountStatement);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText(labelText.accountNumberId, data.accountNumber);

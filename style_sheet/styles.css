@@ -200,6 +200,14 @@ span.colon {
     width: 16%;
 }
 
+.money {
+    text-align: right;
+}
+
+.right {
+    text-align: right;
+}
+
 .qrCodeImg {
     width: .85in;
     height: .75in;
