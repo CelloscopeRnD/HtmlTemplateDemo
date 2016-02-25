@@ -883,9 +883,9 @@ function setRemittanceRequest() {
 
     var tableData = [
        [[labelText.senderNameTextEnglish, data.senderName], [labelText.senderCountryTextEnglish, data.senderCountry]],
-       [[labelText.pinNoTextEnglish, data.pinNo], [labelText.apprxAmountTextEnglish, data.apprxAmount]],
-       [[labelText.iDTypeTextEnglish, data.iDType], [labelText.iDNumberTextEnglish, data.iDNumber]],
-       [[labelText.amountInWordsTextEnglish, data.amountInWords], [labelText.printDateTextEnglish, data.printDate]],
+       [[labelText.iDTypeTextEnglish, data.iDType], [labelText.apprxAmountTextEnglish, data.apprxAmount]],
+       [[labelText.amountInWordsTextEnglish, data.amountInWords], [labelText.iDNumberTextEnglish, data.iDNumber]],
+       [[labelText.emptyText, labelText.emptyText], [labelText.printDateTextEnglish, data.printDate]],
        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
     ];
     replaceTableData(tableData);
