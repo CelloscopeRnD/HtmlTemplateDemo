@@ -120,6 +120,7 @@ tr {
 .label {
     font-size: 7pt;
     font-weight: bold;
+    vertical-align: top;
 }
 
 .topFieldValue {
@@ -130,6 +131,7 @@ tr {
 .fieldValue {
     font-size: 7pt;
     text-transform: uppercase;
+    vertical-align: top;
 }
 
 .cellPadding {
@@ -190,6 +192,7 @@ span.colon {
 
 .fourthColumn {
     width: 17%;
+    padding-left: 10px;
 }
 
 .sixthColumn {
