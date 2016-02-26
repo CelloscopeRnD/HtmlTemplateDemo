@@ -134,6 +134,12 @@ tr {
     vertical-align: top;
 }
 
+.generalFieldValue {
+    font-size: 7pt;
+    vertical-align: top;
+}
+
+
 .cellPadding {
     padding-bottom: 1px !important;
 }
