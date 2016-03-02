@@ -9,7 +9,7 @@
     padding: 0;
 }
 
-@page {
+/*@page {
     size: letter;
     margin: .25in .25in .25in .75in;
 }
@@ -18,7 +18,7 @@
     @page {
         margin: 0 .15in .25in .6in;
     }
-}
+}*/
 
 body {
     font-family: 'Arial Narrow', SolaimanLipi;
@@ -28,6 +28,11 @@ body {
 .main {
     width: 7.5in;
     height: 3.0in;
+    position: relative;
+}
+
+.mainTwo {
+    width: 2in;
     position: relative;
 }
 
