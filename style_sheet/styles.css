@@ -20,6 +20,90 @@
     }
 }*/
 
+@media print {
+    @page {
+        width: 2in;
+        margin: 0;
+    }
+}
+
+.mainTwo {
+    width: 2in;
+    position: relative;
+    /*background-color: lightgray;*/
+
+}
+
+
+
+.commonTwo8{
+   font-size: 8pt;
+}
+.commonTwo8 tr td:nth-child(3) {
+    max-width:80px;
+    white-space:nowrap;
+}
+.commonTwo8 tr {
+    line-height: 10px;
+}
+
+.commonTwo10{
+   font-size: 10pt;
+}
+.commonTwo10 tr td:nth-child(3) {
+    max-width:70px;
+    white-space:nowrap;
+}
+.commonTwo10 tr {
+    line-height: 12px;
+}
+
+.commonTwo12{
+   font-size: 12pt;
+}
+.commonTwo12 tr td:nth-child(3) {
+    max-width:60px;
+    white-space:nowrap;
+}
+.commonTwo12 tr {
+    line-height: 14px;
+}
+
+.commonTwo14{
+   font-size: 14pt;
+}
+.commonTwo14 tr td:nth-child(3) {
+    max-width:70px;
+    white-space:nowrap;
+}
+.commonTwo14 tr {
+    line-height: 16px;
+}
+
+.commonTwo16{
+   font-size: 16pt;
+}
+.commonTwo16 tr td:nth-child(3) {
+    max-width:65px;
+    white-space:nowrap;
+}
+.commonTwo16 tr {
+    line-height: 18px;
+}
+
+.commonTwo18{
+   font-size: 18pt;
+}
+.commonTwo18 tr td:nth-child(3) {
+    max-width:50px;
+    white-space:nowrap;
+}
+.commonTwo18 tr {
+    line-height: 18px;
+}
+
+
+
 body {
     font-family: 'Arial Narrow', SolaimanLipi;
     font-size: 11pt;
@@ -31,10 +115,7 @@ body {
     position: relative;
 }
 
-.mainTwo {
-    width: 2in;
-    position: relative;
-}
+
 
 .logo {
     width: .658in;
