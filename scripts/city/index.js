@@ -30,9 +30,9 @@ window.onload = function myfunction() {
     }
     document.getElementById("go").onclick = function () {
         if ((parseInt(formSelect.value) + 1 == 17)) {
-            window.location.href = "../../templates/city/miniStatementTemplate.html?" + (parseInt(formSelect.value) + 1);
+            window.location.href = "miniStatementTemplate.html?" + (parseInt(formSelect.value) + 1);
         } else {
-            window.location.href = "../../templates/city/template.html?" + (parseInt(formSelect.value) + 1);
+            window.location.href = "template.html?" + (parseInt(formSelect.value) + 1);
         }
     }
 }

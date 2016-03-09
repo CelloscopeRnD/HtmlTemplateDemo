@@ -8,7 +8,7 @@
         setData(parseInt(url));
     }
 
-    addStyleSheet('../../style_sheet/agrani/styles.css'); addStyleSheet('file:///android_asset/styles.css');
+    addStyleSheet('../../style_sheets/agrani/styles.css'); addStyleSheet('file:///android_asset/agrani/styles.css');
     replaceToken(parseInt(url));
 }
 
@@ -219,7 +219,7 @@ var labelText = {
 }
 function replaceToken(receipt) {
     //addImage("agent_banking_logo", "file:///android_asset/AGENT-BANKING-LOGO_Small.png", "images/AGENT-BANKING-LOGO_Small.png");
-    addImage("logo", "file:///android_asset/logo.gif", "../../images/agrani/logo.gif");
+    addImage("logo", "file:///android_asset/agrani/logo.gif", "../../images/agrani/logo.gif");
     //addImage("qr", "qr.png", "images/qr.png");
     //addImage("customerPhoto", "photo.png", "images/photo.png");
 

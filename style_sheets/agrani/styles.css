@@ -9,16 +9,10 @@
     padding: 0;
 }
 
-/*@page {
-    size: letter;
-    margin: .25in .25in .25in .75in;
+@page {
+    width: 2in;
+    margin: 0;
 }
-
-@media print {
-    @page {
-        margin: 0 .15in .25in .6in;
-    }
-}*/
 
 @media print {
     @page {
@@ -31,76 +25,87 @@
     width: 2in;
     position: relative;
     /*background-color: lightgray;*/
-
 }
 
 
 
-.commonTwo8{
-   font-size: 8pt;
-}
-.commonTwo8 tr td:nth-child(3) {
-    max-width:80px;
-    white-space:nowrap;
-}
-.commonTwo8 tr {
-    line-height: 10px;
+.commonTwo8 {
+    font-size: 8pt;
 }
 
-.commonTwo10{
-   font-size: 10pt;
-}
-.commonTwo10 tr td:nth-child(3) {
-    max-width:70px;
-    white-space:nowrap;
-}
-.commonTwo10 tr {
-    line-height: 12px;
+    .commonTwo8 tr td:nth-child(3) {
+        max-width: 80px;
+        white-space: nowrap;
+    }
+
+    .commonTwo8 tr {
+        line-height: 10px;
+    }
+
+.commonTwo10 {
+    font-size: 10pt;
 }
 
-.commonTwo12{
-   font-size: 12pt;
-}
-.commonTwo12 tr td:nth-child(3) {
-    max-width:60px;
-    white-space:nowrap;
-}
-.commonTwo12 tr {
-    line-height: 14px;
+    .commonTwo10 tr td:nth-child(3) {
+        max-width: 70px;
+        white-space: nowrap;
+    }
+
+    .commonTwo10 tr {
+        line-height: 12px;
+    }
+
+.commonTwo12 {
+    font-size: 12pt;
 }
 
-.commonTwo14{
-   font-size: 14pt;
-}
-.commonTwo14 tr td:nth-child(3) {
-    max-width:70px;
-    white-space:nowrap;
-}
-.commonTwo14 tr {
-    line-height: 16px;
+    .commonTwo12 tr td:nth-child(3) {
+        max-width: 60px;
+        white-space: nowrap;
+    }
+
+    .commonTwo12 tr {
+        line-height: 14px;
+    }
+
+.commonTwo14 {
+    font-size: 14pt;
 }
 
-.commonTwo16{
-   font-size: 16pt;
-}
-.commonTwo16 tr td:nth-child(3) {
-    max-width:65px;
-    white-space:nowrap;
-}
-.commonTwo16 tr {
-    line-height: 18px;
+    .commonTwo14 tr td:nth-child(3) {
+        max-width: 70px;
+        white-space: nowrap;
+    }
+
+    .commonTwo14 tr {
+        line-height: 16px;
+    }
+
+.commonTwo16 {
+    font-size: 16pt;
 }
 
-.commonTwo18{
-   font-size: 18pt;
+    .commonTwo16 tr td:nth-child(3) {
+        max-width: 65px;
+        white-space: nowrap;
+    }
+
+    .commonTwo16 tr {
+        line-height: 18px;
+    }
+
+.commonTwo18 {
+    font-size: 18pt;
 }
-.commonTwo18 tr td:nth-child(3) {
-    max-width:50px;
-    white-space:nowrap;
-}
-.commonTwo18 tr {
-    line-height: 18px;
-}
+
+    .commonTwo18 tr td:nth-child(3) {
+        max-width: 50px;
+        white-space: nowrap;
+    }
+
+    .commonTwo18 tr {
+        line-height: 18px;
+    }
 
 
 
