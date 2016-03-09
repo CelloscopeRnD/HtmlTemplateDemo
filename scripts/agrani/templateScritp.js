@@ -8,26 +8,8 @@
         setData(parseInt(url));
     }
 
-    addStyleSheet('style_sheet/styles.css'); addStyleSheet('file:///android_asset/styles.css');
+    addStyleSheet('../../style_sheet/agrani/styles.css'); addStyleSheet('file:///android_asset/styles.css');
     replaceToken(parseInt(url));
-
-    //var body = document.getElementsByTagName('body')[0];
-    //var tbl = document.getElementById("target");
-    //var td0 = tbl.rows[0].cells[0].offsetWidth;
-    //var td2 = tbl.rows[0].cells[2].offsetWidth;
-    //var diff = td2 - td0;
-    //var style = window.getComputedStyle(tbl);
-    //var marginLeft = parseFloat(style.marginLeft);
-    //console.log(marginLeft, td0, td2, diff);
-
-    //tbl.style.marginLeft = marginLeft + diff + 'px';
-    //console.log(marginLeft);
-
-
-    var tbl = document.getElementById("target");
-    var td0 = tbl.rows[0].cells[0].offsetWidth;
-    var td1 = tbl.rows[1].cells[0].offsetWidth;
-    console.log(td0, td1);
 }
 
 function setData(receipt) {
@@ -236,10 +218,10 @@ var labelText = {
     userTextEnglish: "User",
 }
 function replaceToken(receipt) {
-    addImage("agent_banking_logo", "file:///android_asset/AGENT-BANKING-LOGO_Small.png", "images/AGENT-BANKING-LOGO_Small.png");
-    addImage("logo", "file:///android_asset/logo.gif", "images/logo.png");
-    addImage("qr", "qr.png", "images/qr.png");
-    addImage("customerPhoto", "photo.png", "images/photo.png");
+    //addImage("agent_banking_logo", "file:///android_asset/AGENT-BANKING-LOGO_Small.png", "images/AGENT-BANKING-LOGO_Small.png");
+    addImage("logo", "file:///android_asset/logo.gif", "../../images/agrani/logo.gif");
+    //addImage("qr", "qr.png", "images/qr.png");
+    //addImage("customerPhoto", "photo.png", "images/photo.png");
 
     addClassText("addressLine1Label", labelText.addressLine1Text);
     addClassText("addressLine2Label", labelText.addressLine2Text);
