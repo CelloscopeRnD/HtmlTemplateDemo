@@ -9,36 +9,49 @@
     padding: 0;
 }
 
-@page {
-    width: 2in;
-    margin: 0;
-}
+
 
 @media print {
     @page {
-        width: 2in;
         margin: 0;
     }
-}
 
-.mainTwo {
-    width: 2in;
-    position: relative;
-    /*background-color: lightgray;*/
-}
-
-.commonTwo10 {
-    font-size: 10pt;
-}
-
-    .commonTwo10 tr td:nth-child(3) {
-        max-width: 70px;
-        white-space: nowrap;
+    .main {
+        width: 288px;
     }
+}
 
-    .commonTwo10 tr {
-        line-height: 12px;
+@media screen {
+    .main {
+        width: 272px;
+        border-right: 1px dotted black;
     }
+}
+
+.main {
+    /*position: relative;*/
+    /*height: 3.0in;*/
+}
+
+
+body {
+    font-family: 'Arial Narrow', SolaimanLipi;
+    font-size: 11pt;
+}
+
+
+
+.logo {
+    width: 95%;
+    /*height: .4in;*/
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
 
 .commonTwo12 {
     font-size: 12pt;
@@ -66,51 +79,9 @@
         line-height: 16px;
     }
 
-.commonTwo16 {
-    font-size: 16pt;
-}
-
-    .commonTwo16 tr td:nth-child(3) {
-        max-width: 65px;
-        white-space: nowrap;
-    }
-
-    .commonTwo16 tr {
-        line-height: 18px;
-    }
-
-.commonTwo18 {
-    font-size: 18pt;
-}
-
-    .commonTwo18 tr td:nth-child(3) {
-        max-width: 50px;
-        white-space: nowrap;
-    }
-
-    .commonTwo18 tr {
-        line-height: 18px;
-    }
 
 
 
-body {
-    font-family: 'Arial Narrow', SolaimanLipi;
-    font-size: 11pt;
-}
-
-.main {
-    width: 7.5in;
-    height: 3.0in;
-    position: relative;
-}
-
-
-
-.logo {
-    width: 3in;
-    /*height: .4in;*/
-}
 
 .elmentCtr {
     margin: 0 auto;
